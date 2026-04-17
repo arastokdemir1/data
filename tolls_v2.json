@@ -1,17 +1,82 @@
 {
-    2   "bridgeFixedPrices": {
-    3     "osmangazi": { "1": 399.0, "2": 640.0, "3": 760.0 },
-    4     "avrasya": { "1": 112.0, "2": 168.0, "3": 0.0 },
-    5     "bogaz": { "1": 24.0, "2": 31.0, "3": 67.0 },
-    6     "canakkale": { "1": 419.0, "2": 525.0, "3": 945.0 },
-    7     "yavuz_sultan_selim": { "1": 49.0, "2": 65.0, "3": 120.0 }
-    8   },
-    9   "highwayKmPrices": {
-   10     "kuzey_marmara": { "1": 2.35, "2": 3.80, "3": 4.50 },
-   11     "istanbul_izmir": { "1": 2.10, "2": 3.40, "3": 4.10 },
-   12     "ankara_nigde": { "1": 1.85, "2": 2.90, "3": 3.50 },
-   13     "anadolu_otoyolu": { "1": 0.85, "2": 1.10, "3": 1.50 },
-   14     "avrupa_otoyolu": { "1": 0.75, "2": 0.95, "3": 1.30 }
-   15   },
-   16   "lastUpdated": "2026-04-17"
-   17 }
+  "version": "3.0",
+  "lastUpdated": "2026-04-17",
+  "currency": "TRY",
+  "vehicleClasses": {
+    "1": "Otomobil (Aks Aralığı < 3.20m)",
+    "2": "Minibüs, Kamyonet, SUV (Aks Aralığı >= 3.20m, 2 Aks)",
+    "3": "Yolcu Otobüsü vb. (3 Akslı Her Türlü Araç)",
+    "4": "Kamyon vb. (4 ve 5 Akslı Her Türlü Araç)",
+    "5": "TIR vb. (6 ve Üzeri Akslı Araç)",
+    "6": "Motosiklet"
+  },
+  
+  "fixedPoints": {
+    "description": "Sabit ücretli geçiş noktaları (Köprüler ve Tüneller)",
+    "15_temmuz_sehitler_koprusu": { "1": 24.0, "2": 31.0, "3": 67.0, "4": 142.0, "5": 184.0, "6": 10.0 },
+    "fatih_sultan_mehmet_koprusu": { "1": 24.0, "2": 31.0, "3": 67.0, "4": 142.0, "5": 184.0, "6": 10.0 },
+    "yavuz_sultan_selim_koprusu": { "1": 49.0, "2": 65.0, "3": 120.0, "4": 255.0, "5": 320.0, "6": 35.0 },
+    "osmangazi_koprusu": { "1": 399.0, "2": 640.0, "3": 760.0, "4": 1005.0, "5": 1265.0, "6": 280.0 },
+    "1915_canakkale_koprusu": { "1": 419.0, "2": 525.0, "3": 945.0, "4": 1050.0, "5": 1995.0, "6": 105.0 },
+    "avrasya_tuneli_gunduz": { "1": 112.0, "2": 168.0, "3": 0.0, "4": 0.0, "5": 0.0, "6": 41.6 },
+    "avrasya_tuneli_gece": { "1": 56.0, "2": 84.0, "3": 0.0, "4": 0.0, "5": 0.0, "6": 20.8 }
+  },
+
+  "highwaysYID_TotalTransit": {
+    "description": "Yap-İşlet-Devret otoyollarının baştan sona (tam) geçiş ücretleri",
+    "istanbul_izmir_o5_tam_gecis": {
+      "route": "Gebze (Osmangazi Dahil) - İzmir (Karasuluk)",
+      "prices": { "1": 1370.0, "2": 2210.0, "3": 2615.0, "4": 3485.0, "5": 4390.0, "6": 955.0 }
+    },
+    "kuzey_marmara_o7_tam_gecis": {
+      "route": "Kınalı - Akyazı (YSS Köprüsü Hariç)",
+      "prices": { "1": 415.0, "2": 665.0, "3": 795.0, "4": 1085.0, "5": 1385.0, "6": 290.0 }
+    },
+    "ankara_nigde_o21_tam_gecis": {
+      "route": "Ankara (Gölbaşı) - Niğde",
+      "prices": { "1": 295.0, "2": 475.0, "3": 565.0, "4": 780.0, "5": 975.0, "6": 210.0 }
+    },
+    "malkara_canakkale_tam_gecis": {
+      "route": "Malkara - Çanakkale (1915 Köprüsü Dahil)",
+      "prices": { "1": 579.0, "2": 735.0, "3": 1335.0, "4": 1500.0, "5": 2865.0, "6": 145.0 }
+    },
+    "aydin_denizli_tam_gecis": {
+      "route": "Aydın (Kuyucak) - Denizli",
+      "prices": { "1": 250.0, "2": 390.0, "3": 475.0, "4": 640.0, "5": 800.0, "6": 175.0 }
+    }
+  },
+
+  "highwaysKGM_TotalTransit": {
+    "description": "Karayolları Genel Müdürlüğü'ne ait devlet otoyollarının baştan sona geçiş ücretleri",
+    "anadolu_otoyolu_o4": {
+      "route": "İstanbul (Çamlıca) - Ankara (Akıncı)",
+      "prices": { "1": 134.0, "2": 156.0, "3": 185.0, "4": 260.0, "5": 315.0, "6": 55.0 }
+    },
+    "avrupa_otoyolu_o3": {
+      "route": "İstanbul (Mahmutbey) - Edirne",
+      "prices": { "1": 69.0, "2": 78.0, "3": 95.0, "4": 133.0, "5": 156.0, "6": 28.0 }
+    },
+    "izmir_cesme_o32": {
+      "route": "İzmir (Seferihisar) - Çeşme",
+      "prices": { "1": 31.0, "2": 35.0, "3": 42.0, "4": 56.0, "5": 71.0, "6": 12.0 }
+    },
+    "izmir_aydin_o31": {
+      "route": "İzmir (Işıkkent) - Aydın (Batı)",
+      "prices": { "1": 40.0, "2": 45.0, "3": 54.0, "4": 74.0, "5": 92.0, "6": 15.0 }
+    },
+    "cukurova_otoyollari_o52": {
+      "route": "Adana - Mersin - Şanlıurfa",
+      "prices": { "1": 56.0, "2": 65.0, "3": 78.0, "4": 105.0, "5": 133.0, "6": 22.0 }
+    }
+  },
+
+  "dynamicCalculationBase": {
+    "description": "Ara gişelerden çıkış yapılması durumunda MapKit mesafe verisiyle (Km) çarpılacak katsayılar (TL/Km).",
+    "yid_highways_km_multiplier": {
+      "1": 2.25, "2": 3.60, "3": 4.30, "4": 5.80, "5": 7.30, "6": 1.50
+    },
+    "kgm_highways_km_multiplier": {
+      "1": 0.35, "2": 0.45, "3": 0.55, "4": 0.85, "5": 1.10, "6": 0.15
+    }
+  }
+}
