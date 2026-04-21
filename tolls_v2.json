@@ -1,82 +1,194 @@
 {
-  "version": "3.0",
-  "lastUpdated": "2026-04-17",
+  "version": "2026.1-master",
+  "lastUpdated": "2026-04-21",
   "currency": "TRY",
-  "vehicleClasses": {
-    "1": "Otomobil (Aks Aralığı < 3.20m)",
-    "2": "Minibüs, Kamyonet, SUV (Aks Aralığı >= 3.20m, 2 Aks)",
-    "3": "Yolcu Otobüsü vb. (3 Akslı Her Türlü Araç)",
-    "4": "Kamyon vb. (4 ve 5 Akslı Her Türlü Araç)",
-    "5": "TIR vb. (6 ve Üzeri Akslı Araç)",
-    "6": "Motosiklet"
-  },
-  
-  "fixedPoints": {
-    "description": "Sabit ücretli geçiş noktaları (Köprüler ve Tüneller)",
-    "15_temmuz_sehitler_koprusu": { "1": 24.0, "2": 31.0, "3": 67.0, "4": 142.0, "5": 184.0, "6": 10.0 },
-    "fatih_sultan_mehmet_koprusu": { "1": 24.0, "2": 31.0, "3": 67.0, "4": 142.0, "5": 184.0, "6": 10.0 },
-    "yavuz_sultan_selim_koprusu": { "1": 49.0, "2": 65.0, "3": 120.0, "4": 255.0, "5": 320.0, "6": 35.0 },
-    "osmangazi_koprusu": { "1": 399.0, "2": 640.0, "3": 760.0, "4": 1005.0, "5": 1265.0, "6": 280.0 },
-    "1915_canakkale_koprusu": { "1": 419.0, "2": 525.0, "3": 945.0, "4": 1050.0, "5": 1995.0, "6": 105.0 },
-    "avrasya_tuneli_gunduz": { "1": 112.0, "2": 168.0, "3": 0.0, "4": 0.0, "5": 0.0, "6": 41.6 },
-    "avrasya_tuneli_gece": { "1": 56.0, "2": 84.0, "3": 0.0, "4": 0.0, "5": 0.0, "6": 20.8 }
-  },
-
-  "highwaysYID_TotalTransit": {
-    "description": "Yap-İşlet-Devret otoyollarının baştan sona (tam) geçiş ücretleri",
-    "istanbul_izmir_o5_tam_gecis": {
-      "route": "Gebze (Osmangazi Dahil) - İzmir (Karasuluk)",
-      "prices": { "1": 1370.0, "2": 2210.0, "3": 2615.0, "4": 3485.0, "5": 4390.0, "6": 955.0 }
+  "scope": "Turkey operational toll roads, toll bridges and toll tunnel",
+  "sourcePolicy": "official_only",
+  "notes": [
+    "headlineFullTransitPrices only filled where an official total route price is unambiguous in the official source.",
+    "For every gişe and every entry-exit pair, use the detailedTariffPdf links in each corridor.",
+    "Some official PDFs are indexed under unusual KGM paths; links below are kept exactly as reached from official results."
+  ],
+  "fixedPoints": [
+    {
+      "id": "15_temmuz_sehitler_koprusu",
+      "label": "15 Temmuz Şehitler Köprüsü",
+      "operator": "KGM",
+      "type": "bridge",
+      "officialSource": "https://www.kgm.gov.tr/sayfalar/kgm/sitetr/otoyollar/otoyolkopruucret/koprugecisucret.aspx",
+      "prices": { "1": 59.0, "2": 75.0, "3": 168.0, "4": 333.0, "5": 440.0, "6": 25.0 }
     },
-    "kuzey_marmara_o7_tam_gecis": {
-      "route": "Kınalı - Akyazı (YSS Köprüsü Hariç)",
-      "prices": { "1": 415.0, "2": 665.0, "3": 795.0, "4": 1085.0, "5": 1385.0, "6": 290.0 }
+    {
+      "id": "fatih_sultan_mehmet_koprusu",
+      "label": "Fatih Sultan Mehmet Köprüsü",
+      "operator": "KGM",
+      "type": "bridge",
+      "officialSource": "https://www.kgm.gov.tr/sayfalar/kgm/sitetr/otoyollar/otoyolkopruucret/koprugecisucret.aspx",
+      "prices": { "1": 59.0, "2": 75.0, "3": 168.0, "4": 333.0, "5": 440.0, "6": 25.0 }
     },
-    "ankara_nigde_o21_tam_gecis": {
-      "route": "Ankara (Gölbaşı) - Niğde",
-      "prices": { "1": 295.0, "2": 475.0, "3": 565.0, "4": 780.0, "5": 975.0, "6": 210.0 }
+    {
+      "id": "yavuz_sultan_selim_koprusu",
+      "label": "Yavuz Sultan Selim Köprüsü",
+      "operator": "YİD",
+      "type": "bridge",
+      "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/3-YSSKoprusu.pdf",
+      "prices": { "1": 95.0, "2": 125.0, "3": 235.0, "4": 595.0, "5": 740.0, "6": 65.0 }
     },
-    "malkara_canakkale_tam_gecis": {
-      "route": "Malkara - Çanakkale (1915 Köprüsü Dahil)",
-      "prices": { "1": 579.0, "2": 735.0, "3": 1335.0, "4": 1500.0, "5": 2865.0, "6": 145.0 }
+    {
+      "id": "osmangazi_koprusu",
+      "label": "Osmangazi Köprüsü",
+      "operator": "YİD",
+      "type": "bridge",
+      "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/2-Osmangazi.pdf",
+      "prices": { "1": 995.0, "2": 1590.0, "3": 1890.0, "4": 2505.0, "5": 3165.0, "6": 695.0 }
     },
-    "aydin_denizli_tam_gecis": {
-      "route": "Aydın (Kuyucak) - Denizli",
-      "prices": { "1": 250.0, "2": 390.0, "3": 475.0, "4": 640.0, "5": 800.0, "6": 175.0 }
+    {
+      "id": "1915_canakkale_koprusu",
+      "label": "1915 Çanakkale Köprüsü",
+      "operator": "YİD",
+      "type": "bridge",
+      "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/4-1915Canakkale.pdf",
+      "prices": { "1": 995.0, "2": 1245.0, "3": 2240.0, "4": 2490.0, "5": 3755.0, "6": 250.0 }
+    },
+    {
+      "id": "avrasya_tuneli",
+      "label": "Avrasya Tüneli",
+      "operator": "YİD",
+      "type": "tunnel",
+      "officialSource": "https://www.avrasyatuneli.com/haberler-ve-duyurular/detay/1-ocak-2026-itibariyla-gecerli-avrasya-tuneli-gecis-ucretleri-tarifesi",
+      "prices": {
+        "day": { "1": 280.0, "2": 420.0, "6": 218.4 },
+        "night": { "1": 140.0, "2": 210.0, "6": 109.2 }
+      }
     }
-  },
-
-  "highwaysKGM_TotalTransit": {
-    "description": "Karayolları Genel Müdürlüğü'ne ait devlet otoyollarının baştan sona geçiş ücretleri",
-    "anadolu_otoyolu_o4": {
-      "route": "İstanbul (Çamlıca) - Ankara (Akıncı)",
-      "prices": { "1": 134.0, "2": 156.0, "3": 185.0, "4": 260.0, "5": 315.0, "6": 55.0 }
+  ],
+  "corridors": [
+    {
+      "id": "gdh_europe_o3",
+      "label": "GDH Europe Motorway (Mahmutbey - Edirne / O-3)",
+      "operator": "KGM",
+      "type": "state_motorway",
+      "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/11_GDH_Europe_Motorway%28Mahmutbey_Edirne_Crossroads%29Toll_Rates.pdf",
+      "headlineFullTransitPrices": { "1": 168.0, "2": 193.0, "3": 256.0, "4": 338.0, "5": 378.0, "6": 69.0 },
+      "stations": ["Mahmutbey", "Ispartakule", "Avcılar", "Esenyurt", "Hadımköy", "Çatalca", "K.Burgaz", "Selimpaşa", "Silivri", "Kınalı", "Küçükkılıçlı", "Çerkezköy", "Çorlu", "Saray", "Lüleburgaz", "Babaeski", "Havsa", "Edirne"]
     },
-    "avrupa_otoyolu_o3": {
-      "route": "İstanbul (Mahmutbey) - Edirne",
-      "prices": { "1": 69.0, "2": 78.0, "3": 95.0, "4": 133.0, "5": 156.0, "6": 28.0 }
+    {
+      "id": "gdh_anatolia_o4",
+      "label": "GDH Anatolian Motorway (Çamlıca - Akıncı / O-4)",
+      "operator": "KGM",
+      "type": "state_motorway",
+      "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2025Gecis_Ucret/GDH%20Anatolian%20Motorway%20%28%C3%87aml%C4%B1ca-Ak%C4%B1nc%C4%B1%20Section%29%20Toll%20Rates.pdf",
+      "headlineFullTransitPrices": { "1": 269.0, "2": 311.0, "3": 416.0, "4": 538.0, "5": 646.0, "6": 108.0 },
+      "stations": ["Anadolu (Çamlıca)", "Samandıra", "Sultanbeyli", "Mecidiye", "Kurtköy", "Orhanlı", "Ş.Pınar", "Gebze", "Muallimköy", "Liman", "Dil İskelesi", "Doğu Hereke", "Körfez", "Kandıra", "Kartepe", "Doğu İzmit", "Sapanca", "Adapazarı", "Bekirpaşa", "Akyazı", "Topağaç", "Hendek", "Düzce (Gölyaka)", "Düzce Organize Sanayi", "Kaynaşlı", "Abant", "Bolu Batı", "Çaydurt", "Yeniçağa", "Dörtdivan", "Gerede", "Pelitçik (Çamlıdere)", "Çeltikçi (Kızılcahamam)", "Akıncı"],
+      "notes": ["Official KGM source is indexed under a 2025Gecis_Ucret path but contains current 2026 tariff content."]
     },
-    "izmir_cesme_o32": {
-      "route": "İzmir (Seferihisar) - Çeşme",
-      "prices": { "1": 31.0, "2": 35.0, "3": 42.0, "4": 56.0, "5": 71.0, "6": 12.0 }
+    {
+      "id": "izmir_aydin_o31",
+      "label": "İzmir - Aydın Otoyolu (O-31)",
+      "operator": "KGM",
+      "type": "state_motorway",
+      "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/7-Izmir-Aydin.pdf",
+      "headlineFullTransitPrices": { "1": 73.0, "2": 82.0, "3": 115.0, "4": 148.0, "5": 168.0, "6": 33.0 },
+      "stations": ["Işıkkent", "Tahtalıçay (Havalimanı)", "Torbalı", "Belevi", "Germencik", "Aydın Batı"]
     },
-    "izmir_aydin_o31": {
-      "route": "İzmir (Işıkkent) - Aydın (Batı)",
-      "prices": { "1": 40.0, "2": 45.0, "3": 54.0, "4": 74.0, "5": 92.0, "6": 15.0 }
+    {
+      "id": "izmir_cesme_o32",
+      "label": "İzmir - Çeşme Otoyolu (O-32)",
+      "operator": "KGM",
+      "type": "state_motorway",
+      "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/6-Izmir-Cesme.pdf",
+      "headlineFullTransitPrices": { "1": 53.0, "2": 56.0, "3": 102.0, "4": 115.0, "5": 148.0, "6": 20.0 },
+      "stations": ["Seferihisar (Güzelbahçe)", "Urla", "Karaburun", "Zeytinler", "Alaçatı", "Çeşme"]
     },
-    "cukurova_otoyollari_o52": {
-      "route": "Adana - Mersin - Şanlıurfa",
-      "prices": { "1": 56.0, "2": 65.0, "3": 78.0, "4": 105.0, "5": 133.0, "6": 22.0 }
+    {
+      "id": "cukurova_adana_gaziantep",
+      "label": "Çukurova Otoyolları (Adana Doğu - Gaziantep Batı)",
+      "operator": "KGM",
+      "type": "state_motorway",
+      "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/8-CukurovaOtoyoluAdana-Gaziantep.pdf",
+      "headlineFullTransitPrices": null,
+      "stations": ["Adana Doğu Alın", "Ceyhan", "Toprakkale", "Sakızgediği", "Osmaniye", "Osmaniye Organize Sanayi", "Erzin", "Yumurtalık Serbest Bölge", "Dörtyol", "Payas", "İskenderun OSB", "İskenderun", "Düziçi", "Bahçe", "Kömürler (Nurdağı)", "Narlı", "Gaziantep Batı Alın"],
+      "notes": ["Use the official PDF for all entry-exit prices. Total full-route price was not normalized into a single headline field in this file."]
+    },
+    {
+      "id": "cukurova_nigde_mersin_adana",
+      "label": "Çukurova Otoyolları (Niğde - Mersin - Adana Batı)",
+      "operator": "KGM",
+      "type": "state_motorway",
+      "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/10-CukurovaOtoyoluNigde-Mersin-Adana.pdf",
+      "headlineFullTransitPrices": null,
+      "stations": ["Niğde Güney", "Niğde Kuzey", "Gölcük Alın", "Kemerhisar", "Eminlik Alın", "Pozantı (Kuzey)", "Pozantı (Güney)", "Tekir", "Çamalan", "Yenice", "Adana Batı Alın", "Çamtepe", "Tarsus", "Tarsus OSB", "Mersin Alın"],
+      "notes": ["Use the official PDF for all entry-exit prices. Total full-route price was not normalized into a single headline field in this file."]
+    },
+    {
+      "id": "gebze_orhangazi_izmir_o5",
+      "label": "Gebze - Orhangazi - İzmir Otoyolu (O-5, Osmangazi dahil)",
+      "operator": "YİD",
+      "type": "build_operate_transfer_motorway",
+      "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/12_GOI_ENG.pdf",
+      "headlineFullTransitPrices": null,
+      "stations": ["Osmangazi Köprüsü (İzmir Yönü)", "Osmangazi Köprüsü (İstanbul Yönü)", "Altınova", "Kılıç", "Orhangazi", "Gemlik", "Bursa Serbest Bölge", "Bursa Kuzey", "Bursa Batı", "Teknosab", "Karacabey - Mustafakemalpaşa - 1", "Karacabey - Mustafakemalpaşa - 2", "Susurluk", "Balıkesir Kuzey", "Balıkesir Batı", "Savaştepe", "Soma", "Kırkağaç", "Akhisar", "Saruhanlı", "Turgutlu", "İzmir"],
+      "notes": ["Official full matrix is provided in the PDF. This master file intentionally leaves the single full-route headline empty rather than guessing from the split PDF layout."]
+    },
+    {
+      "id": "kmo_avrupa_kinali_odayeri",
+      "label": "Kuzey Marmara Avrupa Otoyolu (Kınalı - Odayeri)",
+      "operator": "YİD",
+      "type": "build_operate_transfer_motorway",
+      "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/14-KMOAvrupaKinali-Odayeri.pdf",
+      "headlineFullTransitPrices": { "1": 220.0, "2": 350.0, "3": 415.0, "4": 535.0, "5": 680.0, "6": 165.0 },
+      "stations": ["Kınalı", "Silivri", "Çatalca", "Nakkaş", "Yassıören", "Tayakadın", "Fatih"]
+    },
+    {
+      "id": "kmo_anadolu_kurtkoy_akyazi",
+      "label": "Kuzey Marmara Anadolu Otoyolu (Kurtköy - Akyazı)",
+      "operator": "YİD",
+      "type": "build_operate_transfer_motorway",
+      "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/15-KMOAnadoluKurtkoy-Akyazi.pdf",
+      "headlineFullTransitPrices": { "1": 510.0, "2": 795.0, "3": 930.0, "4": 1210.0, "5": 1525.0, "6": 350.0 },
+      "stations": ["Kurnaköy 2", "İstanbulpark", "Balçık", "Mermeciler", "Sevindikli", "İlimtepe", "İzmit Kuzey", "İzmit Doğu", "Akmeşe", "Adapazarı-1", "Adapazarı-2", "Karasu", "KMO Akyazı", "TEM Akyazı"]
+    },
+    {
+      "id": "menemen_aliaga_candarli",
+      "label": "Menemen - Aliağa - Çandarlı Otoyolu",
+      "operator": "YİD",
+      "type": "build_operate_transfer_motorway",
+      "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/16-Menemen-Aliaga-Candarli.pdf",
+      "headlineFullTransitPrices": { "1": 205.0, "2": 340.0, "3": 400.0, "4": 525.0, "5": 525.0, "6": 50.0 },
+      "stations": ["Menemen", "Eski Foça", "Yeni Foça", "Aliağa Petkim", "Aliağa OSB", "Yenişakran", "Çandarlı"],
+      "notes": ["Class 4 and class 5 full-route headline values are kept exactly as extracted from the official 2026 tariff PDF."]
+    },
+    {
+      "id": "ankara_nigde_o21",
+      "label": "Ankara - Niğde Otoyolu (O-21)",
+      "operator": "YİD",
+      "type": "build_operate_transfer_motorway",
+      "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/17-Ankara-Nigde.pdf",
+      "headlineFullTransitPrices": { "1": 740.0, "2": 840.0, "3": 1010.0, "4": 1300.0, "5": 1560.0, "6": 250.0 },
+      "stations": ["Ankara Alın", "Karagedik", "Ahiboz", "Emirler", "Kulu-Kırıkkale", "Acıkuyu", "Evren-Sarıyahşi", "Ağaçören", "Kırşehir", "Ortaköy", "Alayhan", "Derinkuyu", "Çiftlik", "Niğde Alın"]
+    },
+    {
+      "id": "malkara_canakkale_1915",
+      "label": "Malkara - Çanakkale (1915 Çanakkale Köprüsü dahil)",
+      "operator": "YİD",
+      "type": "build_operate_transfer_motorway",
+      "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/18-Malkara-Canakkale.pdf",
+      "headlineFullTransitPrices": { "1": 1260.0, "2": 1665.0, "3": 2740.0, "4": 3155.0, "5": 4420.0, "6": 315.0 },
+      "stations": ["Malkara G-1", "Kavakköy G-2", "Gelibolu Kuzey G-3", "Gelibolu Güney G-4", "1915 Çanakkale Köprüsü G-5"]
+    },
+    {
+      "id": "aydin_denizli",
+      "label": "Aydın - Denizli Otoyolu",
+      "operator": "YİD",
+      "type": "build_operate_transfer_motorway",
+      "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/19-Aydin-Denizli.pdf",
+      "headlineFullTransitPrices": { "1": 500.0, "2": 635.0, "3": 760.0, "4": 910.0, "5": 1010.0, "6": 100.0 },
+      "stations": ["Aydın Alın", "Köşk", "Yeni Pazar", "Nazilli", "Kuyucak", "Buharkent", "Sarayköy", "Kumkısık-A", "Kumkısık-B", "Pamukkale", "Kocabaş"]
     }
-  },
-
-  "dynamicCalculationBase": {
-    "description": "Ara gişelerden çıkış yapılması durumunda MapKit mesafe verisiyle (Km) çarpılacak katsayılar (TL/Km).",
-    "yid_highways_km_multiplier": {
-      "1": 2.25, "2": 3.60, "3": 4.30, "4": 5.80, "5": 7.30, "6": 1.50
-    },
-    "kgm_highways_km_multiplier": {
-      "1": 0.35, "2": 0.45, "3": 0.55, "4": 0.85, "5": 1.10, "6": 0.15
-    }
-  }
+  ],
+  "notIncludedBecauseNotOperational": [
+    "Antalya - Alanya Otoyolu",
+    "Mersin - Çeşmeli Otoyolu",
+    "Nakkaş - Başakşehir Kesimi"
+  ]
 }
