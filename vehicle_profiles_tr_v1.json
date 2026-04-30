@@ -1,163 +1,275 @@
 {
-  "version": "2026.1",
-  "lastUpdated": "2026-04-25",
+  "version": "2026.2",
+  "lastUpdated": "2026-04-29",
   "sourcePolicy": "official_primary_sources_preferred",
   "notes": [
     "For records with official WLTP low/medium/high/extraHigh phases, cityConsumption is derived as average(low, medium) and highwayConsumption is derived as average(high, extraHigh).",
     "For records with direct official city/highway values, those values are stored directly.",
     "For Togg T10X, official city and combined values are available in the official catalogue; highwayConsumption is derived using a 45/55 city-highway weighting proxy and is marked as derived.",
-    "For records where the manufacturer only publishes official combined consumption, cityConsumption and highwayConsumption are marked as derived and use a segment-specific proxy documented in the derivation field."
+    "For records where the manufacturer only publishes official combined consumption, cityConsumption and highwayConsumption are marked as derived and use a segment-specific proxy documented in the derivation field.",
+    "2026.2 expands popular Turkey-market coverage with manufacturer-combined derived records for BMW, Mercedes-Benz, Hyundai, Peugeot, Ford, Honda, Kia and Nissan; these are marked as catalog_derived by the app when confidence is below 0.90."
   ],
   "records": [
     {
-      "make": "Toyota",
-      "model": "Corolla 1.5 Vision Plus MDS",
+      "make": "BMW",
+      "model": "320i Sedan M Sport",
+      "year": 2026,
+      "fuelType": "Benzin",
+      "cityConsumption": 8.2,
+      "highwayConsumption": 5.5,
+      "combinedConsumption": 6.6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.08,
+      "aliases": [
+        "BMW 320i",
+        "320i",
+        "3 Serisi 320i",
+        "BMW 3 Series 320i"
+      ],
+      "sourceType": "manufacturer_combined_derived_city_highway",
+      "confidence": 0.74,
+      "sourceUrl": "https://www.bmw.com.tr/tr/all-models/3-series/sedan/2025/bmw-3-serisi-sedan-teknik-veriler.html",
+      "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with premium D-segment gasoline sedan proxy"
+    },
+    {
+      "make": "BMW",
+      "model": "520i Sedan M Sport",
+      "year": 2026,
+      "fuelType": "Benzin",
+      "cityConsumption": 8.7,
+      "highwayConsumption": 5.9,
+      "combinedConsumption": 7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.1,
+      "aliases": [
+        "BMW 520i",
+        "520i",
+        "5 Serisi 520i",
+        "BMW 5 Series 520i"
+      ],
+      "sourceType": "manufacturer_combined_derived_city_highway",
+      "confidence": 0.72,
+      "sourceUrl": "https://www.bmw.com.tr/tr/all-models/5-series/sedan/2025/bmw-5-serisi-sedan-teknik-veriler.html",
+      "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with premium E-segment gasoline sedan proxy"
+    },
+    {
+      "make": "Dacia",
+      "model": "Sandero Stepway 1.0 TCe 90 auto",
       "year": 2025,
       "fuelType": "Benzin",
-      "cityConsumption": 7.0,
-      "highwayConsumption": 5.8,
-      "combinedConsumption": 6.1,
+      "cityConsumption": 6.8,
+      "highwayConsumption": 5.9,
+      "combinedConsumption": 6.2,
       "vehicleClass": 1,
-      "climbSensitivity": 1.03,
-      "aliases": ["Corolla 1.5 Vision Plus", "Corolla 1.5 Vision"],
+      "climbSensitivity": 1.08,
+      "aliases": [
+        "Sandero Stepway TCe 90 auto",
+        "Sandero Stepway 1.0 TCe 90 CVT"
+      ],
       "sourceType": "official_wltp_phases",
       "confidence": 0.97,
-      "sourceUrl": "https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/yasal-bilgilendirme/yakit-ekonomisi-ve-co2-emisyonu.pdf"
+      "sourceUrl": "https://cdn.group.renault.com/dac/tr/dacia-brochures/sandero-stepway/SANDERO-STEPWAY-BJI-STW-PH1-BROSUR-22052025.pdf.asset.pdf/b828e72c60.pdf"
     },
     {
-      "make": "Toyota",
-      "model": "Corolla 1.8 Hybrid Dream e-CVT",
-      "year": 2025,
+      "make": "Fiat",
+      "model": "Egea 1.5 TURBO T4 HYBRID 130CV FWD",
+      "year": 2026,
       "fuelType": "Hibrit",
-      "cityConsumption": 3.9,
+      "cityConsumption": 5.6,
       "highwayConsumption": 4.9,
-      "combinedConsumption": 4.5,
+      "combinedConsumption": 5.2,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Egea Hybrid 1.5 130",
+        "Egea 1.5 Hybrid 130",
+        "Egea Sedan Hybrid 130"
+      ],
+      "sourceType": "official_combined_derived_city_highway",
+      "confidence": 0.72,
+      "sourceUrl": "https://www.fiat.com.tr/modeller/egea/technical-data",
+      "derivation": "combined consumption is official; city/highway are derived from the official combined value using a mild-hybrid C-segment sedan proxy"
+    },
+    {
+      "make": "Ford",
+      "model": "Puma 1.0 EcoBoost 125 PS Powershift",
+      "year": 2026,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.9,
+      "highwayConsumption": 5.2,
+      "combinedConsumption": 5.9,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.09,
+      "aliases": [
+        "Ford Puma 1.0 EcoBoost",
+        "Puma EcoBoost 125",
+        "Puma Powershift"
+      ],
+      "sourceType": "manufacturer_combined_derived_city_highway",
+      "confidence": 0.74,
+      "sourceUrl": "https://www.ford.com.tr/binek-araclar/puma/teknik-ozellikler",
+      "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with B-SUV turbo gasoline proxy"
+    },
+    {
+      "make": "Honda",
+      "model": "Civic Sedan 1.5 VTEC Turbo Elegance CVT",
+      "year": 2026,
+      "fuelType": "Benzin",
+      "cityConsumption": 8.1,
+      "highwayConsumption": 5.7,
+      "combinedConsumption": 6.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.06,
+      "aliases": [
+        "Honda Civic 1.5 VTEC Turbo",
+        "Civic Sedan Turbo",
+        "Civic CVT"
+      ],
+      "sourceType": "manufacturer_combined_derived_city_highway",
+      "confidence": 0.74,
+      "sourceUrl": "https://www.honda.com.tr/otomobil/modeller/honda-civic-sedan/teknik-ozellikler",
+      "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with C-segment turbo gasoline sedan proxy"
+    },
+    {
+      "make": "Honda",
+      "model": "HR-V e:HEV Advance",
+      "year": 2026,
+      "fuelType": "Hibrit",
+      "cityConsumption": 4.5,
+      "highwayConsumption": 5.4,
+      "combinedConsumption": 5,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.11,
+      "aliases": [
+        "Honda HR-V e:HEV",
+        "HR-V Hybrid",
+        "HRV eHEV"
+      ],
+      "sourceType": "manufacturer_combined_derived_city_highway",
+      "confidence": 0.74,
+      "sourceUrl": "https://www.honda.com.tr/otomobil/modeller/honda-hr-v/teknik-ozellikler",
+      "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with B-SUV full-hybrid proxy"
+    },
+    {
+      "make": "Hyundai",
+      "model": "i20 1.4 MPI Elite Otomatik",
+      "year": 2026,
+      "fuelType": "Benzin",
+      "cityConsumption": 8,
+      "highwayConsumption": 5.6,
+      "combinedConsumption": 6.5,
       "vehicleClass": 1,
       "climbSensitivity": 1.02,
-      "aliases": ["Corolla 1.8 Hybrid Dream", "Corolla Hybrid 1.8"],
-      "sourceType": "official_wltp_phases",
-      "confidence": 0.97,
-      "sourceUrl": "https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/yasal-bilgilendirme/yakit-ekonomisi-ve-co2-emisyonu.pdf"
+      "aliases": [
+        "Hyundai i20 1.4 MPI",
+        "i20 1.4 otomatik",
+        "i20 Elite"
+      ],
+      "sourceType": "manufacturer_combined_derived_city_highway",
+      "confidence": 0.75,
+      "sourceUrl": "https://www.hyundai.com/tr/tr/modeller/i20/teknik-ozellikler",
+      "derivation": "manufacturer combined consumption is used where available; city/highway split is derived with B-segment gasoline automatic proxy"
     },
     {
-      "make": "Toyota",
-      "model": "Corolla Cross 1.8 Hybrid Flame e-CVT",
-      "year": 2025,
+      "make": "Hyundai",
+      "model": "Tucson 1.6 T-GDI Hybrid 4x2",
+      "year": 2026,
       "fuelType": "Hibrit",
-      "cityConsumption": 4.1,
-      "highwayConsumption": 5.5,
-      "combinedConsumption": 5.1,
+      "cityConsumption": 5.7,
+      "highwayConsumption": 6.2,
+      "combinedConsumption": 5.9,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.17,
+      "aliases": [
+        "Hyundai Tucson Hybrid",
+        "Tucson Hibrit",
+        "Tucson 1.6 Hybrid"
+      ],
+      "sourceType": "manufacturer_combined_derived_city_highway",
+      "confidence": 0.74,
+      "sourceUrl": "https://www.hyundai.com/tr/tr/modeller/tucson/teknik-ozellikler",
+      "derivation": "manufacturer combined hybrid consumption is used where available; city/highway split is derived with C-SUV hybrid proxy"
+    },
+    {
+      "make": "Kia",
+      "model": "Sportage 1.6 T-GDI Mild Hybrid DCT",
+      "year": 2026,
+      "fuelType": "Hibrit",
+      "cityConsumption": 7.6,
+      "highwayConsumption": 6.2,
+      "combinedConsumption": 6.8,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.17,
+      "aliases": [
+        "Kia Sportage Mild Hybrid",
+        "Sportage 1.6 T-GDI",
+        "Sportage MHEV"
+      ],
+      "sourceType": "manufacturer_combined_derived_city_highway",
+      "confidence": 0.72,
+      "sourceUrl": "https://www.kia.com/tr/modeller/sportage/teknik-ozellikler.html",
+      "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with C-SUV mild-hybrid proxy"
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "C 200 4MATIC AMG",
+      "year": 2026,
+      "fuelType": "Benzin",
+      "cityConsumption": 8.5,
+      "highwayConsumption": 5.8,
+      "combinedConsumption": 6.9,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.1,
+      "aliases": [
+        "Mercedes C200",
+        "C 200",
+        "C200 AMG",
+        "Mercedes-Benz C 200"
+      ],
+      "sourceType": "manufacturer_combined_derived_city_highway",
+      "confidence": 0.74,
+      "sourceUrl": "https://www.mercedes-benz.com.tr/passengercars/models/saloon/c-class/overview.html",
+      "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with premium D-segment gasoline sedan proxy"
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "E 180 AMG",
+      "year": 2026,
+      "fuelType": "Benzin",
+      "cityConsumption": 8.8,
+      "highwayConsumption": 6,
+      "combinedConsumption": 7.1,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.11,
+      "aliases": [
+        "Mercedes E180",
+        "E 180",
+        "Mercedes-Benz E 180"
+      ],
+      "sourceType": "manufacturer_combined_derived_city_highway",
+      "confidence": 0.72,
+      "sourceUrl": "https://www.mercedes-benz.com.tr/passengercars/models/saloon/e-class/overview.html",
+      "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with premium E-segment gasoline sedan proxy"
+    },
+    {
+      "make": "Nissan",
+      "model": "Qashqai 1.3 DIG-T MHEV X-Tronic",
+      "year": 2026,
+      "fuelType": "Hibrit",
+      "cityConsumption": 7.3,
+      "highwayConsumption": 5.8,
+      "combinedConsumption": 6.4,
       "vehicleClass": 1,
       "climbSensitivity": 1.14,
-      "aliases": ["Corolla Cross 1.8 Hybrid", "Corolla Cross Hybrid"],
-      "sourceType": "official_wltp_phases",
-      "confidence": 0.97,
-      "sourceUrl": "https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/yasal-bilgilendirme/yakit-ekonomisi-ve-co2-emisyonu.pdf"
-    },
-    {
-      "make": "Toyota",
-      "model": "Yaris 1.5 Hybrid Flame e-CVT",
-      "year": 2025,
-      "fuelType": "Hibrit",
-      "cityConsumption": 3.0,
-      "highwayConsumption": 4.3,
-      "combinedConsumption": 3.9,
-      "vehicleClass": 1,
-      "climbSensitivity": 1.01,
-      "aliases": ["Yaris 1.5 Hybrid", "Yaris Hybrid"],
-      "sourceType": "official_wltp_phases",
-      "confidence": 0.97,
-      "sourceUrl": "https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/yasal-bilgilendirme/yakit-ekonomisi-ve-co2-emisyonu.pdf"
-    },
-    {
-      "make": "Toyota",
-      "model": "Yaris Cross 1.5 Hybrid Flame e-CVT",
-      "year": 2025,
-      "fuelType": "Hibrit",
-      "cityConsumption": 3.5,
-      "highwayConsumption": 5.2,
-      "combinedConsumption": 4.7,
-      "vehicleClass": 1,
-      "climbSensitivity": 1.10,
-      "aliases": ["Yaris Cross 1.5 Hybrid", "Yaris Cross Hybrid"],
-      "sourceType": "official_wltp_phases",
-      "confidence": 0.97,
-      "sourceUrl": "https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/yasal-bilgilendirme/yakit-ekonomisi-ve-co2-emisyonu.pdf"
-    },
-    {
-      "make": "Toyota",
-      "model": "C-HR 1.8 Hybrid Flame e-CVT",
-      "year": 2025,
-      "fuelType": "Hibrit",
-      "cityConsumption": 3.7,
-      "highwayConsumption": 5.1,
-      "combinedConsumption": 4.7,
-      "vehicleClass": 1,
-      "climbSensitivity": 1.12,
-      "aliases": ["Toyota C-HR 1.8 Hybrid", "C-HR Hybrid 1.8"],
-      "sourceType": "official_wltp_phases",
-      "confidence": 0.97,
-      "sourceUrl": "https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/yasal-bilgilendirme/yakit-ekonomisi-ve-co2-emisyonu.pdf"
-    },
-    {
-      "make": "Volkswagen",
-      "model": "Polo 1.0 80 PS Impression Man.",
-      "year": 2026,
-      "fuelType": "Benzin",
-      "cityConsumption": 6.0,
-      "highwayConsumption": 5.5,
-      "combinedConsumption": 5.6,
-      "vehicleClass": 1,
-      "climbSensitivity": 1.02,
-      "aliases": ["Polo 1.0 80 PS", "Polo Impression 1.0"],
-      "sourceType": "official_wltp_phases",
-      "confidence": 0.98,
-      "sourceUrl": "https://binekarac.vw.com.tr/idhub/content/dam/onehub_pkw/importers/tr/yakit-ekonomisi-co2-emisyonu/pdf-yakit-tuketim-etiketi/24_my_polo_impression_man.pdf"
-    },
-    {
-      "make": "Volkswagen",
-      "model": "Polo 1.0 TSI 95 PS Life Man.",
-      "year": 2026,
-      "fuelType": "Benzin",
-      "cityConsumption": 6.1,
-      "highwayConsumption": 5.2,
-      "combinedConsumption": 5.4,
-      "vehicleClass": 1,
-      "climbSensitivity": 1.03,
-      "aliases": ["Polo 1.0 TSI 95 PS", "Polo Life 1.0 TSI Manual"],
-      "sourceType": "official_wltp_phases",
-      "confidence": 0.98,
-      "sourceUrl": "https://binekarac.vw.com.tr/idhub/content/dam/onehub_pkw/importers/tr/yakit-ekonomisi-co2-emisyonu/pdf-yakit-tuketim-etiketi/24_my_polo_life_man.pdf"
-    },
-    {
-      "make": "Volkswagen",
-      "model": "Polo 1.0 TSI 95 PS Life DSG",
-      "year": 2026,
-      "fuelType": "Benzin",
-      "cityConsumption": 6.4,
-      "highwayConsumption": 5.4,
-      "combinedConsumption": 5.7,
-      "vehicleClass": 1,
-      "climbSensitivity": 1.03,
-      "aliases": ["Polo 1.0 TSI 95 PS DSG", "Polo Life 1.0 TSI DSG"],
-      "sourceType": "official_wltp_phases",
-      "confidence": 0.98,
-      "sourceUrl": "https://binekarac.vw.com.tr/idhub/content/dam/onehub_pkw/importers/tr/yakit-ekonomisi-co2-emisyonu/pdf-yakit-tuketim-etiketi/24_my_polo_life_dsg.pdf"
-    },
-    {
-      "make": "Opel",
-      "model": "Corsa 1.2 100 HP Benzin MT6 Edition",
-      "year": 2026,
-      "fuelType": "Benzin",
-      "cityConsumption": 5.8,
-      "highwayConsumption": 4.9,
-      "combinedConsumption": 5.3,
-      "vehicleClass": 1,
-      "climbSensitivity": 1.03,
-      "aliases": ["Corsa 1.2 100 HP MT6", "Corsa Edition MT6"],
-      "sourceType": "official_wltp_phases",
-      "confidence": 0.97,
-      "sourceUrl": "https://www.opel.com.tr/opel-hakkinda/cevre-yakit-ekonomisi-emisyon-bilgileri.html"
+      "aliases": [
+        "Nissan Qashqai Mild Hybrid",
+        "Qashqai 1.3 DIG-T",
+        "Qashqai MHEV"
+      ],
+      "sourceType": "manufacturer_combined_derived_city_highway",
+      "confidence": 0.74,
+      "sourceUrl": "https://www.nissan.com.tr/araclar/yeni-araclar/qashqai/teknik-ozellikler.html",
+      "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with C-SUV mild-hybrid proxy"
     },
     {
       "make": "Opel",
@@ -169,7 +281,28 @@
       "combinedConsumption": 5.5,
       "vehicleClass": 1,
       "climbSensitivity": 1.04,
-      "aliases": ["Corsa 1.2 100 HP AT8", "Corsa Edition AT8"],
+      "aliases": [
+        "Corsa 1.2 100 HP AT8",
+        "Corsa Edition AT8"
+      ],
+      "sourceType": "official_wltp_phases",
+      "confidence": 0.97,
+      "sourceUrl": "https://www.opel.com.tr/opel-hakkinda/cevre-yakit-ekonomisi-emisyon-bilgileri.html"
+    },
+    {
+      "make": "Opel",
+      "model": "Corsa 1.2 100 HP Benzin MT6 Edition",
+      "year": 2026,
+      "fuelType": "Benzin",
+      "cityConsumption": 5.8,
+      "highwayConsumption": 4.9,
+      "combinedConsumption": 5.3,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "Corsa 1.2 100 HP MT6",
+        "Corsa Edition MT6"
+      ],
       "sourceType": "official_wltp_phases",
       "confidence": 0.97,
       "sourceUrl": "https://www.opel.com.tr/opel-hakkinda/cevre-yakit-ekonomisi-emisyon-bilgileri.html"
@@ -184,116 +317,53 @@
       "combinedConsumption": 4.5,
       "vehicleClass": 1,
       "climbSensitivity": 1.03,
-      "aliases": ["Corsa Hybrid 110 e-DCT6", "Corsa Hybrid Edition"],
+      "aliases": [
+        "Corsa Hybrid 110 e-DCT6",
+        "Corsa Hybrid Edition"
+      ],
       "sourceType": "official_wltp_phases",
       "confidence": 0.97,
       "sourceUrl": "https://www.opel.com.tr/opel-hakkinda/cevre-yakit-ekonomisi-emisyon-bilgileri.html"
     },
     {
-      "make": "Dacia",
-      "model": "Sandero Stepway 1.0 TCe 90 auto",
-      "year": 2025,
+      "make": "Peugeot",
+      "model": "2008 1.2 PureTech 130 EAT8 Allure",
+      "year": 2026,
       "fuelType": "Benzin",
-      "cityConsumption": 6.8,
-      "highwayConsumption": 5.9,
-      "combinedConsumption": 6.2,
+      "cityConsumption": 7.1,
+      "highwayConsumption": 5.4,
+      "combinedConsumption": 6.1,
       "vehicleClass": 1,
-      "climbSensitivity": 1.08,
-      "aliases": ["Sandero Stepway TCe 90 auto", "Sandero Stepway 1.0 TCe 90 CVT"],
-      "sourceType": "official_wltp_phases",
-      "confidence": 0.97,
-      "sourceUrl": "https://cdn.group.renault.com/dac/tr/dacia-brochures/sandero-stepway/SANDERO-STEPWAY-BJI-STW-PH1-BROSUR-22052025.pdf.asset.pdf/b828e72c60.pdf"
+      "climbSensitivity": 1.09,
+      "aliases": [
+        "Peugeot 2008 PureTech 130",
+        "2008 1.2 PureTech",
+        "2008 EAT8"
+      ],
+      "sourceType": "manufacturer_combined_derived_city_highway",
+      "confidence": 0.73,
+      "sourceUrl": "https://www.peugeot.com.tr/modeller/2008.html",
+      "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with B-SUV gasoline automatic proxy"
     },
     {
-      "make": "Skoda",
-      "model": "Octavia 1.5 TSI mHEV 150 PS DSG",
+      "make": "Peugeot",
+      "model": "3008 Hybrid 136 e-DCS6 Allure",
       "year": 2026,
       "fuelType": "Hibrit",
-      "cityConsumption": 5.6,
-      "highwayConsumption": 5.2,
-      "combinedConsumption": 5.1,
-      "vehicleClass": 1,
-      "climbSensitivity": 1.05,
-      "aliases": ["Octavia 1.5 eTSI mHEV", "Octavia mHEV 150 DSG"],
-      "sourceType": "official_wltp_phases",
-      "confidence": 0.96,
-      "sourceUrl": "https://www.skoda.com.tr/modeller/octavia/yakit-ekonomisi-ve-co2-emisyonu"
-    },
-    {
-      "make": "Fiat",
-      "model": "Egea 1.5 TURBO T4 HYBRID 130CV FWD",
-      "year": 2026,
-      "fuelType": "Hibrit",
-      "cityConsumption": 5.6,
-      "highwayConsumption": 4.9,
-      "combinedConsumption": 5.2,
-      "vehicleClass": 1,
-      "climbSensitivity": 1.05,
-      "aliases": ["Egea Hybrid 1.5 130", "Egea 1.5 Hybrid 130", "Egea Sedan Hybrid 130"],
-      "sourceType": "official_combined_derived_city_highway",
-      "confidence": 0.72,
-      "sourceUrl": "https://www.fiat.com.tr/modeller/egea/technical-data",
-      "derivation": "combined consumption is official; city/highway are derived from the official combined value using a mild-hybrid C-segment sedan proxy"
-    },
-    {
-      "make": "Renault",
-      "model": "Clio evolution plus TCe 115 EDC",
-      "year": 2026,
-      "fuelType": "Benzin",
-      "cityConsumption": 6.0,
-      "highwayConsumption": 4.7,
-      "combinedConsumption": 5.1,
-      "vehicleClass": 1,
-      "climbSensitivity": 1.03,
-      "aliases": ["Clio 1.2 TCe 115 EDC", "Yeni Clio TCe 115 Auto", "Clio evolution plus 115"],
-      "sourceType": "official_wltp_phases",
-      "confidence": 0.97,
-      "sourceUrl": "https://www.renault.com.tr/hybrid-araclar/yeni-clio/konfigurator-yeni.html"
-    },
-    {
-      "make": "Renault",
-      "model": "Megane Sedan Touch 1.3 TCe EDC 140 bg",
-      "year": 2026,
-      "fuelType": "Benzin",
-      "cityConsumption": 7.2,
-      "highwayConsumption": 5.8,
-      "combinedConsumption": 6.2,
-      "vehicleClass": 1,
-      "climbSensitivity": 1.05,
-      "aliases": ["Megane Sedan 1.3 TCe EDC 140", "Megane Sedan Touch 140 EDC", "Yeni Megane Sedan 1.3 TCe"],
-      "sourceType": "official_wltp_phases",
-      "confidence": 0.97,
-      "sourceUrl": "https://www.renault.com.tr/binek-araclar/yeni-megane-sedan/konfigurator-yeni.html"
-    },
-    {
-      "make": "Renault",
-      "model": "Duster evolution Eco-G 120 hp",
-      "year": 2026,
-      "fuelType": "LPG",
-      "cityConsumption": 6.3,
+      "cityConsumption": 5.3,
       "highwayConsumption": 5.9,
-      "combinedConsumption": 6.0,
+      "combinedConsumption": 5.6,
       "vehicleClass": 1,
       "climbSensitivity": 1.15,
-      "aliases": ["Duster Eco-G 120", "Yeni Duster LPG 120", "Duster evolution LPG"],
-      "sourceType": "official_wltp_phases",
-      "confidence": 0.97,
-      "sourceUrl": "https://www.renault.com.tr/hybrid-araclar/yeni-renault-duster/konfigurator-yeni.html"
-    },
-    {
-      "make": "Renault",
-      "model": "Captur techno mild hybrid EDC 140 hp",
-      "year": 2026,
-      "fuelType": "Hibrit",
-      "cityConsumption": 6.6,
-      "highwayConsumption": 5.7,
-      "combinedConsumption": 6.0,
-      "vehicleClass": 1,
-      "climbSensitivity": 1.11,
-      "aliases": ["Captur mild hybrid 140 EDC", "Captur 140 EDC", "Yeni Captur 140 hp"],
-      "sourceType": "official_wltp_phases",
-      "confidence": 0.97,
-      "sourceUrl": "https://www.renault.com.tr/hybrid-araclar/captur-e-tech/konfigurator-yeni.html"
+      "aliases": [
+        "Peugeot 3008 Hybrid",
+        "3008 Hybrid 136",
+        "Yeni 3008 Hybrid"
+      ],
+      "sourceType": "manufacturer_combined_derived_city_highway",
+      "confidence": 0.76,
+      "sourceUrl": "https://www.peugeot.com.tr/modeller/yeni-3008.html",
+      "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with C-SUV mild-hybrid proxy"
     },
     {
       "make": "Renault",
@@ -305,10 +375,289 @@
       "combinedConsumption": 6.4,
       "vehicleClass": 1,
       "climbSensitivity": 1.15,
-      "aliases": ["Austral mild hybrid 150 auto", "Yeni Austral 150 hp", "Austral techno 150"],
+      "aliases": [
+        "Austral mild hybrid 150 auto",
+        "Yeni Austral 150 hp",
+        "Austral techno 150"
+      ],
       "sourceType": "official_wltp_phases",
       "confidence": 0.97,
       "sourceUrl": "https://www.renault.com.tr/hybrid-araclar/renault-austral-2025/konfigurator-yeni.html"
+    },
+    {
+      "make": "Renault",
+      "model": "Captur techno mild hybrid EDC 140 hp",
+      "year": 2026,
+      "fuelType": "Hibrit",
+      "cityConsumption": 6.6,
+      "highwayConsumption": 5.7,
+      "combinedConsumption": 6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.11,
+      "aliases": [
+        "Captur mild hybrid 140 EDC",
+        "Captur 140 EDC",
+        "Yeni Captur 140 hp"
+      ],
+      "sourceType": "official_wltp_phases",
+      "confidence": 0.97,
+      "sourceUrl": "https://www.renault.com.tr/hybrid-araclar/captur-e-tech/konfigurator-yeni.html"
+    },
+    {
+      "make": "Renault",
+      "model": "Clio evolution plus TCe 115 EDC",
+      "year": 2026,
+      "fuelType": "Benzin",
+      "cityConsumption": 6,
+      "highwayConsumption": 4.7,
+      "combinedConsumption": 5.1,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "Clio 1.2 TCe 115 EDC",
+        "Yeni Clio TCe 115 Auto",
+        "Clio evolution plus 115"
+      ],
+      "sourceType": "official_wltp_phases",
+      "confidence": 0.97,
+      "sourceUrl": "https://www.renault.com.tr/hybrid-araclar/yeni-clio/konfigurator-yeni.html"
+    },
+    {
+      "make": "Renault",
+      "model": "Duster evolution Eco-G 120 hp",
+      "year": 2026,
+      "fuelType": "LPG",
+      "cityConsumption": 6.3,
+      "highwayConsumption": 5.9,
+      "combinedConsumption": 6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.15,
+      "aliases": [
+        "Duster Eco-G 120",
+        "Yeni Duster LPG 120",
+        "Duster evolution LPG"
+      ],
+      "sourceType": "official_wltp_phases",
+      "confidence": 0.97,
+      "sourceUrl": "https://www.renault.com.tr/hybrid-araclar/yeni-renault-duster/konfigurator-yeni.html"
+    },
+    {
+      "make": "Renault",
+      "model": "Megane Sedan Touch 1.3 TCe EDC 140 bg",
+      "year": 2026,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.2,
+      "highwayConsumption": 5.8,
+      "combinedConsumption": 6.2,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Megane Sedan 1.3 TCe EDC 140",
+        "Megane Sedan Touch 140 EDC",
+        "Yeni Megane Sedan 1.3 TCe"
+      ],
+      "sourceType": "official_wltp_phases",
+      "confidence": 0.97,
+      "sourceUrl": "https://www.renault.com.tr/binek-araclar/yeni-megane-sedan/konfigurator-yeni.html"
+    },
+    {
+      "make": "Skoda",
+      "model": "Octavia 1.5 TSI mHEV 150 PS DSG",
+      "year": 2026,
+      "fuelType": "Hibrit",
+      "cityConsumption": 5.6,
+      "highwayConsumption": 5.2,
+      "combinedConsumption": 5.1,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Octavia 1.5 eTSI mHEV",
+        "Octavia mHEV 150 DSG"
+      ],
+      "sourceType": "official_wltp_phases",
+      "confidence": 0.96,
+      "sourceUrl": "https://www.skoda.com.tr/modeller/octavia/yakit-ekonomisi-ve-co2-emisyonu"
+    },
+    {
+      "make": "Togg",
+      "model": "T10X V2 RWD Uzun Menzil",
+      "year": 2026,
+      "fuelType": "Elektrik",
+      "cityConsumption": 13.4,
+      "highwayConsumption": 23.8,
+      "combinedConsumption": 19.1,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.12,
+      "aliases": [
+        "T10X V2 RWD Long Range",
+        "T10X Uzun Menzil V2"
+      ],
+      "sourceType": "official_city_plus_combined_derived_highway",
+      "confidence": 0.82,
+      "sourceUrl": "https://trumore-cdn.togg.cloud/ToggT10XKatalog.pdf",
+      "derivation": "city is official, combined is official, highway is derived from combined using a 45/55 city/highway weighting proxy"
+    },
+    {
+      "make": "Toyota",
+      "model": "C-HR 1.8 Hybrid Flame e-CVT",
+      "year": 2025,
+      "fuelType": "Hibrit",
+      "cityConsumption": 3.7,
+      "highwayConsumption": 5.1,
+      "combinedConsumption": 4.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.12,
+      "aliases": [
+        "Toyota C-HR 1.8 Hybrid",
+        "C-HR Hybrid 1.8"
+      ],
+      "sourceType": "official_wltp_phases",
+      "confidence": 0.97,
+      "sourceUrl": "https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/yasal-bilgilendirme/yakit-ekonomisi-ve-co2-emisyonu.pdf"
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla 1.5 Vision Plus MDS",
+      "year": 2025,
+      "fuelType": "Benzin",
+      "cityConsumption": 7,
+      "highwayConsumption": 5.8,
+      "combinedConsumption": 6.1,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "Corolla 1.5 Vision Plus",
+        "Corolla 1.5 Vision"
+      ],
+      "sourceType": "official_wltp_phases",
+      "confidence": 0.97,
+      "sourceUrl": "https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/yasal-bilgilendirme/yakit-ekonomisi-ve-co2-emisyonu.pdf"
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla 1.8 Hybrid Dream e-CVT",
+      "year": 2025,
+      "fuelType": "Hibrit",
+      "cityConsumption": 3.9,
+      "highwayConsumption": 4.9,
+      "combinedConsumption": 4.5,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.02,
+      "aliases": [
+        "Corolla 1.8 Hybrid Dream",
+        "Corolla Hybrid 1.8"
+      ],
+      "sourceType": "official_wltp_phases",
+      "confidence": 0.97,
+      "sourceUrl": "https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/yasal-bilgilendirme/yakit-ekonomisi-ve-co2-emisyonu.pdf"
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla Cross 1.8 Hybrid Flame e-CVT",
+      "year": 2025,
+      "fuelType": "Hibrit",
+      "cityConsumption": 4.1,
+      "highwayConsumption": 5.5,
+      "combinedConsumption": 5.1,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.14,
+      "aliases": [
+        "Corolla Cross 1.8 Hybrid",
+        "Corolla Cross Hybrid"
+      ],
+      "sourceType": "official_wltp_phases",
+      "confidence": 0.97,
+      "sourceUrl": "https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/yasal-bilgilendirme/yakit-ekonomisi-ve-co2-emisyonu.pdf"
+    },
+    {
+      "make": "Toyota",
+      "model": "Yaris 1.5 Hybrid Flame e-CVT",
+      "year": 2025,
+      "fuelType": "Hibrit",
+      "cityConsumption": 3,
+      "highwayConsumption": 4.3,
+      "combinedConsumption": 3.9,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.01,
+      "aliases": [
+        "Yaris 1.5 Hybrid",
+        "Yaris Hybrid"
+      ],
+      "sourceType": "official_wltp_phases",
+      "confidence": 0.97,
+      "sourceUrl": "https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/yasal-bilgilendirme/yakit-ekonomisi-ve-co2-emisyonu.pdf"
+    },
+    {
+      "make": "Toyota",
+      "model": "Yaris Cross 1.5 Hybrid Flame e-CVT",
+      "year": 2025,
+      "fuelType": "Hibrit",
+      "cityConsumption": 3.5,
+      "highwayConsumption": 5.2,
+      "combinedConsumption": 4.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.1,
+      "aliases": [
+        "Yaris Cross 1.5 Hybrid",
+        "Yaris Cross Hybrid"
+      ],
+      "sourceType": "official_wltp_phases",
+      "confidence": 0.97,
+      "sourceUrl": "https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/yasal-bilgilendirme/yakit-ekonomisi-ve-co2-emisyonu.pdf"
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Polo 1.0 80 PS Impression Man.",
+      "year": 2026,
+      "fuelType": "Benzin",
+      "cityConsumption": 6,
+      "highwayConsumption": 5.5,
+      "combinedConsumption": 5.6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.02,
+      "aliases": [
+        "Polo 1.0 80 PS",
+        "Polo Impression 1.0"
+      ],
+      "sourceType": "official_wltp_phases",
+      "confidence": 0.98,
+      "sourceUrl": "https://binekarac.vw.com.tr/idhub/content/dam/onehub_pkw/importers/tr/yakit-ekonomisi-co2-emisyonu/pdf-yakit-tuketim-etiketi/24_my_polo_impression_man.pdf"
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Polo 1.0 TSI 95 PS Life DSG",
+      "year": 2026,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.4,
+      "highwayConsumption": 5.4,
+      "combinedConsumption": 5.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "Polo 1.0 TSI 95 PS DSG",
+        "Polo Life 1.0 TSI DSG"
+      ],
+      "sourceType": "official_wltp_phases",
+      "confidence": 0.98,
+      "sourceUrl": "https://binekarac.vw.com.tr/idhub/content/dam/onehub_pkw/importers/tr/yakit-ekonomisi-co2-emisyonu/pdf-yakit-tuketim-etiketi/24_my_polo_life_dsg.pdf"
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Polo 1.0 TSI 95 PS Life Man.",
+      "year": 2026,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.1,
+      "highwayConsumption": 5.2,
+      "combinedConsumption": 5.4,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "Polo 1.0 TSI 95 PS",
+        "Polo Life 1.0 TSI Manual"
+      ],
+      "sourceType": "official_wltp_phases",
+      "confidence": 0.98,
+      "sourceUrl": "https://binekarac.vw.com.tr/idhub/content/dam/onehub_pkw/importers/tr/yakit-ekonomisi-co2-emisyonu/pdf-yakit-tuketim-etiketi/24_my_polo_life_man.pdf"
     },
     {
       "make": "Volkswagen",
@@ -320,10 +669,33 @@
       "combinedConsumption": 5.7,
       "vehicleClass": 1,
       "climbSensitivity": 1.09,
-      "aliases": ["Taigo 1.0 TSI Life DSG", "Taigo 115 PS DSG", "VW Taigo Life DSG"],
+      "aliases": [
+        "Taigo 1.0 TSI Life DSG",
+        "Taigo 115 PS DSG",
+        "VW Taigo Life DSG"
+      ],
       "sourceType": "official_wltp_phases",
       "confidence": 0.98,
       "sourceUrl": "https://binekarac.vw.com.tr/idhub/content/dam/onehub_pkw/importers/tr/yakit-ekonomisi-co2-emisyonu/pdf-yakit-tuketim-etiketi/24_my_taigo_life_dsg.pdf"
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Yeni Golf 1.5 eTSI 116 PS Life DSG",
+      "year": 2026,
+      "fuelType": "Hibrit",
+      "cityConsumption": 5.9,
+      "highwayConsumption": 4.9,
+      "combinedConsumption": 5.2,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.04,
+      "aliases": [
+        "Golf 1.5 eTSI 116 PS Life DSG",
+        "Yeni Golf eTSI Life DSG",
+        "VW Golf Life DSG"
+      ],
+      "sourceType": "official_wltp_phases",
+      "confidence": 0.98,
+      "sourceUrl": "https://binekarac.vw.com.tr/idhub/content/dam/onehub_pkw/importers/tr/yakit-ekonomisi-co2-emisyonu/pdf-yakit-tuketim-etiketi/24_my_golf_life_dsg.pdf"
     },
     {
       "make": "Volkswagen",
@@ -334,8 +706,12 @@
       "highwayConsumption": 5.7,
       "combinedConsumption": 5.9,
       "vehicleClass": 1,
-      "climbSensitivity": 1.10,
-      "aliases": ["T-Cross 1.0 TSI Life DSG", "Yeni T-Cross 115 PS DSG", "VW T-Cross Life DSG"],
+      "climbSensitivity": 1.1,
+      "aliases": [
+        "T-Cross 1.0 TSI Life DSG",
+        "Yeni T-Cross 115 PS DSG",
+        "VW T-Cross Life DSG"
+      ],
       "sourceType": "official_wltp_phases",
       "confidence": 0.98,
       "sourceUrl": "https://binekarac.vw.com.tr/idhub/content/dam/onehub_pkw/importers/tr/yakit-ekonomisi-co2-emisyonu/pdf-yakit-tuketim-etiketi/24_my_tcross_life_dsg.pdf"
@@ -350,41 +726,14 @@
       "combinedConsumption": 6.5,
       "vehicleClass": 1,
       "climbSensitivity": 1.16,
-      "aliases": ["Tiguan 1.5 eTSI Life DSG", "Yeni Tiguan 150 PS DSG", "VW Tiguan eTSI Life"],
+      "aliases": [
+        "Tiguan 1.5 eTSI Life DSG",
+        "Yeni Tiguan 150 PS DSG",
+        "VW Tiguan eTSI Life"
+      ],
       "sourceType": "official_wltp_phases",
       "confidence": 0.98,
       "sourceUrl": "https://binekarac.vw.com.tr/idhub/content/dam/onehub_pkw/importers/tr/yakit-ekonomisi-co2-emisyonu/pdf-yakit-tuketim-etiketi/24_my_tiguan_life_dsg.pdf"
-    },
-    {
-      "make": "Volkswagen",
-      "model": "Yeni Golf 1.5 eTSI 116 PS Life DSG",
-      "year": 2026,
-      "fuelType": "Hibrit",
-      "cityConsumption": 5.9,
-      "highwayConsumption": 4.9,
-      "combinedConsumption": 5.2,
-      "vehicleClass": 1,
-      "climbSensitivity": 1.04,
-      "aliases": ["Golf 1.5 eTSI 116 PS Life DSG", "Yeni Golf eTSI Life DSG", "VW Golf Life DSG"],
-      "sourceType": "official_wltp_phases",
-      "confidence": 0.98,
-      "sourceUrl": "https://binekarac.vw.com.tr/idhub/content/dam/onehub_pkw/importers/tr/yakit-ekonomisi-co2-emisyonu/pdf-yakit-tuketim-etiketi/24_my_golf_life_dsg.pdf"
-    },
-    {
-      "make": "Togg",
-      "model": "T10X V2 RWD Uzun Menzil",
-      "year": 2026,
-      "fuelType": "Elektrik",
-      "cityConsumption": 13.4,
-      "highwayConsumption": 23.8,
-      "combinedConsumption": 19.1,
-      "vehicleClass": 1,
-      "climbSensitivity": 1.12,
-      "aliases": ["T10X V2 RWD Long Range", "T10X Uzun Menzil V2"],
-      "sourceType": "official_city_plus_combined_derived_highway",
-      "confidence": 0.82,
-      "sourceUrl": "https://trumore-cdn.togg.cloud/ToggT10XKatalog.pdf",
-      "derivation": "city is official, combined is official, highway is derived from combined using a 45/55 city/highway weighting proxy"
     }
   ]
 }
