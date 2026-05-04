@@ -1,0 +1,74 @@
+{
+  "version": "pricing-manifest-v1",
+  "generatedAt": "2026-05-04T17:44:46.482228Z",
+  "repository": "arastokdemir1/data",
+  "baseRawUrl": "https://raw.githubusercontent.com/arastokdemir1/data/main/",
+  "refreshCadence": "15_minutes_for_provider_api_files",
+  "files": [
+    {
+      "id": "fuel_prices",
+      "filename": "fuel_prices.json",
+      "category": "fuel",
+      "priority": 10,
+      "appRole": "current_compact_fuel_prices",
+      "sourceType": "provider_api",
+      "refreshPolicy": "automatic_15_minutes",
+      "version": null,
+      "lastUpdated": "2026-05-01T00:00:00Z",
+      "bytes": 96,
+      "sha256": "40dd13beeb7bcca133e7a22e4734a7acaf70e48409f4bb4b8f1fd1816aca0c3b"
+    },
+    {
+      "id": "fuel_prices_tr_v1",
+      "filename": "fuel_prices_tr_v1.json",
+      "category": "fuel",
+      "priority": 20,
+      "appRole": "city_district_fuel_prices",
+      "sourceType": "provider_api",
+      "refreshPolicy": "automatic_15_minutes",
+      "version": "opet-01.05.2026",
+      "lastUpdated": "2026-05-01T00:00:00Z",
+      "bytes": 89828,
+      "sha256": "5f0a6bb61c982c29257bf2b40f40f63ecf0a82255d3aa493fc751bdbd99c013a"
+    },
+    {
+      "id": "toll_matrix_tr_v1",
+      "filename": "toll_matrix_tr_v1.json",
+      "category": "toll",
+      "priority": 10,
+      "appRole": "primary_toll_matrix",
+      "sourceType": "official_tariff_matrix",
+      "refreshPolicy": "source_change_or_manual_tariff_update",
+      "version": "2026.3-matrix",
+      "lastUpdated": "2026-04-25",
+      "bytes": 567754,
+      "sha256": "b3d0bde4890e81624bfca5f6d69900cbdb6b0ab369f417074f30fbd8aba28ccb"
+    },
+    {
+      "id": "tolls_v3_app_ready",
+      "filename": "tolls_v3_app_ready.json",
+      "category": "toll",
+      "priority": 20,
+      "appRole": "fallback_toll_tariff",
+      "sourceType": "official_tariff_fallback",
+      "refreshPolicy": "source_change_or_manual_tariff_update",
+      "version": "2026.2-app-ready",
+      "lastUpdated": "2026-04-25",
+      "bytes": 19746,
+      "sha256": "84d90f702322df414d4fc8e7331e32bcdfdcdc07e511d84873d0685085c55606"
+    },
+    {
+      "id": "vehicle_profiles_tr_v1",
+      "filename": "vehicle_profiles_tr_v1.json",
+      "category": "vehicle",
+      "priority": 10,
+      "appRole": "vehicle_consumption_profiles",
+      "sourceType": "curated_vehicle_catalog",
+      "refreshPolicy": "catalog_release_update",
+      "version": "2026.2",
+      "lastUpdated": "2026-04-29",
+      "bytes": 25781,
+      "sha256": "182c8eda1a25678d6a868c1e6d3f2bd9b4dc09b29f905422d405c0766b1e3c84"
+    }
+  ]
+}
