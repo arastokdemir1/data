@@ -1,0 +1,34 @@
+name: Update pricing data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-pricing-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout data repository
+        uses: actions/checkout@v4
+
+      - name: Generate dynamic pricing JSON
+        run: python3 scripts/update_all_pricing_data.py --root .
+
+      - name: Validate generated JSON
+        run: |
+          python3 -m json.tool fuel_prices.json >/dev/null
+          python3 -m json.tool fuel_prices_tr_v1.json >/dev/null
+          python3 -m json.tool pricing_manifest.json >/dev/null
+          if [ -f toll_matrix_tr_v1.json ]; then python3 -m json.tool toll_matrix_tr_v1.json >/dev/null; fi
+          if [ -f tolls_v3_app_ready.json ]; then python3 -m json.tool tolls_v3_app_ready.json >/dev/null; fi
+          if [ -f vehicle_profiles_tr_v1.json ]; then python3 -m json.tool vehicle_profiles_tr_v1.json >/dev/null; fi
+
+      - name: Commit changed pricing data files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update pricing data"
+          file_pattern: fuel_prices.json fuel_prices_tr_v1.json pricing_manifest.json
