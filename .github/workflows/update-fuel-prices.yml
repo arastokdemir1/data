@@ -3,14 +3,19 @@ name: Update pricing data
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "17,47 * * * *"
 
 permissions:
   contents: write
 
+concurrency:
+  group: update-pricing-data
+  cancel-in-progress: false
+
 jobs:
   update-pricing-data:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout data repository
         uses: actions/checkout@v4
