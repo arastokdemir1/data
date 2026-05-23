@@ -7,7 +7,8 @@
   "confidence": "provider_recommended_price",
   "notes": [
     "OPET publishes recommended fuel prices; station pump prices may differ.",
-    "LPG is not included in the current OPET API response and is preserved in fuel_prices.json."
+    "LPG sourced from hasanadiguzel.com when available, otherwise preserved from previous run.",
+    "hasanadiguzel.com used as full fallback when OPET API is unavailable."
   ],
   "districtPrices": [
     {

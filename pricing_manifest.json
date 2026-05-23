@@ -1,6 +1,6 @@
 {
   "version": "pricing-manifest-v1",
-  "generatedAt": "2026-05-23T19:49:27.952458Z",
+  "generatedAt": "2026-05-23T21:07:54.212032Z",
   "repository": "arastokdemir1/data",
   "baseRawUrl": "https://raw.githubusercontent.com/arastokdemir1/data/main/",
   "refreshCadence": "15_minutes_for_provider_api_files",
@@ -28,8 +28,8 @@
       "refreshPolicy": "automatic_15_minutes",
       "version": "opet-22.05.2026",
       "lastUpdated": "2026-05-22T00:00:00Z",
-      "bytes": 89824,
-      "sha256": "35d83f03cf7c4c2dd1b853c4de1d83afd87deb464ab12b8afb1a9ccdf10031f2"
+      "bytes": 89900,
+      "sha256": "b87f3ce95de13fd344caf361a19b253f7b7d2e3755232dafb62faa7e8784d09c"
     },
     {
       "id": "toll_matrix_tr_v1",
