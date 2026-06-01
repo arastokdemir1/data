@@ -621,12 +621,12 @@
       "type": "build_operate_transfer_motorway",
       "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/17-Ankara-Nigde.pdf",
       "headlineFullTransitPrices": {
-        "1": 20.0,
-        "2": 40.0,
-        "3": 40.0,
-        "4": 40.0,
-        "5": 65.0,
-        "6": 90.0
+        "1": 740.0,
+        "2": 840.0,
+        "3": 1010.0,
+        "4": 1300.0,
+        "5": 1560.0,
+        "6": 250.0
       },
       "stations": [
         "Ankara Alın",
