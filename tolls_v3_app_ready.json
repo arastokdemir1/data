@@ -239,12 +239,12 @@
       "type": "state_motorway",
       "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/7-Izmir-Aydin.pdf",
       "headlineFullTransitPrices": {
-        "1": 44.0,
-        "2": 400.0,
-        "3": 35.0,
-        "4": 250.0,
-        "5": 21.0,
-        "6": 250.0
+        "1": 73.0,
+        "2": 82.0,
+        "3": 115.0,
+        "4": 148.0,
+        "5": 168.0,
+        "6": 33.0
       },
       "stations": [
         "Işıkkent",
@@ -283,12 +283,12 @@
       "type": "state_motorway",
       "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/6-Izmir-Cesme.pdf",
       "headlineFullTransitPrices": {
-        "1": 30.0,
-        "2": 600.0,
-        "3": 21.0,
-        "4": 200.0,
-        "5": 12.0,
-        "6": 400.0
+        "1": 53.0,
+        "2": 56.0,
+        "3": 102.0,
+        "4": 115.0,
+        "5": 148.0,
+        "6": 20.0
       },
       "stations": [
         "Seferihisar (Güzelbahçe)",
@@ -483,11 +483,11 @@
       "type": "build_operate_transfer_motorway",
       "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/14-KMOAvrupaKinali-Odayeri.pdf",
       "headlineFullTransitPrices": {
-        "1": 90.0,
-        "2": 190.0,
-        "3": 90.0,
-        "4": 100.0,
-        "5": 140.0,
+        "1": 220.0,
+        "2": 350.0,
+        "3": 415.0,
+        "4": 535.0,
+        "5": 680.0,
         "6": 165.0
       },
       "stations": [
@@ -526,11 +526,12 @@
       "type": "build_operate_transfer_motorway",
       "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/15-KMOAnadoluKurtkoy-Akyazi.pdf",
       "headlineFullTransitPrices": {
-        "1": 10.0,
-        "2": 16.5,
-        "3": 22.0,
-        "4": 26.5,
-        "5": 35.0
+        "1": 510.0,
+        "2": 795.0,
+        "3": 930.0,
+        "4": 1210.0,
+        "5": 1525.0,
+        "6": 350.0
       },
       "stations": [
         "Kurnaköy 2",
@@ -673,12 +674,12 @@
       "type": "build_operate_transfer_motorway",
       "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/18-Malkara-Canakkale.pdf",
       "headlineFullTransitPrices": {
-        "1": 1915.0,
-        "2": 2740.0,
-        "3": 2490.0,
-        "4": 2365.0,
-        "5": 2240.0,
-        "6": 2740.0
+        "1": 1260.0,
+        "2": 1665.0,
+        "3": 2740.0,
+        "4": 3155.0,
+        "5": 4420.0,
+        "6": 315.0
       },
       "stations": [
         "Malkara G-1",
