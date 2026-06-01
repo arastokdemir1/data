@@ -1,0 +1,45 @@
+name: Update toll prices
+
+on:
+  workflow_dispatch:          # Manuel tetikle
+  schedule:
+    - cron: "0 3 * * 1"      # Her Pazartesi 03:00 UTC (KGM fiyatları genelde Ocak'ta değişir, haftalık kontrol yeterli)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-toll-prices
+  cancel-in-progress: false
+
+jobs:
+  update-toll-prices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 pdfplumber -q
+
+      - name: Run toll price updater
+        run: python scripts/update_toll_prices.py --root .
+        continue-on-error: true   # Scraping başarısız olursa workflow durmasın
+
+      - name: Validate JSON
+        run: |
+          python -m json.tool tolls_v3_app_ready.json > /dev/null
+          python -m json.tool pricing_manifest.json > /dev/null
+
+      - name: Commit updated toll prices
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update toll prices from KGM"
+          file_pattern: tolls_v3_app_ready.json toll_matrix_tr_v1.json pricing_manifest.json
