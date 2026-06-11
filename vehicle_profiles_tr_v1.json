@@ -1,15 +1,121 @@
 {
-  "version": "2026.2",
-  "lastUpdated": "2026-04-29",
-  "sourcePolicy": "official_primary_sources_preferred",
-  "notes": [
-    "For records with official WLTP low/medium/high/extraHigh phases, cityConsumption is derived as average(low, medium) and highwayConsumption is derived as average(high, extraHigh).",
-    "For records with direct official city/highway values, those values are stored directly.",
-    "For Togg T10X, official city and combined values are available in the official catalogue; highwayConsumption is derived using a 45/55 city-highway weighting proxy and is marked as derived.",
-    "For records where the manufacturer only publishes official combined consumption, cityConsumption and highwayConsumption are marked as derived and use a segment-specific proxy documented in the derivation field.",
-    "2026.2 expands popular Turkey-market coverage with manufacturer-combined derived records for BMW, Mercedes-Benz, Hyundai, Peugeot, Ford, Honda, Kia and Nissan; these are marked as catalog_derived by the app when confidence is below 0.90."
-  ],
+  "version": "2026.3",
+  "lastUpdated": "2026-06-11",
   "records": [
+    {
+      "make": "Audi",
+      "model": "A3 Sportback 35 TFSI",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.8,
+      "highwayConsumption": 4.9,
+      "combinedConsumption": 5.8,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "A3 35 TFSI",
+        "A3 Sportback"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Audi",
+      "model": "A4 40 TDI",
+      "year": 2020,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.7,
+      "highwayConsumption": 4.4,
+      "combinedConsumption": 5.0,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.07,
+      "aliases": [
+        "A4 Dizel",
+        "A4 40 TDI quattro"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Audi",
+      "model": "A6 40 TDI",
+      "year": 2021,
+      "fuelType": "Dizel",
+      "cityConsumption": 6.0,
+      "highwayConsumption": 4.6,
+      "combinedConsumption": 5.2,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.08,
+      "aliases": [
+        "A6 Dizel",
+        "A6 40 TDI quattro"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Audi",
+      "model": "Q3 35 TFSI",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.7,
+      "highwayConsumption": 5.8,
+      "combinedConsumption": 6.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.16,
+      "aliases": [
+        "Q3",
+        "Q3 Benzin"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "BMW",
+      "model": "118i",
+      "year": 2020,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.5,
+      "highwayConsumption": 5.2,
+      "combinedConsumption": 6.2,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "1 Serisi 118i",
+        "BMW 118i"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "BMW",
+      "model": "320d",
+      "year": 2019,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.6,
+      "highwayConsumption": 4.3,
+      "combinedConsumption": 4.9,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.07,
+      "aliases": [
+        "3 Serisi 320d",
+        "BMW 320d"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
     {
       "make": "BMW",
       "model": "320i Sedan M Sport",
@@ -33,6 +139,25 @@
     },
     {
       "make": "BMW",
+      "model": "520d",
+      "year": 2018,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.7,
+      "highwayConsumption": 4.4,
+      "combinedConsumption": 5.0,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.08,
+      "aliases": [
+        "5 Serisi 520d",
+        "BMW 520d"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "BMW",
       "model": "520i Sedan M Sport",
       "year": 2026,
       "fuelType": "Benzin",
@@ -53,6 +178,253 @@
       "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with premium E-segment gasoline sedan proxy"
     },
     {
+      "make": "BMW",
+      "model": "X1 sDrive16d",
+      "year": 2020,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.8,
+      "highwayConsumption": 4.6,
+      "combinedConsumption": 5.1,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.15,
+      "aliases": [
+        "X1 Dizel",
+        "X1 16d"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Chery",
+      "model": "Omoda 5 1.6 TGDI",
+      "year": 2024,
+      "fuelType": "Benzin",
+      "cityConsumption": 8.8,
+      "highwayConsumption": 6.5,
+      "combinedConsumption": 7.5,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.14,
+      "aliases": [
+        "Omoda 5",
+        "Omoda"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Chery",
+      "model": "Tiggo 7 Pro 1.6 TGDI",
+      "year": 2024,
+      "fuelType": "Benzin",
+      "cityConsumption": 9.0,
+      "highwayConsumption": 6.6,
+      "combinedConsumption": 7.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.16,
+      "aliases": [
+        "Tiggo 7",
+        "Tiggo7 Pro"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Chery",
+      "model": "Tiggo 8 Pro 1.6 TGDI",
+      "year": 2024,
+      "fuelType": "Benzin",
+      "cityConsumption": 9.4,
+      "highwayConsumption": 7.0,
+      "combinedConsumption": 8.1,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.18,
+      "aliases": [
+        "Tiggo 8",
+        "Tiggo8 Pro"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Citroen",
+      "model": "Berlingo 1.5 BlueHDi",
+      "year": 2021,
+      "fuelType": "Dizel",
+      "cityConsumption": 6.0,
+      "highwayConsumption": 4.8,
+      "combinedConsumption": 5.3,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.22,
+      "aliases": [
+        "Berlingo",
+        "Berlingo Dizel"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Citroen",
+      "model": "C-Elysee 1.5 BlueHDi",
+      "year": 2020,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.0,
+      "highwayConsumption": 3.9,
+      "combinedConsumption": 4.4,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "C-Elysee",
+        "C Elysee Dizel"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Citroen",
+      "model": "C3 1.2 PureTech",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.5,
+      "highwayConsumption": 4.9,
+      "combinedConsumption": 5.6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "C3",
+        "C3 PureTech"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Citroen",
+      "model": "C4 1.2 PureTech EAT8",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.6,
+      "highwayConsumption": 5.0,
+      "combinedConsumption": 5.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.1,
+      "aliases": [
+        "C4",
+        "C4 Benzin"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Citroen",
+      "model": "C5 Aircross 1.5 BlueHDi",
+      "year": 2022,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.9,
+      "highwayConsumption": 4.7,
+      "combinedConsumption": 5.2,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.16,
+      "aliases": [
+        "C5 Aircross",
+        "C5 Aircross Dizel"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Cupra",
+      "model": "Formentor 1.5 TSI DSG",
+      "year": 2023,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.2,
+      "highwayConsumption": 5.6,
+      "combinedConsumption": 6.3,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.14,
+      "aliases": [
+        "Formentor",
+        "Cupra Formentor"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Dacia",
+      "model": "Duster 1.5 Blue dCi 115",
+      "year": 2022,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.3,
+      "highwayConsumption": 4.4,
+      "combinedConsumption": 4.8,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.2,
+      "aliases": [
+        "Duster Dizel",
+        "Duster dCi"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Dacia",
+      "model": "Jogger 1.0 ECO-G 100",
+      "year": 2024,
+      "fuelType": "LPG",
+      "cityConsumption": 8.3,
+      "highwayConsumption": 6.6,
+      "combinedConsumption": 7.4,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.12,
+      "aliases": [
+        "Jogger",
+        "Jogger LPG"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Dacia",
+      "model": "Sandero 1.0 SCe 65 HP",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.5,
+      "highwayConsumption": 4.7,
+      "combinedConsumption": 5.5,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "Sandero",
+        "Sandero SCe"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
       "make": "Dacia",
       "model": "Sandero Stepway 1.0 TCe 90 auto",
       "year": 2025,
@@ -69,6 +441,103 @@
       "sourceType": "official_wltp_phases",
       "confidence": 0.97,
       "sourceUrl": "https://cdn.group.renault.com/dac/tr/dacia-brochures/sandero-stepway/SANDERO-STEPWAY-BJI-STW-PH1-BROSUR-22052025.pdf.asset.pdf/b828e72c60.pdf"
+    },
+    {
+      "make": "Fiat",
+      "model": "500 1.0 Hybrid",
+      "year": 2022,
+      "fuelType": "Hibrit",
+      "cityConsumption": 5.2,
+      "highwayConsumption": 4.3,
+      "combinedConsumption": 4.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.0,
+      "aliases": [
+        "Fiat 500 Hybrid",
+        "500 Hybrid"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Fiat",
+      "model": "Doblo 1.6 Multijet 105 HP",
+      "year": 2021,
+      "fuelType": "Dizel",
+      "cityConsumption": 6.5,
+      "highwayConsumption": 5.0,
+      "combinedConsumption": 5.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.25,
+      "aliases": [
+        "Doblo Combi",
+        "Doblo Panorama"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Fiat",
+      "model": "Egea 1.0 FireFly 100 HP",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.7,
+      "highwayConsumption": 4.9,
+      "combinedConsumption": 5.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Egea 1.0",
+        "Egea Sedan 1.0",
+        "Tipo 1.0"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Fiat",
+      "model": "Egea 1.3 Multijet 95 HP",
+      "year": 2020,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.2,
+      "highwayConsumption": 3.9,
+      "combinedConsumption": 4.5,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Egea 1.3 Dizel",
+        "Egea Multijet"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Fiat",
+      "model": "Egea 1.4 Fire 95 HP",
+      "year": 2021,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.9,
+      "highwayConsumption": 5.3,
+      "combinedConsumption": 6.5,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Egea 1.4",
+        "Egea Sedan 1.4",
+        "Tipo 1.4"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
     },
     {
       "make": "Fiat",
@@ -91,6 +560,158 @@
       "derivation": "combined consumption is official; city/highway are derived from the official combined value using a mild-hybrid C-segment sedan proxy"
     },
     {
+      "make": "Fiat",
+      "model": "Egea 1.6 Multijet 130 HP DCT",
+      "year": 2022,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.6,
+      "highwayConsumption": 4.2,
+      "combinedConsumption": 4.8,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Egea 1.6 Dizel",
+        "Egea 1.6 Multijet"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Fiat",
+      "model": "Egea Cross 1.5 Hybrid 130 HP",
+      "year": 2024,
+      "fuelType": "Hibrit",
+      "cityConsumption": 5.8,
+      "highwayConsumption": 5.1,
+      "combinedConsumption": 5.4,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.12,
+      "aliases": [
+        "Egea Cross Hybrid",
+        "Tipo Cross Hybrid"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Fiat",
+      "model": "Fiorino 1.3 Multijet 95 HP",
+      "year": 2021,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.8,
+      "highwayConsumption": 4.5,
+      "combinedConsumption": 5.1,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.22,
+      "aliases": [
+        "Fiorino Combi",
+        "Fiorino Panorama"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Ford",
+      "model": "Courier 1.5 TDCi",
+      "year": 2022,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.9,
+      "highwayConsumption": 4.7,
+      "combinedConsumption": 5.2,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.2,
+      "aliases": [
+        "Tourneo Courier Dizel",
+        "Courier"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Ford",
+      "model": "Fiesta 1.0 EcoBoost",
+      "year": 2019,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.3,
+      "highwayConsumption": 4.6,
+      "combinedConsumption": 5.4,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "Fiesta",
+        "Fiesta EcoBoost"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Ford",
+      "model": "Focus 1.5 EcoBlue AT",
+      "year": 2021,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.3,
+      "highwayConsumption": 4.1,
+      "combinedConsumption": 4.6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Focus Dizel",
+        "Focus EcoBlue"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Ford",
+      "model": "Focus 1.6 Ti-VCT",
+      "year": 2017,
+      "fuelType": "Benzin",
+      "cityConsumption": 8.4,
+      "highwayConsumption": 5.5,
+      "combinedConsumption": 6.8,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Focus 1.6",
+        "Focus Benzin"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Ford",
+      "model": "Kuga 1.5 EcoBlue AT",
+      "year": 2022,
+      "fuelType": "Dizel",
+      "cityConsumption": 6.0,
+      "highwayConsumption": 4.8,
+      "combinedConsumption": 5.3,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.18,
+      "aliases": [
+        "Kuga Dizel",
+        "Kuga"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
       "make": "Ford",
       "model": "Puma 1.0 EcoBoost 125 PS Powershift",
       "year": 2026,
@@ -109,6 +730,139 @@
       "confidence": 0.74,
       "sourceUrl": "https://www.ford.com.tr/binek-araclar/puma/teknik-ozellikler",
       "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with B-SUV turbo gasoline proxy"
+    },
+    {
+      "make": "Ford",
+      "model": "Ranger 2.0 EcoBlue 4x4",
+      "year": 2023,
+      "fuelType": "Dizel",
+      "cityConsumption": 9.4,
+      "highwayConsumption": 7.4,
+      "combinedConsumption": 8.3,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.3,
+      "aliases": [
+        "Ranger",
+        "Ranger Dizel"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Ford",
+      "model": "Tourneo Courier 1.0 EcoBoost",
+      "year": 2024,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.2,
+      "highwayConsumption": 5.6,
+      "combinedConsumption": 6.3,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.2,
+      "aliases": [
+        "Tourneo Courier",
+        "Courier Benzin"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Ford",
+      "model": "Transit Custom 2.0 TDCi",
+      "year": 2021,
+      "fuelType": "Dizel",
+      "cityConsumption": 8.9,
+      "highwayConsumption": 7.2,
+      "combinedConsumption": 8.0,
+      "vehicleClass": 2,
+      "climbSensitivity": 1.3,
+      "aliases": [
+        "Transit Custom",
+        "Tourneo Custom"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Honda",
+      "model": "CR-V 1.5 VTEC Turbo",
+      "year": 2020,
+      "fuelType": "Benzin",
+      "cityConsumption": 8.8,
+      "highwayConsumption": 6.5,
+      "combinedConsumption": 7.5,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.18,
+      "aliases": [
+        "CRV",
+        "CR-V Benzin"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Honda",
+      "model": "City 1.5 VTEC CVT",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.9,
+      "highwayConsumption": 5.0,
+      "combinedConsumption": 5.9,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "City",
+        "City 1.5"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Honda",
+      "model": "Civic 1.6 i-DTEC",
+      "year": 2018,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.0,
+      "highwayConsumption": 3.9,
+      "combinedConsumption": 4.4,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Civic Dizel",
+        "Civic i-DTEC"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Honda",
+      "model": "Civic 1.6 i-VTEC ECO",
+      "year": 2016,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.9,
+      "highwayConsumption": 5.2,
+      "combinedConsumption": 6.4,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Civic 1.6",
+        "Civic i-VTEC"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
     },
     {
       "make": "Honda",
@@ -152,23 +906,79 @@
     },
     {
       "make": "Hyundai",
-      "model": "i20 1.4 MPI Elite Otomatik",
-      "year": 2026,
-      "fuelType": "Benzin",
-      "cityConsumption": 8,
-      "highwayConsumption": 5.6,
-      "combinedConsumption": 6.5,
+      "model": "Accent Blue 1.6 CRDi",
+      "year": 2018,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.4,
+      "highwayConsumption": 4.2,
+      "combinedConsumption": 4.7,
       "vehicleClass": 1,
-      "climbSensitivity": 1.02,
+      "climbSensitivity": 1.03,
       "aliases": [
-        "Hyundai i20 1.4 MPI",
-        "i20 1.4 otomatik",
-        "i20 Elite"
+        "Accent Blue",
+        "Accent Dizel"
       ],
-      "sourceType": "manufacturer_combined_derived_city_highway",
-      "confidence": 0.75,
-      "sourceUrl": "https://www.hyundai.com/tr/tr/modeller/i20/teknik-ozellikler",
-      "derivation": "manufacturer combined consumption is used where available; city/highway split is derived with B-segment gasoline automatic proxy"
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Hyundai",
+      "model": "Bayon 1.0 T-GDI DCT",
+      "year": 2024,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.4,
+      "highwayConsumption": 5.0,
+      "combinedConsumption": 5.6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.1,
+      "aliases": [
+        "Bayon Turbo",
+        "Bayon T-GDI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Hyundai",
+      "model": "Bayon 1.4 MPI AT",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.9,
+      "highwayConsumption": 5.5,
+      "combinedConsumption": 6.6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.1,
+      "aliases": [
+        "Bayon",
+        "Bayon 1.4"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Hyundai",
+      "model": "Tucson 1.6 CRDi DCT",
+      "year": 2022,
+      "fuelType": "Dizel",
+      "cityConsumption": 6.0,
+      "highwayConsumption": 4.9,
+      "combinedConsumption": 5.4,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.18,
+      "aliases": [
+        "Tucson Dizel",
+        "Tucson CRDi"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
     },
     {
       "make": "Hyundai",
@@ -191,6 +1001,140 @@
       "derivation": "manufacturer combined hybrid consumption is used where available; city/highway split is derived with C-SUV hybrid proxy"
     },
     {
+      "make": "Hyundai",
+      "model": "i10 1.0 MPI AMT",
+      "year": 2023,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.4,
+      "highwayConsumption": 4.7,
+      "combinedConsumption": 5.5,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.02,
+      "aliases": [
+        "i10",
+        "i10 1.0"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Hyundai",
+      "model": "i20 1.0 T-GDI 48V DCT",
+      "year": 2024,
+      "fuelType": "Hibrit",
+      "cityConsumption": 6.3,
+      "highwayConsumption": 4.8,
+      "combinedConsumption": 5.5,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "i20 Turbo",
+        "i20 T-GDI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Hyundai",
+      "model": "i20 1.4 MPI Elite Otomatik",
+      "year": 2026,
+      "fuelType": "Benzin",
+      "cityConsumption": 8,
+      "highwayConsumption": 5.6,
+      "combinedConsumption": 6.5,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.02,
+      "aliases": [
+        "Hyundai i20 1.4 MPI",
+        "i20 1.4 otomatik",
+        "i20 Elite"
+      ],
+      "sourceType": "manufacturer_combined_derived_city_highway",
+      "confidence": 0.75,
+      "sourceUrl": "https://www.hyundai.com/tr/tr/modeller/i20/teknik-ozellikler",
+      "derivation": "manufacturer combined consumption is used where available; city/highway split is derived with B-segment gasoline automatic proxy"
+    },
+    {
+      "make": "Jaecoo",
+      "model": "7 1.6 TGDI DCT",
+      "year": 2025,
+      "fuelType": "Benzin",
+      "cityConsumption": 8.9,
+      "highwayConsumption": 6.8,
+      "combinedConsumption": 7.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.16,
+      "aliases": [
+        "Jaecoo 7",
+        "J7"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Kia",
+      "model": "Ceed 1.6 CRDi DCT",
+      "year": 2020,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.5,
+      "highwayConsumption": 4.3,
+      "combinedConsumption": 4.8,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Ceed Dizel",
+        "Ceed CRDi"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Kia",
+      "model": "Niro 1.6 GDI Hybrid",
+      "year": 2023,
+      "fuelType": "Hibrit",
+      "cityConsumption": 4.6,
+      "highwayConsumption": 5.0,
+      "combinedConsumption": 4.8,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.12,
+      "aliases": [
+        "Niro Hybrid",
+        "Niro"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Kia",
+      "model": "Picanto 1.0 AMT",
+      "year": 2023,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.2,
+      "highwayConsumption": 4.6,
+      "combinedConsumption": 5.3,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.02,
+      "aliases": [
+        "Picanto",
+        "Picanto 1.0"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
       "make": "Kia",
       "model": "Sportage 1.6 T-GDI Mild Hybrid DCT",
       "year": 2026,
@@ -209,6 +1153,101 @@
       "confidence": 0.72,
       "sourceUrl": "https://www.kia.com/tr/modeller/sportage/teknik-ozellikler.html",
       "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with C-SUV mild-hybrid proxy"
+    },
+    {
+      "make": "Kia",
+      "model": "Stonic 1.4 MPI AT",
+      "year": 2021,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.6,
+      "highwayConsumption": 5.3,
+      "combinedConsumption": 6.3,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.1,
+      "aliases": [
+        "Stonic",
+        "Stonic 1.4"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "MG",
+      "model": "HS 1.5 T-GDI DCT",
+      "year": 2023,
+      "fuelType": "Benzin",
+      "cityConsumption": 8.6,
+      "highwayConsumption": 6.3,
+      "combinedConsumption": 7.3,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.16,
+      "aliases": [
+        "MG HS",
+        "HS"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "MG",
+      "model": "ZS 1.5 VTI-tech",
+      "year": 2023,
+      "fuelType": "Benzin",
+      "cityConsumption": 8.0,
+      "highwayConsumption": 5.9,
+      "combinedConsumption": 6.8,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.12,
+      "aliases": [
+        "MG ZS",
+        "ZS"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "A 180 Sedan",
+      "year": 2021,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.6,
+      "highwayConsumption": 5.3,
+      "combinedConsumption": 6.3,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.06,
+      "aliases": [
+        "A180",
+        "A 180"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "C 180 AMG",
+      "year": 2018,
+      "fuelType": "Benzin",
+      "cityConsumption": 8.0,
+      "highwayConsumption": 5.4,
+      "combinedConsumption": 6.6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.07,
+      "aliases": [
+        "C180",
+        "C 180"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
     },
     {
       "make": "Mercedes-Benz",
@@ -252,6 +1291,120 @@
       "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with premium E-segment gasoline sedan proxy"
     },
     {
+      "make": "Mercedes-Benz",
+      "model": "E 220d",
+      "year": 2020,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.6,
+      "highwayConsumption": 4.4,
+      "combinedConsumption": 4.9,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.08,
+      "aliases": [
+        "E220d",
+        "E 220 d"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "GLA 200",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 8.0,
+      "highwayConsumption": 5.8,
+      "combinedConsumption": 6.8,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.15,
+      "aliases": [
+        "GLA200",
+        "GLA 200"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "Vito 114 CDI Tourer",
+      "year": 2021,
+      "fuelType": "Dizel",
+      "cityConsumption": 8.0,
+      "highwayConsumption": 6.6,
+      "combinedConsumption": 7.2,
+      "vehicleClass": 2,
+      "climbSensitivity": 1.3,
+      "aliases": [
+        "Vito",
+        "Vito Tourer"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Mitsubishi",
+      "model": "L200 2.2 DI-D AT",
+      "year": 2022,
+      "fuelType": "Dizel",
+      "cityConsumption": 9.0,
+      "highwayConsumption": 7.2,
+      "combinedConsumption": 8.0,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.3,
+      "aliases": [
+        "L200",
+        "L 200"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Nissan",
+      "model": "Juke 1.0 DIG-T DCT",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.7,
+      "highwayConsumption": 5.1,
+      "combinedConsumption": 5.8,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.12,
+      "aliases": [
+        "Juke",
+        "Juke DIG-T"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Nissan",
+      "model": "Micra 1.0 IG-T CVT",
+      "year": 2019,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.3,
+      "highwayConsumption": 4.6,
+      "combinedConsumption": 5.4,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.02,
+      "aliases": [
+        "Micra",
+        "Micra 1.0"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
       "make": "Nissan",
       "model": "Qashqai 1.3 DIG-T MHEV X-Tronic",
       "year": 2026,
@@ -270,6 +1423,63 @@
       "confidence": 0.74,
       "sourceUrl": "https://www.nissan.com.tr/araclar/yeni-araclar/qashqai/teknik-ozellikler.html",
       "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with C-SUV mild-hybrid proxy"
+    },
+    {
+      "make": "Nissan",
+      "model": "X-Trail e-POWER",
+      "year": 2023,
+      "fuelType": "Hibrit",
+      "cityConsumption": 6.5,
+      "highwayConsumption": 6.8,
+      "combinedConsumption": 6.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.18,
+      "aliases": [
+        "X-Trail",
+        "XTrail e-Power"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Opel",
+      "model": "Astra 1.2 Turbo AT8",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.6,
+      "highwayConsumption": 4.9,
+      "combinedConsumption": 5.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Astra Benzin",
+        "Astra Turbo"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Opel",
+      "model": "Astra 1.6 CDTI",
+      "year": 2018,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.3,
+      "highwayConsumption": 4.1,
+      "combinedConsumption": 4.6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Astra Dizel",
+        "Astra CDTI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
     },
     {
       "make": "Opel",
@@ -326,6 +1536,44 @@
       "sourceUrl": "https://www.opel.com.tr/opel-hakkinda/cevre-yakit-ekonomisi-emisyon-bilgileri.html"
     },
     {
+      "make": "Opel",
+      "model": "Crossland 1.2 Turbo",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.8,
+      "highwayConsumption": 5.2,
+      "combinedConsumption": 5.9,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.12,
+      "aliases": [
+        "Crossland",
+        "Crossland X"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Opel",
+      "model": "Mokka 1.2 Turbo AT8",
+      "year": 2023,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.5,
+      "highwayConsumption": 5.0,
+      "combinedConsumption": 5.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.12,
+      "aliases": [
+        "Mokka",
+        "Mokka Turbo"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
       "make": "Peugeot",
       "model": "2008 1.2 PureTech 130 EAT8 Allure",
       "year": 2026,
@@ -347,6 +1595,44 @@
     },
     {
       "make": "Peugeot",
+      "model": "208 1.2 PureTech 100 AT",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.4,
+      "highwayConsumption": 4.8,
+      "combinedConsumption": 5.5,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "208",
+        "208 PureTech"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Peugeot",
+      "model": "3008 1.5 BlueHDi EAT8",
+      "year": 2021,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.9,
+      "highwayConsumption": 4.7,
+      "combinedConsumption": 5.2,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.16,
+      "aliases": [
+        "3008 Dizel",
+        "3008 BlueHDi"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Peugeot",
       "model": "3008 Hybrid 136 e-DCS6 Allure",
       "year": 2026,
       "fuelType": "Hibrit",
@@ -364,6 +1650,63 @@
       "confidence": 0.76,
       "sourceUrl": "https://www.peugeot.com.tr/modeller/yeni-3008.html",
       "derivation": "manufacturer combined WLTP value is used where available; city/highway split is derived with C-SUV mild-hybrid proxy"
+    },
+    {
+      "make": "Peugeot",
+      "model": "301 1.5 BlueHDi",
+      "year": 2020,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.0,
+      "highwayConsumption": 3.9,
+      "combinedConsumption": 4.4,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "301",
+        "301 Dizel"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Peugeot",
+      "model": "308 1.5 BlueHDi EAT8",
+      "year": 2022,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.2,
+      "highwayConsumption": 4.1,
+      "combinedConsumption": 4.6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "308 Dizel",
+        "308 BlueHDi"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Peugeot",
+      "model": "Rifter 1.5 BlueHDi",
+      "year": 2021,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.8,
+      "highwayConsumption": 4.7,
+      "combinedConsumption": 5.2,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.22,
+      "aliases": [
+        "Rifter",
+        "Partner Tepee"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
     },
     {
       "make": "Renault",
@@ -405,6 +1748,63 @@
     },
     {
       "make": "Renault",
+      "model": "Clio 1.0 SCe 65 HP",
+      "year": 2021,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.4,
+      "highwayConsumption": 4.6,
+      "combinedConsumption": 5.4,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "Clio SCe",
+        "Clio 5 1.0"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Renault",
+      "model": "Clio 1.0 TCe 90 X-Tronic",
+      "year": 2023,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.6,
+      "highwayConsumption": 5.0,
+      "combinedConsumption": 5.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "Clio TCe",
+        "Clio Otomatik"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Renault",
+      "model": "Clio 1.5 Blue dCi 85 HP",
+      "year": 2020,
+      "fuelType": "Dizel",
+      "cityConsumption": 4.8,
+      "highwayConsumption": 3.7,
+      "combinedConsumption": 4.2,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "Clio Dizel",
+        "Clio dCi"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Renault",
       "model": "Clio evolution plus TCe 115 EDC",
       "year": 2026,
       "fuelType": "Benzin",
@@ -421,6 +1821,25 @@
       "sourceType": "official_wltp_phases",
       "confidence": 0.97,
       "sourceUrl": "https://www.renault.com.tr/hybrid-araclar/yeni-clio/konfigurator-yeni.html"
+    },
+    {
+      "make": "Renault",
+      "model": "Duster 1.3 TCe 150 EDC",
+      "year": 2023,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.3,
+      "highwayConsumption": 5.7,
+      "combinedConsumption": 6.4,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.2,
+      "aliases": [
+        "Duster TCe",
+        "Duster Benzin"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
     },
     {
       "make": "Renault",
@@ -443,6 +1862,44 @@
     },
     {
       "make": "Renault",
+      "model": "Kangoo Multix 1.5 dCi",
+      "year": 2018,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.6,
+      "highwayConsumption": 4.5,
+      "combinedConsumption": 5.0,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.22,
+      "aliases": [
+        "Kangoo",
+        "Kangoo Combi"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Renault",
+      "model": "Megane 1.5 Blue dCi 115 EDC",
+      "year": 2020,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.2,
+      "highwayConsumption": 4.1,
+      "combinedConsumption": 4.6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Megane Dizel",
+        "Megane dCi"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Renault",
       "model": "Megane Sedan Touch 1.3 TCe EDC 140 bg",
       "year": 2026,
       "fuelType": "Benzin",
@@ -459,6 +1916,177 @@
       "sourceType": "official_wltp_phases",
       "confidence": 0.97,
       "sourceUrl": "https://www.renault.com.tr/binek-araclar/yeni-megane-sedan/konfigurator-yeni.html"
+    },
+    {
+      "make": "Renault",
+      "model": "Symbol 1.5 dCi 90 HP",
+      "year": 2018,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.0,
+      "highwayConsumption": 3.9,
+      "combinedConsumption": 4.4,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "Symbol Dizel",
+        "Symbol dCi"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Renault",
+      "model": "Taliant 1.0 Turbo 90 X-Tronic",
+      "year": 2023,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.5,
+      "highwayConsumption": 4.9,
+      "combinedConsumption": 5.6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "Taliant",
+        "Taliant Turbo"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Seat",
+      "model": "Arona 1.0 TSI DSG",
+      "year": 2023,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.4,
+      "highwayConsumption": 4.9,
+      "combinedConsumption": 5.6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.1,
+      "aliases": [
+        "Arona",
+        "Arona TSI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Seat",
+      "model": "Ateca 1.5 TSI DSG",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.4,
+      "highwayConsumption": 5.7,
+      "combinedConsumption": 6.5,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.16,
+      "aliases": [
+        "Ateca",
+        "Ateca TSI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Seat",
+      "model": "Ibiza 1.0 TSI DSG",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.2,
+      "highwayConsumption": 4.7,
+      "combinedConsumption": 5.4,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "Ibiza",
+        "Ibiza TSI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Seat",
+      "model": "Leon 1.5 eTSI DSG",
+      "year": 2022,
+      "fuelType": "Hibrit",
+      "cityConsumption": 6.0,
+      "highwayConsumption": 4.9,
+      "combinedConsumption": 5.4,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.04,
+      "aliases": [
+        "Leon",
+        "Leon eTSI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Skoda",
+      "model": "Fabia 1.0 TSI DSG",
+      "year": 2023,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.2,
+      "highwayConsumption": 4.7,
+      "combinedConsumption": 5.4,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.03,
+      "aliases": [
+        "Fabia",
+        "Fabia TSI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Skoda",
+      "model": "Kamiq 1.0 TSI DSG",
+      "year": 2023,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.5,
+      "highwayConsumption": 5.0,
+      "combinedConsumption": 5.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.1,
+      "aliases": [
+        "Kamiq",
+        "Kamiq TSI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Skoda",
+      "model": "Kodiaq 1.5 TSI DSG",
+      "year": 2023,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.9,
+      "highwayConsumption": 6.1,
+      "combinedConsumption": 6.9,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.18,
+      "aliases": [
+        "Kodiaq",
+        "Kodiaq TSI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
     },
     {
       "make": "Skoda",
@@ -479,23 +2107,137 @@
       "sourceUrl": "https://www.skoda.com.tr/modeller/octavia/yakit-ekonomisi-ve-co2-emisyonu"
     },
     {
-      "make": "Togg",
-      "model": "T10X V2 RWD Uzun Menzil",
-      "year": 2026,
-      "fuelType": "Elektrik",
-      "cityConsumption": 13.4,
-      "highwayConsumption": 23.8,
-      "combinedConsumption": 19.1,
+      "make": "Skoda",
+      "model": "Octavia 1.6 TDI DSG",
+      "year": 2019,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.3,
+      "highwayConsumption": 4.1,
+      "combinedConsumption": 4.6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Octavia Dizel",
+        "Octavia TDI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Skoda",
+      "model": "Scala 1.0 TSI DSG",
+      "year": 2023,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.3,
+      "highwayConsumption": 4.8,
+      "combinedConsumption": 5.5,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.04,
+      "aliases": [
+        "Scala",
+        "Scala TSI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Skoda",
+      "model": "Superb 1.5 TSI DSG",
+      "year": 2021,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.2,
+      "highwayConsumption": 5.2,
+      "combinedConsumption": 6.1,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.06,
+      "aliases": [
+        "Superb",
+        "Superb TSI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Suzuki",
+      "model": "S-Cross 1.4 Hybrid AT",
+      "year": 2023,
+      "fuelType": "Hibrit",
+      "cityConsumption": 6.3,
+      "highwayConsumption": 5.4,
+      "combinedConsumption": 5.8,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.14,
+      "aliases": [
+        "S-Cross",
+        "SCross"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Suzuki",
+      "model": "Swift 1.2 Hybrid CVT",
+      "year": 2024,
+      "fuelType": "Hibrit",
+      "cityConsumption": 5.5,
+      "highwayConsumption": 4.4,
+      "combinedConsumption": 4.9,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.02,
+      "aliases": [
+        "Swift",
+        "Swift Hybrid"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Suzuki",
+      "model": "Vitara 1.4 Hybrid AT",
+      "year": 2023,
+      "fuelType": "Hibrit",
+      "cityConsumption": 6.2,
+      "highwayConsumption": 5.3,
+      "combinedConsumption": 5.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.14,
+      "aliases": [
+        "Vitara",
+        "Vitara Hybrid"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Toyota",
+      "model": "C-HR 1.2 Turbo",
+      "year": 2018,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.4,
+      "highwayConsumption": 5.4,
+      "combinedConsumption": 6.3,
       "vehicleClass": 1,
       "climbSensitivity": 1.12,
       "aliases": [
-        "T10X V2 RWD Long Range",
-        "T10X Uzun Menzil V2"
+        "C-HR Benzin",
+        "CHR 1.2"
       ],
-      "sourceType": "official_city_plus_combined_derived_highway",
-      "confidence": 0.82,
-      "sourceUrl": "https://trumore-cdn.togg.cloud/ToggT10XKatalog.pdf",
-      "derivation": "city is official, combined is official, highway is derived from combined using a 45/55 city/highway weighting proxy"
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
     },
     {
       "make": "Toyota",
@@ -535,6 +2277,25 @@
     },
     {
       "make": "Toyota",
+      "model": "Corolla 1.6 Valvematic",
+      "year": 2018,
+      "fuelType": "Benzin",
+      "cityConsumption": 8.4,
+      "highwayConsumption": 5.6,
+      "combinedConsumption": 6.9,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.05,
+      "aliases": [
+        "Corolla 1.6",
+        "Corolla Benzin"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Toyota",
       "model": "Corolla 1.8 Hybrid Dream e-CVT",
       "year": 2025,
       "fuelType": "Hibrit",
@@ -571,6 +2332,63 @@
     },
     {
       "make": "Toyota",
+      "model": "Hilux 2.4 D-4D 4x4",
+      "year": 2022,
+      "fuelType": "Dizel",
+      "cityConsumption": 9.2,
+      "highwayConsumption": 7.0,
+      "combinedConsumption": 8.0,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.3,
+      "aliases": [
+        "Hilux",
+        "Hilux Dizel"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Toyota",
+      "model": "RAV4 2.5 Hybrid AWD",
+      "year": 2023,
+      "fuelType": "Hibrit",
+      "cityConsumption": 4.8,
+      "highwayConsumption": 5.8,
+      "combinedConsumption": 5.3,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.18,
+      "aliases": [
+        "RAV4 Hybrid",
+        "RAV4"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Toyota",
+      "model": "Yaris 1.0",
+      "year": 2019,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.6,
+      "highwayConsumption": 4.7,
+      "combinedConsumption": 5.6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.02,
+      "aliases": [
+        "Yaris Benzin",
+        "Yaris 1.0 Vision"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Toyota",
       "model": "Yaris 1.5 Hybrid Flame e-CVT",
       "year": 2025,
       "fuelType": "Hibrit",
@@ -604,6 +2422,120 @@
       "sourceType": "official_wltp_phases",
       "confidence": 0.97,
       "sourceUrl": "https://www.toyota.com.tr/content/dam/toyota/nmsc/turkey/yasal-bilgilendirme/yakit-ekonomisi-ve-co2-emisyonu.pdf"
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Caddy 2.0 TDI",
+      "year": 2022,
+      "fuelType": "Dizel",
+      "cityConsumption": 6.2,
+      "highwayConsumption": 5.0,
+      "combinedConsumption": 5.5,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.22,
+      "aliases": [
+        "Caddy Dizel",
+        "Caddy Combi"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Golf 1.0 TSI",
+      "year": 2021,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.2,
+      "highwayConsumption": 4.6,
+      "combinedConsumption": 5.3,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.04,
+      "aliases": [
+        "Golf 1.0",
+        "Golf TSI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Golf 1.6 TDI",
+      "year": 2018,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.2,
+      "highwayConsumption": 4.0,
+      "combinedConsumption": 4.5,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.04,
+      "aliases": [
+        "Golf Dizel",
+        "Golf TDI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Jetta 1.2 TSI",
+      "year": 2017,
+      "fuelType": "Benzin",
+      "cityConsumption": 6.6,
+      "highwayConsumption": 4.8,
+      "combinedConsumption": 5.6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.04,
+      "aliases": [
+        "Jetta",
+        "Jetta TSI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Passat 1.5 TSI ACT DSG",
+      "year": 2020,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.3,
+      "highwayConsumption": 5.1,
+      "combinedConsumption": 6.1,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.06,
+      "aliases": [
+        "Passat 1.5",
+        "Passat TSI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Passat 1.6 TDI DSG",
+      "year": 2019,
+      "fuelType": "Dizel",
+      "cityConsumption": 5.4,
+      "highwayConsumption": 4.2,
+      "combinedConsumption": 4.7,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.06,
+      "aliases": [
+        "Passat Dizel",
+        "Passat TDI"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
     },
     {
       "make": "Volkswagen",
@@ -661,6 +2593,25 @@
     },
     {
       "make": "Volkswagen",
+      "model": "T-Roc 1.5 TSI DSG",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.2,
+      "highwayConsumption": 5.5,
+      "combinedConsumption": 6.3,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.14,
+      "aliases": [
+        "T-Roc",
+        "TRoc"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Volkswagen",
       "model": "Taigo 1.0 TSI 115 PS Life DSG",
       "year": 2026,
       "fuelType": "Benzin",
@@ -677,6 +2628,44 @@
       "sourceType": "official_wltp_phases",
       "confidence": 0.98,
       "sourceUrl": "https://binekarac.vw.com.tr/idhub/content/dam/onehub_pkw/importers/tr/yakit-ekonomisi-co2-emisyonu/pdf-yakit-tuketim-etiketi/24_my_taigo_life_dsg.pdf"
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Tiguan 1.5 TSI DSG",
+      "year": 2021,
+      "fuelType": "Benzin",
+      "cityConsumption": 7.8,
+      "highwayConsumption": 5.9,
+      "combinedConsumption": 6.8,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.18,
+      "aliases": [
+        "Tiguan TSI",
+        "Tiguan Benzin"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Transporter 2.0 TDI",
+      "year": 2021,
+      "fuelType": "Dizel",
+      "cityConsumption": 8.6,
+      "highwayConsumption": 7.0,
+      "combinedConsumption": 7.7,
+      "vehicleClass": 2,
+      "climbSensitivity": 1.3,
+      "aliases": [
+        "Transporter",
+        "Caravelle"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
     },
     {
       "make": "Volkswagen",
@@ -734,6 +2723,44 @@
       "sourceType": "official_wltp_phases",
       "confidence": 0.98,
       "sourceUrl": "https://binekarac.vw.com.tr/idhub/content/dam/onehub_pkw/importers/tr/yakit-ekonomisi-co2-emisyonu/pdf-yakit-tuketim-etiketi/24_my_tiguan_life_dsg.pdf"
+    },
+    {
+      "make": "Volvo",
+      "model": "XC40 T4 AWD",
+      "year": 2022,
+      "fuelType": "Benzin",
+      "cityConsumption": 8.6,
+      "highwayConsumption": 6.2,
+      "combinedConsumption": 7.3,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.16,
+      "aliases": [
+        "XC40",
+        "XC40 Benzin"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
+    },
+    {
+      "make": "Volvo",
+      "model": "XC60 B5 AWD",
+      "year": 2022,
+      "fuelType": "Hibrit",
+      "cityConsumption": 9.0,
+      "highwayConsumption": 6.5,
+      "combinedConsumption": 7.6,
+      "vehicleClass": 1,
+      "climbSensitivity": 1.18,
+      "aliases": [
+        "XC60",
+        "XC60 B5"
+      ],
+      "sourceType": "wltp_catalog_derived",
+      "confidence": 0.78,
+      "sourceUrl": null,
+      "derivation": "WLTP/manufacturer combined figure; city/highway split derived with segment proxy for Turkish market trims"
     }
   ]
 }
