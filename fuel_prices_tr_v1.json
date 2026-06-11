@@ -1,6 +1,6 @@
 {
-  "version": "opet-09.06.2026",
-  "lastUpdated": "2026-06-09T00:00:00Z",
+  "version": "opet-12.06.2026",
+  "lastUpdated": "2026-06-12T00:00:00Z",
   "currency": "TRY",
   "source": "OPET public fuel price API",
   "sourceUrl": "https://www.opet.com.tr/akaryakit-fiyatlari",
@@ -27,7 +27,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.77
+          "amount": 65.4
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -72,7 +72,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.8
+          "amount": 65.43
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -117,7 +117,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.73
+          "amount": 65.36
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -162,7 +162,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.86
+          "amount": 65.49
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -207,7 +207,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.73
+          "amount": 65.36
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -252,7 +252,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.74
+          "amount": 65.37
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -297,7 +297,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.72
+          "amount": 65.35
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -342,7 +342,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.76
+          "amount": 65.39
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -387,7 +387,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.84
+          "amount": 65.47
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -432,7 +432,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.83
+          "amount": 65.46
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -477,7 +477,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.71
+          "amount": 65.34
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -522,7 +522,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.71
+          "amount": 65.34
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -567,7 +567,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.73
+          "amount": 65.36
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -612,7 +612,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.83
+          "amount": 65.46
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -657,7 +657,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.82
+          "amount": 65.45
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -702,7 +702,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.71
+          "amount": 65.34
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -747,7 +747,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.82
+          "amount": 65.45
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -792,7 +792,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.84
+          "amount": 65.47
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -837,7 +837,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.71
+          "amount": 65.34
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -882,7 +882,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.74
+          "amount": 65.37
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -927,7 +927,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.7
+          "amount": 65.33
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -972,7 +972,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.72
+          "amount": 65.35
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1017,7 +1017,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.72
+          "amount": 65.35
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1062,7 +1062,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.73
+          "amount": 65.36
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1107,7 +1107,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.72
+          "amount": 65.35
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1152,7 +1152,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.82
+          "amount": 65.45
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1197,7 +1197,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.69
+          "amount": 65.32
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1242,7 +1242,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.72
+          "amount": 65.35
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1287,7 +1287,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.8
+          "amount": 65.43
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1332,7 +1332,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.83
+          "amount": 65.46
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1377,7 +1377,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.84
+          "amount": 65.47
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1422,7 +1422,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.72
+          "amount": 65.35
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1467,7 +1467,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.79
+          "amount": 65.42
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1512,7 +1512,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.82
+          "amount": 65.45
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1557,7 +1557,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.81
+          "amount": 65.44
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1602,7 +1602,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.88
+          "amount": 65.51
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1647,7 +1647,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.8
+          "amount": 65.43
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1692,7 +1692,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.88
+          "amount": 65.51
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1737,7 +1737,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.75
+          "amount": 65.38
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1782,7 +1782,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.7
+          "amount": 65.33
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1827,7 +1827,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.7
+          "amount": 65.33
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1872,7 +1872,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.69
+          "amount": 65.32
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1917,7 +1917,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.78
+          "amount": 65.41
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -1962,7 +1962,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.72
+          "amount": 65.35
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2007,7 +2007,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.76
+          "amount": 65.39
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2052,7 +2052,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.85
+          "amount": 65.48
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2097,7 +2097,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.74
+          "amount": 65.37
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2142,7 +2142,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.74
+          "amount": 65.37
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2187,7 +2187,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.71
+          "amount": 65.34
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2232,7 +2232,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.72
+          "amount": 65.35
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2277,7 +2277,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.72
+          "amount": 65.35
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2322,7 +2322,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.79
+          "amount": 65.42
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2367,7 +2367,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.69
+          "amount": 65.32
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2412,7 +2412,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.75
+          "amount": 65.38
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2457,7 +2457,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.72
+          "amount": 65.35
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2502,7 +2502,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.78
+          "amount": 65.41
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2547,7 +2547,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.69
+          "amount": 65.32
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2592,7 +2592,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.83
+          "amount": 65.46
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2637,7 +2637,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.78
+          "amount": 65.41
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2682,7 +2682,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.72
+          "amount": 65.35
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2727,7 +2727,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.83
+          "amount": 65.46
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2772,7 +2772,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.73
+          "amount": 65.36
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2817,7 +2817,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.75
+          "amount": 65.38
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2862,7 +2862,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.82
+          "amount": 65.45
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2907,7 +2907,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.78
+          "amount": 65.41
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2952,7 +2952,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.81
+          "amount": 65.44
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -2997,7 +2997,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.69
+          "amount": 65.32
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -3042,7 +3042,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.75
+          "amount": 65.38
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -3087,7 +3087,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.84
+          "amount": 65.47
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -3132,7 +3132,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.76
+          "amount": 65.39
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -3177,7 +3177,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.76
+          "amount": 65.39
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -3222,7 +3222,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.8
+          "amount": 65.43
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -3267,7 +3267,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.85
+          "amount": 65.48
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -3312,7 +3312,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.71
+          "amount": 65.34
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -3357,7 +3357,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.75
+          "amount": 65.38
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -3402,7 +3402,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.79
+          "amount": 65.42
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -3447,7 +3447,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.82
+          "amount": 65.45
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -3492,7 +3492,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.72
+          "amount": 65.35
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -3537,7 +3537,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.86
+          "amount": 65.49
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -3582,7 +3582,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.71
+          "amount": 65.34
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -3627,7 +3627,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.73
+          "amount": 65.36
         },
         "A121": {
           "name": "Motorin UltraForce",
@@ -3672,7 +3672,7 @@
         "A110": {
           "name": "Gazyağı",
           "shortName": "GY",
-          "amount": 67.72
+          "amount": 65.35
         },
         "A121": {
           "name": "Motorin UltraForce",
