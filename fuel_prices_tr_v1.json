@@ -691,13 +691,13 @@
       "provinceName": "BİLECİK",
       "districtCode": "011001",
       "districtName": "MERKEZ",
-      "gasoline": 64.0,
+      "gasoline": 64,
       "diesel": 66.1,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 64.0
+          "amount": 64
         },
         "A110": {
           "name": "Gazyağı",
