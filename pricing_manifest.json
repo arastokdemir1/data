@@ -1,6 +1,6 @@
 {
   "version": "pricing-manifest-v1",
-  "generatedAt": "2026-07-02T17:18:43.298918Z",
+  "generatedAt": "2026-07-02T19:01:54.110725Z",
   "repository": "arastokdemir1/data",
   "baseRawUrl": "https://raw.githubusercontent.com/arastokdemir1/data/main/",
   "refreshCadence": "15_minutes_for_provider_api_files",
@@ -41,8 +41,8 @@
       "refreshPolicy": "source_change_or_manual_tariff_update",
       "version": "2026.3-matrix",
       "lastUpdated": "2026-04-25",
-      "bytes": 567754,
-      "sha256": "b3d0bde4890e81624bfca5f6d69900cbdb6b0ab369f417074f30fbd8aba28ccb"
+      "bytes": 567940,
+      "sha256": "77eac8ebd6c528927cb2284c898bc8b27f78596f8d1067e227a22a716d127ba2"
     },
     {
       "id": "tolls_v3_app_ready",
