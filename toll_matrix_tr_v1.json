@@ -20349,9 +20349,14 @@
         "o-7",
         "o7",
         "kuzey marmara otoyolu",
+        "kuzey marmara",
+        "kmo",
+        "kmo avrupa",
         "kınalı",
         "odayeri",
-        "fatih"
+        "fatih",
+        "silivri",
+        "çatalca"
       ],
       "stations": [
         {
@@ -20760,9 +20765,13 @@
         "o-7",
         "o7",
         "kuzey marmara otoyolu",
+        "kuzey marmara",
+        "kmo",
+        "kmo anadolu",
         "kurtköy",
         "akyazı",
-        "kurnaköy"
+        "kurnaköy",
+        "kurnaköy 2"
       ],
       "stations": [
         {
