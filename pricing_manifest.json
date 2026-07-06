@@ -1,6 +1,6 @@
 {
   "version": "pricing-manifest-v1",
-  "generatedAt": "2026-07-06T00:00:00Z",
+  "generatedAt": "2026-07-06T11:01:26.712337Z",
   "repository": "arastokdemir1/data",
   "baseRawUrl": "https://raw.githubusercontent.com/arastokdemir1/data/main/",
   "refreshCadence": "15_minutes_for_provider_api_files",
@@ -40,7 +40,7 @@
       "sourceType": "official_tariff_matrix",
       "refreshPolicy": "source_change_or_manual_tariff_update",
       "version": "2026.3-matrix",
-      "lastUpdated": "2026-07-06",
+      "lastUpdated": "2026-04-25",
       "bytes": 567940,
       "sha256": "77eac8ebd6c528927cb2284c898bc8b27f78596f8d1067e227a22a716d127ba2"
     },
@@ -54,8 +54,8 @@
       "refreshPolicy": "source_change_or_manual_tariff_update",
       "version": "2026.2-app-ready",
       "lastUpdated": "2026-07-06",
-      "bytes": 19744,
-      "sha256": "40a748a6eddb2f0db6b313954c02bf35ed8f9c6c6cdc7040c2cd18dd5deb9fea"
+      "bytes": 19750,
+      "sha256": "f1d5227554e8e3ac80a942359c673544045aae5777a49a15c40cf097400c536c"
     },
     {
       "id": "vehicle_profiles_tr_v1",
