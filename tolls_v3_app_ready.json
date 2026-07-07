@@ -1,6 +1,6 @@
 {
   "version": "2026.2-app-ready",
-  "lastUpdated": "2026-07-06",
+  "lastUpdated": "2026-07-07",
   "currency": "TRY",
   "sourcePolicy": "official_primary_with_matrix_ready_fallbacks",
   "notes": [
@@ -16,12 +16,12 @@
       "operator": "KGM",
       "officialSource": "https://www.kgm.gov.tr/sayfalar/kgm/sitetr/otoyollar/otoyolkopruucret/koprugecisucret.aspx",
       "prices": {
-        "1": 33.0,
-        "2": 42.0,
-        "3": 93.0,
-        "4": 184.0,
-        "5": 244.0,
-        "6": 14.0
+        "1": 59.0,
+        "2": 75.0,
+        "3": 168.0,
+        "4": 333.0,
+        "5": 440.0,
+        "6": 25.0
       }
     },
     {
@@ -31,12 +31,12 @@
       "operator": "KGM",
       "officialSource": "https://www.kgm.gov.tr/sayfalar/kgm/sitetr/otoyollar/otoyolkopruucret/koprugecisucret.aspx",
       "prices": {
-        "1": 33.0,
-        "2": 42.0,
-        "3": 93.0,
-        "4": 184.0,
-        "5": 244.0,
-        "6": 14.0
+        "1": 59.0,
+        "2": 75.0,
+        "3": 168.0,
+        "4": 333.0,
+        "5": 440.0,
+        "6": 25.0
       }
     },
     {
@@ -92,14 +92,14 @@
       "officialSource": "https://www.avrasyatuneli.com/haberler-ve-duyurular/detay/1-ocak-2026-itibariyla-gecerli-avrasya-tuneli-gecis-ucretleri-tarifesi",
       "prices": {
         "day": {
-          "1": 280.0,
-          "2": 420.0,
-          "6": 218.4
+          "1": 330.0,
+          "2": 495.0,
+          "6": 257.4
         },
         "night": {
-          "1": 140.0,
-          "2": 210.0,
-          "6": 109.2
+          "1": 165.0,
+          "2": 247.5,
+          "6": 128.7
         }
       }
     }

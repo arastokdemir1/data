@@ -245,6 +245,10 @@ def main() -> int:
         print("⚠️  Hiçbir fiyat alınamadı."); return 1
 
     update_v3(root / "tolls_v3_app_ready.json", all_fp, pdf_cor)
+    # KRITIK: uygulama gişe fiyatlarını önce toll_matrix_tr_v1.json'dan okuyor
+    # ("primary_toll_matrix") — bu dosya güncellenmezse app'te eski fiyat gösterilir.
+    # Önceden sadece app_ready dosyası güncelleniyordu, matrix hiç dokunulmuyordu.
+    update_v3(root / "toll_matrix_tr_v1.json", all_fp, pdf_cor)
     update_manifest(root)
     return 0
 

@@ -1,6 +1,6 @@
 {
-  "version": "2026.3-matrix",
-  "lastUpdated": "2026-04-25",
+  "version": "2026.4-matrix",
+  "lastUpdated": "2026-07-07",
   "currency": "TRY",
   "sourcePolicy": "official_matrix_first",
   "notes": [
@@ -47,12 +47,12 @@
       "operator": "YID",
       "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/3-YSSKoprusu.pdf",
       "prices": {
-        "1": 95.0,
-        "2": 125.0,
-        "3": 235.0,
-        "4": 595.0,
-        "5": 740.0,
-        "6": 65.0
+        "1": 110.0,
+        "2": 145.0,
+        "3": 270.0,
+        "4": 690.0,
+        "5": 860.0,
+        "6": 75.0
       }
     },
     {
@@ -62,12 +62,12 @@
       "operator": "YID",
       "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/2-Osmangazi.pdf",
       "prices": {
-        "1": 995.0,
-        "2": 1590.0,
-        "3": 1890.0,
-        "4": 2505.0,
-        "5": 3165.0,
-        "6": 695.0
+        "1": 1170.0,
+        "2": 1870.0,
+        "3": 2225.0,
+        "4": 2950.0,
+        "5": 3720.0,
+        "6": 820.0
       }
     },
     {
@@ -77,12 +77,12 @@
       "operator": "YID",
       "officialSource": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/2026Gecis_Ucret/4-1915Canakkale.pdf",
       "prices": {
-        "1": 995.0,
-        "2": 1245.0,
-        "3": 2240.0,
-        "4": 2490.0,
-        "5": 3755.0,
-        "6": 250.0
+        "1": 1170.0,
+        "2": 1465.0,
+        "3": 2635.0,
+        "4": 2925.0,
+        "5": 5560.0,
+        "6": 295.0
       }
     },
     {
@@ -93,14 +93,14 @@
       "officialSource": "https://www.avrasyatuneli.com/haberler-ve-duyurular/detay/1-ocak-2026-itibariyla-gecerli-avrasya-tuneli-gecis-ucretleri-tarifesi",
       "prices": {
         "day": {
-          "1": 280.0,
-          "2": 420.0,
-          "6": 218.4
+          "1": 330.0,
+          "2": 495.0,
+          "6": 257.4
         },
         "night": {
-          "1": 140.0,
-          "2": 210.0,
-          "6": 109.2
+          "1": 165.0,
+          "2": 247.5,
+          "6": 128.7
         }
       }
     }

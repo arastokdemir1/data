@@ -40,7 +40,7 @@
       "sourceType": "official_tariff_matrix",
       "refreshPolicy": "source_change_or_manual_tariff_update",
       "version": "2026.3-matrix",
-      "lastUpdated": "2026-04-25",
+      "lastUpdated": "2026-07-07",
       "bytes": 567940,
       "sha256": "77eac8ebd6c528927cb2284c898bc8b27f78596f8d1067e227a22a716d127ba2"
     },
@@ -53,7 +53,7 @@
       "sourceType": "official_tariff_fallback",
       "refreshPolicy": "source_change_or_manual_tariff_update",
       "version": "2026.2-app-ready",
-      "lastUpdated": "2026-07-06",
+      "lastUpdated": "2026-07-07",
       "bytes": 19750,
       "sha256": "f1d5227554e8e3ac80a942359c673544045aae5777a49a15c40cf097400c536c"
     },
