@@ -61,13 +61,13 @@
       "provinceName": "ADIYAMAN",
       "districtCode": "002001",
       "districtName": "MERKEZ",
-      "gasoline": 65,
+      "gasoline": 65.0,
       "diesel": 69.08,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 65
+          "amount": 65.0
         },
         "A110": {
           "name": "Gazyağı",
@@ -2491,13 +2491,13 @@
       "provinceName": "MALATYA",
       "districtCode": "044001",
       "districtName": "MERKEZ",
-      "gasoline": 65,
+      "gasoline": 65.0,
       "diesel": 69.07,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 65
+          "amount": 65.0
         },
         "A110": {
           "name": "Gazyağı",
