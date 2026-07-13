@@ -1,6 +1,6 @@
 {
   "version": "pricing-manifest-v1",
-  "generatedAt": "2026-07-13T00:00:00Z",
+  "generatedAt": "2026-07-13T07:35:41.504558Z",
   "repository": "arastokdemir1/data",
   "baseRawUrl": "https://raw.githubusercontent.com/arastokdemir1/data/main/",
   "refreshCadence": "15_minutes_for_provider_api_files",
@@ -41,8 +41,8 @@
       "refreshPolicy": "source_change_or_manual_tariff_update",
       "version": "2026.5-matrix",
       "lastUpdated": "2026-07-13",
-      "bytes": 604445,
-      "sha256": "9fc5207f50a4096086228e7b5649d37af0d0148478754625c4eb3c7ccf38acef"
+      "bytes": 605606,
+      "sha256": "f35bc851defa58137caf280666e8b43ee0a7dae4778f5c5ee02aaf80e18c77e5"
     },
     {
       "id": "tolls_v3_app_ready",
@@ -54,8 +54,8 @@
       "refreshPolicy": "source_change_or_manual_tariff_update",
       "version": "2026.2-app-ready",
       "lastUpdated": "2026-07-13",
-      "bytes": 19752,
-      "sha256": "9db7180828c2bb36b28cb833d051c61a0e027e93c2a3afefdb53e2759850cf4b"
+      "bytes": 19750,
+      "sha256": "f115c5c7c6d22e5d91a1af60bd677bf1ad39febd12e44fedc873f10343a522ba"
     },
     {
       "id": "vehicle_profiles_tr_v1",
