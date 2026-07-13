@@ -1,6 +1,6 @@
 {
   "version": "2026.2-app-ready",
-  "lastUpdated": "2026-07-07",
+  "lastUpdated": "2026-07-13",
   "currency": "TRY",
   "sourcePolicy": "official_primary_with_matrix_ready_fallbacks",
   "notes": [
@@ -16,12 +16,12 @@
       "operator": "KGM",
       "officialSource": "https://www.kgm.gov.tr/sayfalar/kgm/sitetr/otoyollar/otoyolkopruucret/koprugecisucret.aspx",
       "prices": {
-        "1": 59.0,
-        "2": 75.0,
-        "3": 168.0,
-        "4": 333.0,
-        "5": 440.0,
-        "6": 25.0
+        "1": 33.0,
+        "2": 42.0,
+        "3": 93.0,
+        "4": 184.0,
+        "5": 244.0,
+        "6": 14.0
       }
     },
     {
@@ -31,12 +31,12 @@
       "operator": "KGM",
       "officialSource": "https://www.kgm.gov.tr/sayfalar/kgm/sitetr/otoyollar/otoyolkopruucret/koprugecisucret.aspx",
       "prices": {
-        "1": 59.0,
-        "2": 75.0,
-        "3": 168.0,
-        "4": 333.0,
-        "5": 440.0,
-        "6": 25.0
+        "1": 33.0,
+        "2": 42.0,
+        "3": 93.0,
+        "4": 184.0,
+        "5": 244.0,
+        "6": 14.0
       }
     },
     {
