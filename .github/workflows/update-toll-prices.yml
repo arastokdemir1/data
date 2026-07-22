@@ -30,8 +30,11 @@ jobs:
         run: pip install requests beautifulsoup4 pdfplumber -q
 
       - name: Run toll price updater
+        # continue-on-error KALDIRILDI: script zaten "gerçek scrape hatası" (exit 1)
+        # ile "bu hafta fiyat değişmedi" (exit 0) durumunu ayırt ediyor. Maskeleme
+        # yalnızca gerçek hataları gizliyordu — haftalarca sessizce hiç veri
+        # güncellemeden yeşil görünmesine yol açtı (CarLog gişe bug'ının kök nedeni).
         run: python scripts/update_toll_prices.py --root .
-        continue-on-error: true   # Scraping başarısız olursa workflow durmasın
 
       - name: Validate JSON
         run: |
