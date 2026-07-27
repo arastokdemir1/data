@@ -1,6 +1,6 @@
 {
   "version": "pricing-manifest-v1",
-  "generatedAt": "2026-07-27T00:00:00Z",
+  "generatedAt": "2026-07-27T07:49:05.740104Z",
   "repository": "arastokdemir1/data",
   "baseRawUrl": "https://raw.githubusercontent.com/arastokdemir1/data/main/",
   "refreshCadence": "15_minutes_for_provider_api_files",
@@ -40,7 +40,7 @@
       "sourceType": "official_tariff_matrix",
       "refreshPolicy": "source_change_or_manual_tariff_update",
       "version": "2026.5-matrix",
-      "lastUpdated": "2026-07-27",
+      "lastUpdated": "2026-07-13",
       "bytes": 605606,
       "sha256": "f35bc851defa58137caf280666e8b43ee0a7dae4778f5c5ee02aaf80e18c77e5"
     },
@@ -53,7 +53,7 @@
       "sourceType": "official_tariff_fallback",
       "refreshPolicy": "source_change_or_manual_tariff_update",
       "version": "2026.2-app-ready",
-      "lastUpdated": "2026-07-27",
+      "lastUpdated": "2026-07-13",
       "bytes": 19750,
       "sha256": "f115c5c7c6d22e5d91a1af60bd677bf1ad39febd12e44fedc873f10343a522ba"
     },
