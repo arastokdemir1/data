@@ -1,6 +1,6 @@
 {
-  "version": "opet-05.08.2026",
-  "lastUpdated": "2026-08-05T00:00:00Z",
+  "version": "opet-06.08.2026",
+  "lastUpdated": "2026-08-06T00:00:00Z",
   "currency": "TRY",
   "source": "OPET public fuel price API",
   "sourceUrl": "https://www.opet.com.tr/akaryakit-fiyatlari",
@@ -42,17 +42,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.28
+          "amount": 51.81
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.51
+          "amount": 40.07
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.16
+          "amount": 34.18
         }
       }
     },
@@ -87,17 +87,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.31
+          "amount": 51.84
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.54
+          "amount": 40.1
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.18
+          "amount": 34.2
         }
       }
     },
@@ -132,17 +132,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.24
+          "amount": 51.77
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.46
+          "amount": 40.02
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.15
+          "amount": 34.17
         }
       }
     },
@@ -177,17 +177,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.34
+          "amount": 51.87
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.52
+          "amount": 40.08
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.21
+          "amount": 34.23
         }
       }
     },
@@ -222,17 +222,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.26
+          "amount": 51.79
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.49
+          "amount": 40.05
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.13
+          "amount": 34.15
         }
       }
     },
@@ -267,17 +267,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.25
+          "amount": 51.78
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.46
+          "amount": 40.02
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.13
+          "amount": 34.15
         }
       }
     },
@@ -312,17 +312,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.24
+          "amount": 51.77
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.42
+          "amount": 39.98
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.12
+          "amount": 34.14
         }
       }
     },
@@ -357,17 +357,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.25
+          "amount": 51.78
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.44
+          "amount": 40.0
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.16
+          "amount": 34.18
         }
       }
     },
@@ -402,17 +402,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.33
+          "amount": 51.86
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.49
+          "amount": 40.05
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.21
+          "amount": 34.23
         }
       }
     },
@@ -447,17 +447,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.31
+          "amount": 51.84
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.47
+          "amount": 40.03
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.19
+          "amount": 34.21
         }
       }
     },
@@ -492,17 +492,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.22
+          "amount": 51.75
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.43
+          "amount": 39.99
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.18
+          "amount": 34.2
         }
       }
     },
@@ -537,17 +537,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.22
+          "amount": 51.75
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.43
+          "amount": 39.99
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.17
+          "amount": 34.19
         }
       }
     },
@@ -582,17 +582,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.24
+          "amount": 51.77
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.46
+          "amount": 40.02
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.14
+          "amount": 34.16
         }
       }
     },
@@ -627,17 +627,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.34
+          "amount": 51.87
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.53
+          "amount": 40.09
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.2
+          "amount": 34.22
         }
       }
     },
@@ -672,17 +672,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.31
+          "amount": 51.84
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.47
+          "amount": 40.03
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.18
+          "amount": 34.2
         }
       }
     },
@@ -717,17 +717,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.22
+          "amount": 51.75
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.43
+          "amount": 39.99
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.15
+          "amount": 34.17
         }
       }
     },
@@ -762,17 +762,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.33
+          "amount": 51.86
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.54
+          "amount": 40.1
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.19
+          "amount": 34.21
         }
       }
     },
@@ -807,17 +807,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.34
+          "amount": 51.87
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.55
+          "amount": 40.11
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.21
+          "amount": 34.23
         }
       }
     },
@@ -852,17 +852,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.22
+          "amount": 51.75
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.44
+          "amount": 40.0
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.13
+          "amount": 34.15
         }
       }
     },
@@ -897,17 +897,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.24
+          "amount": 51.77
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.45
+          "amount": 40.01
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.16
+          "amount": 34.18
         }
       }
     },
@@ -942,17 +942,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.21
+          "amount": 51.74
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.43
+          "amount": 39.99
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.16
+          "amount": 34.18
         }
       }
     },
@@ -987,17 +987,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.22
+          "amount": 51.75
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.45
+          "amount": 40.01
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.18
+          "amount": 34.2
         }
       }
     },
@@ -1032,17 +1032,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.23
+          "amount": 51.76
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.43
+          "amount": 39.99
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.12
+          "amount": 34.14
         }
       }
     },
@@ -1077,17 +1077,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.25
+          "amount": 51.78
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.44
+          "amount": 40.0
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.13
+          "amount": 34.15
         }
       }
     },
@@ -1122,17 +1122,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.23
+          "amount": 51.76
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.44
+          "amount": 40.0
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.16
+          "amount": 34.18
         }
       }
     },
@@ -1167,17 +1167,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.32
+          "amount": 51.85
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.52
+          "amount": 40.08
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.19
+          "amount": 34.21
         }
       }
     },
@@ -1212,17 +1212,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.22
+          "amount": 51.75
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.43
+          "amount": 39.99
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.15
+          "amount": 34.17
         }
       }
     },
@@ -1257,17 +1257,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.23
+          "amount": 51.76
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.49
+          "amount": 40.05
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.19
+          "amount": 34.21
         }
       }
     },
@@ -1302,17 +1302,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.32
+          "amount": 51.85
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.57
+          "amount": 40.13
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.18
+          "amount": 34.2
         }
       }
     },
@@ -1347,17 +1347,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.31
+          "amount": 51.84
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.48
+          "amount": 40.04
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.18
+          "amount": 34.2
         }
       }
     },
@@ -1392,17 +1392,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.32
+          "amount": 51.85
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.49
+          "amount": 40.05
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.19
+          "amount": 34.21
         }
       }
     },
@@ -1437,17 +1437,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.22
+          "amount": 51.75
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.45
+          "amount": 40.01
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.14
+          "amount": 34.16
         }
       }
     },
@@ -1482,17 +1482,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.31
+          "amount": 51.84
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.52
+          "amount": 40.08
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.17
+          "amount": 34.19
         }
       }
     },
@@ -1527,17 +1527,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.28
+          "amount": 51.81
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.46
+          "amount": 40.02
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.16
+          "amount": 34.18
         }
       }
     },
@@ -1572,17 +1572,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.3
+          "amount": 51.83
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.46
+          "amount": 40.02
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.17
+          "amount": 34.19
         }
       }
     },
@@ -1617,17 +1617,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.52
+          "amount": 52.05
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.76
+          "amount": 40.32
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.39
+          "amount": 34.41
         }
       }
     },
@@ -1662,17 +1662,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.3
+          "amount": 51.83
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.5
+          "amount": 40.06
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.17
+          "amount": 34.19
         }
       }
     },
@@ -1707,17 +1707,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.34
+          "amount": 51.87
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.54
+          "amount": 40.1
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.22
+          "amount": 34.24
         }
       }
     },
@@ -1752,17 +1752,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.25
+          "amount": 51.78
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.46
+          "amount": 40.02
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.15
+          "amount": 34.17
         }
       }
     },
@@ -1797,17 +1797,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.21
+          "amount": 51.74
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.51
+          "amount": 40.07
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.16
+          "amount": 34.18
         }
       }
     },
@@ -1842,17 +1842,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.21
+          "amount": 51.74
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.47
+          "amount": 40.03
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.16
+          "amount": 34.18
         }
       }
     },
@@ -1887,17 +1887,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.21
+          "amount": 51.74
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.41
+          "amount": 39.97
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.18
+          "amount": 34.2
         }
       }
     },
@@ -1932,17 +1932,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.29
+          "amount": 51.82
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.51
+          "amount": 40.07
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.16
+          "amount": 34.18
         }
       }
     },
@@ -1977,17 +1977,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.23
+          "amount": 51.76
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.46
+          "amount": 40.02
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.13
+          "amount": 34.15
         }
       }
     },
@@ -2022,17 +2022,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.28
+          "amount": 51.81
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.56
+          "amount": 40.12
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.15
+          "amount": 34.17
         }
       }
     },
@@ -2067,17 +2067,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.33
+          "amount": 51.86
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.51
+          "amount": 40.07
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.21
+          "amount": 34.23
         }
       }
     },
@@ -2112,17 +2112,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.24
+          "amount": 51.77
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.48
+          "amount": 40.04
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.14
+          "amount": 34.16
         }
       }
     },
@@ -2157,17 +2157,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.27
+          "amount": 51.8
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.54
+          "amount": 40.1
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.13
+          "amount": 34.15
         }
       }
     },
@@ -2202,17 +2202,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.24
+          "amount": 51.77
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.41
+          "amount": 39.97
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.11
+          "amount": 34.13
         }
       }
     },
@@ -2247,17 +2247,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.23
+          "amount": 51.76
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.49
+          "amount": 40.05
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.18
+          "amount": 34.2
         }
       }
     },
@@ -2292,17 +2292,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.25
+          "amount": 51.78
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.43
+          "amount": 39.99
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.12
+          "amount": 34.14
         }
       }
     },
@@ -2337,17 +2337,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.31
+          "amount": 51.84
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.51
+          "amount": 40.07
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.17
+          "amount": 34.19
         }
       }
     },
@@ -2382,17 +2382,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.2
+          "amount": 51.73
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.41
+          "amount": 39.97
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.15
+          "amount": 34.17
         }
       }
     },
@@ -2427,17 +2427,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.26
+          "amount": 51.79
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.51
+          "amount": 40.07
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.13
+          "amount": 34.15
         }
       }
     },
@@ -2472,17 +2472,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.22
+          "amount": 51.75
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.45
+          "amount": 40.01
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.15
+          "amount": 34.17
         }
       }
     },
@@ -2517,17 +2517,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.3
+          "amount": 51.83
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.55
+          "amount": 40.11
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.17
+          "amount": 34.19
         }
       }
     },
@@ -2562,17 +2562,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.21
+          "amount": 51.74
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.41
+          "amount": 39.97
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.17
+          "amount": 34.19
         }
       }
     },
@@ -2607,17 +2607,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.34
+          "amount": 51.87
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.57
+          "amount": 40.13
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.2
+          "amount": 34.22
         }
       }
     },
@@ -2652,17 +2652,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.28
+          "amount": 51.81
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.53
+          "amount": 40.09
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.16
+          "amount": 34.18
         }
       }
     },
@@ -2697,17 +2697,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.23
+          "amount": 51.76
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.45
+          "amount": 40.01
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.18
+          "amount": 34.2
         }
       }
     },
@@ -2742,17 +2742,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.33
+          "amount": 51.86
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.61
+          "amount": 40.17
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.21
+          "amount": 34.23
         }
       }
     },
@@ -2787,17 +2787,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.27
+          "amount": 51.8
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.53
+          "amount": 40.09
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.13
+          "amount": 34.15
         }
       }
     },
@@ -2832,17 +2832,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.27
+          "amount": 51.8
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.51
+          "amount": 40.07
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.14
+          "amount": 34.16
         }
       }
     },
@@ -2877,17 +2877,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.28
+          "amount": 51.81
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.46
+          "amount": 40.02
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.16
+          "amount": 34.18
         }
       }
     },
@@ -2922,17 +2922,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.29
+          "amount": 51.82
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.5
+          "amount": 40.06
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.17
+          "amount": 34.19
         }
       }
     },
@@ -2967,17 +2967,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.31
+          "amount": 51.84
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.45
+          "amount": 40.01
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.19
+          "amount": 34.21
         }
       }
     },
@@ -3012,17 +3012,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.21
+          "amount": 51.74
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.42
+          "amount": 39.98
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.15
+          "amount": 34.17
         }
       }
     },
@@ -3057,17 +3057,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.27
+          "amount": 51.8
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.44
+          "amount": 40.0
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.14
+          "amount": 34.16
         }
       }
     },
@@ -3102,17 +3102,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.35
+          "amount": 51.88
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.55
+          "amount": 40.11
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.21
+          "amount": 34.23
         }
       }
     },
@@ -3147,17 +3147,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.25
+          "amount": 51.78
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.46
+          "amount": 40.02
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.15
+          "amount": 34.17
         }
       }
     },
@@ -3192,17 +3192,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.28
+          "amount": 51.81
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.49
+          "amount": 40.05
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.15
+          "amount": 34.17
         }
       }
     },
@@ -3237,17 +3237,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.32
+          "amount": 51.85
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.54
+          "amount": 40.1
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.18
+          "amount": 34.2
         }
       }
     },
@@ -3282,17 +3282,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.35
+          "amount": 51.88
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.55
+          "amount": 40.11
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.21
+          "amount": 34.23
         }
       }
     },
@@ -3327,17 +3327,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.22
+          "amount": 51.75
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.47
+          "amount": 40.03
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.18
+          "amount": 34.2
         }
       }
     },
@@ -3372,17 +3372,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.27
+          "amount": 51.8
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.47
+          "amount": 40.03
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.14
+          "amount": 34.16
         }
       }
     },
@@ -3417,17 +3417,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.3
+          "amount": 51.83
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.44
+          "amount": 40.0
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.18
+          "amount": 34.2
         }
       }
     },
@@ -3462,17 +3462,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.31
+          "amount": 51.84
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.54
+          "amount": 40.1
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.18
+          "amount": 34.2
         }
       }
     },
@@ -3507,17 +3507,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.23
+          "amount": 51.76
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.44
+          "amount": 40.0
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.15
+          "amount": 34.17
         }
       }
     },
@@ -3552,17 +3552,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.35
+          "amount": 51.88
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.58
+          "amount": 40.14
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.22
+          "amount": 34.24
         }
       }
     },
@@ -3597,17 +3597,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.21
+          "amount": 51.74
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.42
+          "amount": 39.98
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.16
+          "amount": 34.18
         }
       }
     },
@@ -3642,17 +3642,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.26
+          "amount": 51.79
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.44
+          "amount": 40.0
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.13
+          "amount": 34.15
         }
       }
     },
@@ -3687,17 +3687,17 @@
         "A201": {
           "name": "Kalorifer Yakıtı",
           "shortName": "Kalori",
-          "amount": 57.22
+          "amount": 51.75
         },
         "A212": {
           "name": "Fuel Oil",
           "shortName": "F. Oil",
-          "amount": 42.45
+          "amount": 40.01
         },
         "A218": {
           "name": "Yüksek Kükürtlü Fuel Oil",
           "shortName": "YKFO",
-          "amount": 36.15
+          "amount": 34.17
         }
       }
     }
