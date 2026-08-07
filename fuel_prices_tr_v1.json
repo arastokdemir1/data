@@ -1,6 +1,6 @@
 {
-  "version": "opet-06.08.2026",
-  "lastUpdated": "2026-08-06T00:00:00Z",
+  "version": "opet-07.08.2026",
+  "lastUpdated": "2026-08-07T00:00:00Z",
   "currency": "TRY",
   "source": "OPET public fuel price API",
   "sourceUrl": "https://www.opet.com.tr/akaryakit-fiyatlari",
