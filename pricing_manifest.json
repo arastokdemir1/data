@@ -1,6 +1,6 @@
 {
   "version": "pricing-manifest-v1",
-  "generatedAt": "2026-08-07T20:21:30.367657Z",
+  "generatedAt": "2026-08-07T21:21:13.661030Z",
   "repository": "arastokdemir1/data",
   "baseRawUrl": "https://raw.githubusercontent.com/arastokdemir1/data/main/",
   "refreshCadence": "15_minutes_for_provider_api_files",
@@ -14,9 +14,9 @@
       "sourceType": "provider_api",
       "refreshPolicy": "automatic_15_minutes",
       "version": null,
-      "lastUpdated": "2026-08-07T00:00:00Z",
+      "lastUpdated": "2026-08-08T00:00:00Z",
       "bytes": 98,
-      "sha256": "d371e2827261bb7f71cfe2579528ffb4adacbf8b1372c16726240fac53ebcdb0"
+      "sha256": "ede4361091b2b759ecca0cd60ecb483d133433d8cfb8dbb2f4db4691b65b74c1"
     },
     {
       "id": "fuel_prices_tr_v1",
@@ -26,10 +26,10 @@
       "appRole": "city_district_fuel_prices",
       "sourceType": "provider_api",
       "refreshPolicy": "automatic_15_minutes",
-      "version": "opet-07.08.2026",
-      "lastUpdated": "2026-08-07T00:00:00Z",
-      "bytes": 89874,
-      "sha256": "431aaad82d426aa57d50bd9e3a7e63f235294273b0ec979aa07f05c3a74dd078"
+      "version": "opet-08.08.2026",
+      "lastUpdated": "2026-08-08T00:00:00Z",
+      "bytes": 89876,
+      "sha256": "60f5bba453876a2dd85bb976952bbc14fb2046f38791ca5a845658ce5d301c07"
     },
     {
       "id": "toll_matrix_tr_v1",
