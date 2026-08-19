@@ -1,6 +1,6 @@
 {
   "version": "pricing-manifest-v1",
-  "generatedAt": "2026-08-19T21:03:21.370932Z",
+  "generatedAt": "2026-08-19T21:39:25.275191Z",
   "repository": "arastokdemir1/data",
   "baseRawUrl": "https://raw.githubusercontent.com/arastokdemir1/data/main/",
   "refreshCadence": "15_minutes_for_provider_api_files",
@@ -16,7 +16,7 @@
       "version": null,
       "lastUpdated": "2026-08-20T00:00:00Z",
       "bytes": 98,
-      "sha256": "365019b6a8814d3097de37fbf8fd821024fdf142db3adb91084688b241813292"
+      "sha256": "4205156fee6b2c87190eed8db351bb6a7098f83bedb78d3ff97a584987849712"
     },
     {
       "id": "fuel_prices_tr_v1",
@@ -28,8 +28,8 @@
       "refreshPolicy": "automatic_15_minutes",
       "version": "opet-20.08.2026",
       "lastUpdated": "2026-08-20T00:00:00Z",
-      "bytes": 89901,
-      "sha256": "d7b799ccb416f74cf12c44cfc18d8133b068f944e55a214b9976d8babbb4b3d3"
+      "bytes": 89870,
+      "sha256": "be3b2468a2ce8397efe35443edf4ad79fba8da5fc9c7827ebeee77b2ffa34cb8"
     },
     {
       "id": "toll_matrix_tr_v1",
