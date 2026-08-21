@@ -1,6 +1,6 @@
 {
   "version": "pricing-manifest-v1",
-  "generatedAt": "2026-08-21T16:49:47.944474Z",
+  "generatedAt": "2026-08-21T17:43:14.391600Z",
   "repository": "arastokdemir1/data",
   "baseRawUrl": "https://raw.githubusercontent.com/arastokdemir1/data/main/",
   "refreshCadence": "15_minutes_for_provider_api_files",
