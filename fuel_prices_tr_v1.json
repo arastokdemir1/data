@@ -1,6 +1,6 @@
 {
-  "version": "opet-01.09.2026",
-  "lastUpdated": "2026-09-01T00:00:00Z",
+  "version": "opet-02.09.2026",
+  "lastUpdated": "2026-09-02T00:00:00Z",
   "currency": "TRY",
   "source": "OPET public fuel price API",
   "sourceUrl": "https://www.opet.com.tr/akaryakit-fiyatlari",
@@ -16,13 +16,13 @@
       "provinceName": "ADANA",
       "districtCode": "001001",
       "districtName": "MERKEZ",
-      "gasoline": 76.14,
-      "diesel": 82.99,
+      "gasoline": 76.23,
+      "diesel": 83.11,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.14
+          "amount": 76.23
         },
         "A110": {
           "name": "Gazyağı",
@@ -32,12 +32,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.99
+          "amount": 83.11
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.99
+          "amount": 83.11
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -61,13 +61,13 @@
       "provinceName": "ADIYAMAN",
       "districtCode": "002001",
       "districtName": "MERKEZ",
-      "gasoline": 76.48,
-      "diesel": 83.36,
+      "gasoline": 76.57,
+      "diesel": 83.48,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.48
+          "amount": 76.57
         },
         "A110": {
           "name": "Gazyağı",
@@ -77,12 +77,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.36
+          "amount": 83.48
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.36
+          "amount": 83.48
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -106,13 +106,13 @@
       "provinceName": "AFYONKARAHİSAR",
       "districtCode": "003001",
       "districtName": "MERKEZ",
-      "gasoline": 76.41,
-      "diesel": 83.38,
+      "gasoline": 76.5,
+      "diesel": 83.5,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.41
+          "amount": 76.5
         },
         "A110": {
           "name": "Gazyağı",
@@ -122,12 +122,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.38
+          "amount": 83.5
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.38
+          "amount": 83.5
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -151,13 +151,13 @@
       "provinceName": "AĞRI",
       "districtCode": "004001",
       "districtName": "MERKEZ",
-      "gasoline": 76.85,
-      "diesel": 83.7,
+      "gasoline": 76.94,
+      "diesel": 83.82,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.85
+          "amount": 76.94
         },
         "A110": {
           "name": "Gazyağı",
@@ -167,12 +167,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.7
+          "amount": 83.82
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.7
+          "amount": 83.82
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -196,13 +196,13 @@
       "provinceName": "AKSARAY",
       "districtCode": "068001",
       "districtName": "MERKEZ",
-      "gasoline": 76.21,
-      "diesel": 83.06,
+      "gasoline": 76.3,
+      "diesel": 83.18,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.21
+          "amount": 76.3
         },
         "A110": {
           "name": "Gazyağı",
@@ -212,12 +212,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.06
+          "amount": 83.18
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.06
+          "amount": 83.18
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -241,13 +241,13 @@
       "provinceName": "AMASYA",
       "districtCode": "005001",
       "districtName": "MERKEZ",
-      "gasoline": 75.9,
-      "diesel": 82.74,
+      "gasoline": 75.99,
+      "diesel": 82.86,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.9
+          "amount": 75.99
         },
         "A110": {
           "name": "Gazyağı",
@@ -257,12 +257,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.74
+          "amount": 82.86
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.74
+          "amount": 82.86
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -286,13 +286,13 @@
       "provinceName": "ANKARA",
       "districtCode": "006001",
       "districtName": "MERKEZ",
-      "gasoline": 75.3,
-      "diesel": 82.16,
+      "gasoline": 75.39,
+      "diesel": 82.28,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.3
+          "amount": 75.39
         },
         "A110": {
           "name": "Gazyağı",
@@ -302,12 +302,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.16
+          "amount": 82.28
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.16
+          "amount": 82.28
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -331,13 +331,13 @@
       "provinceName": "ANTALYA",
       "districtCode": "007001",
       "districtName": "MERKEZ",
-      "gasoline": 76.52,
-      "diesel": 83.47,
+      "gasoline": 76.61,
+      "diesel": 83.59,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.52
+          "amount": 76.61
         },
         "A110": {
           "name": "Gazyağı",
@@ -347,12 +347,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.47
+          "amount": 83.59
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.47
+          "amount": 83.59
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -376,13 +376,13 @@
       "provinceName": "ARDAHAN",
       "districtCode": "075002",
       "districtName": "MERKEZ",
-      "gasoline": 76.37,
-      "diesel": 83.23,
+      "gasoline": 76.46,
+      "diesel": 83.35,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.37
+          "amount": 76.46
         },
         "A110": {
           "name": "Gazyağı",
@@ -392,12 +392,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.23
+          "amount": 83.35
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.23
+          "amount": 83.35
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -421,13 +421,13 @@
       "provinceName": "ARTVİN",
       "districtCode": "008001",
       "districtName": "MERKEZ",
-      "gasoline": 76.2,
-      "diesel": 83.04,
+      "gasoline": 76.29,
+      "diesel": 83.16,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.2
+          "amount": 76.29
         },
         "A110": {
           "name": "Gazyağı",
@@ -437,12 +437,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.04
+          "amount": 83.16
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.04
+          "amount": 83.16
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -466,13 +466,13 @@
       "provinceName": "AYDIN",
       "districtCode": "009001",
       "districtName": "MERKEZ",
-      "gasoline": 75.8,
-      "diesel": 82.67,
+      "gasoline": 75.89,
+      "diesel": 82.79,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.8
+          "amount": 75.89
         },
         "A110": {
           "name": "Gazyağı",
@@ -482,12 +482,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.67
+          "amount": 82.79
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.67
+          "amount": 82.79
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -511,13 +511,13 @@
       "provinceName": "BALIKESİR",
       "districtCode": "010001",
       "districtName": "MERKEZ",
-      "gasoline": 75.9,
-      "diesel": 82.76,
+      "gasoline": 75.99,
+      "diesel": 82.88,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.9
+          "amount": 75.99
         },
         "A110": {
           "name": "Gazyağı",
@@ -527,12 +527,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.76
+          "amount": 82.88
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.76
+          "amount": 82.88
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -556,13 +556,13 @@
       "provinceName": "BARTIN",
       "districtCode": "074001",
       "districtName": "MERKEZ",
-      "gasoline": 75.62,
-      "diesel": 82.29,
+      "gasoline": 75.71,
+      "diesel": 82.41,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.62
+          "amount": 75.71
         },
         "A110": {
           "name": "Gazyağı",
@@ -572,12 +572,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.29
+          "amount": 82.41
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.29
+          "amount": 82.41
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -601,13 +601,13 @@
       "provinceName": "BATMAN",
       "districtCode": "072001",
       "districtName": "MERKEZ",
-      "gasoline": 76.78,
-      "diesel": 83.74,
+      "gasoline": 76.87,
+      "diesel": 83.86,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.78
+          "amount": 76.87
         },
         "A110": {
           "name": "Gazyağı",
@@ -617,12 +617,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.74
+          "amount": 83.86
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.74
+          "amount": 83.86
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -646,13 +646,13 @@
       "provinceName": "BAYBURT",
       "districtCode": "069001",
       "districtName": "MERKEZ",
-      "gasoline": 76.07,
-      "diesel": 82.92,
+      "gasoline": 76.16,
+      "diesel": 83.04,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.07
+          "amount": 76.16
         },
         "A110": {
           "name": "Gazyağı",
@@ -662,12 +662,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.92
+          "amount": 83.04
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.92
+          "amount": 83.04
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -691,13 +691,13 @@
       "provinceName": "BİLECİK",
       "districtCode": "011001",
       "districtName": "MERKEZ",
-      "gasoline": 75.27,
-      "diesel": 81.91,
+      "gasoline": 75.36,
+      "diesel": 82.03,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.27
+          "amount": 75.36
         },
         "A110": {
           "name": "Gazyağı",
@@ -707,12 +707,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 81.91
+          "amount": 82.03
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 81.91
+          "amount": 82.03
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -736,13 +736,13 @@
       "provinceName": "BİNGÖL",
       "districtCode": "012001",
       "districtName": "MERKEZ",
-      "gasoline": 76.87,
-      "diesel": 83.83,
+      "gasoline": 76.96,
+      "diesel": 83.95,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.87
+          "amount": 76.96
         },
         "A110": {
           "name": "Gazyağı",
@@ -752,12 +752,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.83
+          "amount": 83.95
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.83
+          "amount": 83.95
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -781,13 +781,13 @@
       "provinceName": "BİTLİS",
       "districtCode": "013002",
       "districtName": "MERKEZ",
-      "gasoline": 76.92,
-      "diesel": 83.89,
+      "gasoline": 77.01,
+      "diesel": 84.01,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.92
+          "amount": 77.01
         },
         "A110": {
           "name": "Gazyağı",
@@ -797,12 +797,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.89
+          "amount": 84.01
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.89
+          "amount": 84.01
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -826,13 +826,13 @@
       "provinceName": "BOLU",
       "districtCode": "014001",
       "districtName": "MERKEZ",
-      "gasoline": 75.39,
-      "diesel": 82.03,
+      "gasoline": 75.48,
+      "diesel": 82.15,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.39
+          "amount": 75.48
         },
         "A110": {
           "name": "Gazyağı",
@@ -842,12 +842,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.03
+          "amount": 82.15
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.03
+          "amount": 82.15
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -871,13 +871,13 @@
       "provinceName": "BURDUR",
       "districtCode": "015001",
       "districtName": "MERKEZ",
-      "gasoline": 76.36,
-      "diesel": 83.31,
+      "gasoline": 76.45,
+      "diesel": 83.43,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.36
+          "amount": 76.45
         },
         "A110": {
           "name": "Gazyağı",
@@ -887,12 +887,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.31
+          "amount": 83.43
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.31
+          "amount": 83.43
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -916,13 +916,13 @@
       "provinceName": "BURSA",
       "districtCode": "016001",
       "districtName": "MERKEZ",
-      "gasoline": 75.39,
-      "diesel": 82.05,
+      "gasoline": 75.48,
+      "diesel": 82.17,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.39
+          "amount": 75.48
         },
         "A110": {
           "name": "Gazyağı",
@@ -932,12 +932,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.05
+          "amount": 82.17
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.05
+          "amount": 82.17
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -961,13 +961,13 @@
       "provinceName": "ÇANAKKALE",
       "districtCode": "017001",
       "districtName": "MERKEZ",
-      "gasoline": 75.96,
-      "diesel": 82.8,
+      "gasoline": 76.05,
+      "diesel": 82.92,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.96
+          "amount": 76.05
         },
         "A110": {
           "name": "Gazyağı",
@@ -977,12 +977,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.8
+          "amount": 82.92
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.8
+          "amount": 82.92
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1006,13 +1006,13 @@
       "provinceName": "ÇANKIRI",
       "districtCode": "018001",
       "districtName": "MERKEZ",
-      "gasoline": 75.71,
-      "diesel": 82.57,
+      "gasoline": 75.8,
+      "diesel": 82.69,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.71
+          "amount": 75.8
         },
         "A110": {
           "name": "Gazyağı",
@@ -1022,12 +1022,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.57
+          "amount": 82.69
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.57
+          "amount": 82.69
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1051,13 +1051,13 @@
       "provinceName": "ÇORUM",
       "districtCode": "019001",
       "districtName": "MERKEZ",
-      "gasoline": 75.91,
-      "diesel": 82.74,
+      "gasoline": 76.0,
+      "diesel": 82.86,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.91
+          "amount": 76.0
         },
         "A110": {
           "name": "Gazyağı",
@@ -1067,12 +1067,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.74
+          "amount": 82.86
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.74
+          "amount": 82.86
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1096,13 +1096,13 @@
       "provinceName": "DENİZLİ",
       "districtCode": "020001",
       "districtName": "MERKEZ",
-      "gasoline": 76.06,
-      "diesel": 82.95,
+      "gasoline": 76.15,
+      "diesel": 83.07,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.06
+          "amount": 76.15
         },
         "A110": {
           "name": "Gazyağı",
@@ -1112,12 +1112,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.95
+          "amount": 83.07
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.95
+          "amount": 83.07
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1141,13 +1141,13 @@
       "provinceName": "DİYARBAKIR",
       "districtCode": "021001",
       "districtName": "MERKEZ",
-      "gasoline": 76.77,
-      "diesel": 83.74,
+      "gasoline": 76.86,
+      "diesel": 83.86,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.77
+          "amount": 76.86
         },
         "A110": {
           "name": "Gazyağı",
@@ -1157,12 +1157,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.74
+          "amount": 83.86
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.74
+          "amount": 83.86
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1186,13 +1186,13 @@
       "provinceName": "DÜZCE",
       "districtCode": "081001",
       "districtName": "MERKEZ",
-      "gasoline": 75.23,
-      "diesel": 81.88,
+      "gasoline": 75.32,
+      "diesel": 82.0,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.23
+          "amount": 75.32
         },
         "A110": {
           "name": "Gazyağı",
@@ -1202,12 +1202,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 81.88
+          "amount": 82.0
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 81.88
+          "amount": 82.0
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1231,13 +1231,13 @@
       "provinceName": "EDİRNE",
       "districtCode": "022003",
       "districtName": "MERKEZ",
-      "gasoline": 75.43,
-      "diesel": 82.31,
+      "gasoline": 75.52,
+      "diesel": 82.43,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.43
+          "amount": 75.52
         },
         "A110": {
           "name": "Gazyağı",
@@ -1247,12 +1247,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.31
+          "amount": 82.43
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.31
+          "amount": 82.43
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1276,13 +1276,13 @@
       "provinceName": "ELAZIĞ",
       "districtCode": "023001",
       "districtName": "MERKEZ",
-      "gasoline": 76.92,
-      "diesel": 83.87,
+      "gasoline": 77.01,
+      "diesel": 83.99,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.92
+          "amount": 77.01
         },
         "A110": {
           "name": "Gazyağı",
@@ -1292,12 +1292,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.87
+          "amount": 83.99
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.87
+          "amount": 83.99
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1321,13 +1321,13 @@
       "provinceName": "ERZİNCAN",
       "districtCode": "024001",
       "districtName": "MERKEZ",
-      "gasoline": 76.31,
-      "diesel": 83.16,
+      "gasoline": 76.4,
+      "diesel": 83.28,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.31
+          "amount": 76.4
         },
         "A110": {
           "name": "Gazyağı",
@@ -1337,12 +1337,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.16
+          "amount": 83.28
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.16
+          "amount": 83.28
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1366,13 +1366,13 @@
       "provinceName": "ERZURUM",
       "districtCode": "025001",
       "districtName": "MERKEZ",
-      "gasoline": 76.36,
-      "diesel": 83.22,
+      "gasoline": 76.45,
+      "diesel": 83.34,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.36
+          "amount": 76.45
         },
         "A110": {
           "name": "Gazyağı",
@@ -1382,12 +1382,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.22
+          "amount": 83.34
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.22
+          "amount": 83.34
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1411,13 +1411,13 @@
       "provinceName": "ESKİŞEHİR",
       "districtCode": "026001",
       "districtName": "MERKEZ",
-      "gasoline": 75.58,
-      "diesel": 82.24,
+      "gasoline": 75.67,
+      "diesel": 82.36,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.58
+          "amount": 75.67
         },
         "A110": {
           "name": "Gazyağı",
@@ -1427,12 +1427,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.24
+          "amount": 82.36
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.24
+          "amount": 82.36
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1456,13 +1456,13 @@
       "provinceName": "GAZİANTEP",
       "districtCode": "027001",
       "districtName": "MERKEZ",
-      "gasoline": 76.28,
-      "diesel": 83.12,
+      "gasoline": 76.37,
+      "diesel": 83.24,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.28
+          "amount": 76.37
         },
         "A110": {
           "name": "Gazyağı",
@@ -1472,12 +1472,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.12
+          "amount": 83.24
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.12
+          "amount": 83.24
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1501,13 +1501,13 @@
       "provinceName": "GİRESUN",
       "districtCode": "028001",
       "districtName": "MERKEZ",
-      "gasoline": 76.12,
-      "diesel": 82.98,
+      "gasoline": 76.21,
+      "diesel": 83.1,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.12
+          "amount": 76.21
         },
         "A110": {
           "name": "Gazyağı",
@@ -1517,12 +1517,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.98
+          "amount": 83.1
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.98
+          "amount": 83.1
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1546,13 +1546,13 @@
       "provinceName": "GÜMÜŞHANE",
       "districtCode": "029002",
       "districtName": "MERKEZ",
-      "gasoline": 76.08,
-      "diesel": 82.92,
+      "gasoline": 76.17,
+      "diesel": 83.04,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.08
+          "amount": 76.17
         },
         "A110": {
           "name": "Gazyağı",
@@ -1562,12 +1562,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.92
+          "amount": 83.04
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.92
+          "amount": 83.04
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1591,13 +1591,13 @@
       "provinceName": "HAKKARİ",
       "districtCode": "030002",
       "districtName": "MERKEZ",
-      "gasoline": 76.93,
-      "diesel": 83.89,
+      "gasoline": 77.02,
+      "diesel": 84.01,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.93
+          "amount": 77.02
         },
         "A110": {
           "name": "Gazyağı",
@@ -1607,12 +1607,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.89
+          "amount": 84.01
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.89
+          "amount": 84.01
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1636,13 +1636,13 @@
       "provinceName": "HATAY",
       "districtCode": "031001",
       "districtName": "MERKEZ",
-      "gasoline": 76.01,
-      "diesel": 82.88,
+      "gasoline": 76.1,
+      "diesel": 83.0,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.01
+          "amount": 76.1
         },
         "A110": {
           "name": "Gazyağı",
@@ -1652,12 +1652,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.88
+          "amount": 83.0
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.88
+          "amount": 83.0
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1681,13 +1681,13 @@
       "provinceName": "IĞDIR",
       "districtCode": "076001",
       "districtName": "MERKEZ",
-      "gasoline": 76.82,
-      "diesel": 83.69,
+      "gasoline": 76.91,
+      "diesel": 83.81,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.82
+          "amount": 76.91
         },
         "A110": {
           "name": "Gazyağı",
@@ -1697,12 +1697,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.69
+          "amount": 83.81
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.69
+          "amount": 83.81
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1726,13 +1726,13 @@
       "provinceName": "ISPARTA",
       "districtCode": "032001",
       "districtName": "MERKEZ",
-      "gasoline": 76.41,
-      "diesel": 83.37,
+      "gasoline": 76.5,
+      "diesel": 83.49,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.41
+          "amount": 76.5
         },
         "A110": {
           "name": "Gazyağı",
@@ -1742,12 +1742,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.37
+          "amount": 83.49
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.37
+          "amount": 83.49
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1771,13 +1771,13 @@
       "provinceName": "İSTANBUL ANADOLU",
       "districtCode": "034002",
       "districtName": "ANADOLU_Y_MERKEZ",
-      "gasoline": 74.2,
-      "diesel": 80.92,
+      "gasoline": 74.29,
+      "diesel": 81.04,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 74.2
+          "amount": 74.29
         },
         "A110": {
           "name": "Gazyağı",
@@ -1787,12 +1787,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 80.92
+          "amount": 81.04
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 80.92
+          "amount": 81.04
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1816,13 +1816,13 @@
       "provinceName": "İSTANBUL AVRUPA",
       "districtCode": "934004",
       "districtName": "MERKEZ",
-      "gasoline": 74.35,
-      "diesel": 81.04,
+      "gasoline": 74.44,
+      "diesel": 81.16,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 74.35
+          "amount": 74.44
         },
         "A110": {
           "name": "Gazyağı",
@@ -1832,12 +1832,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 81.04
+          "amount": 81.16
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 81.04
+          "amount": 81.16
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1861,13 +1861,13 @@
       "provinceName": "İZMİR",
       "districtCode": "035001",
       "districtName": "MERKEZ",
-      "gasoline": 75.59,
-      "diesel": 82.44,
+      "gasoline": 75.68,
+      "diesel": 82.56,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.59
+          "amount": 75.68
         },
         "A110": {
           "name": "Gazyağı",
@@ -1877,12 +1877,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.44
+          "amount": 82.56
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.44
+          "amount": 82.56
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1906,13 +1906,13 @@
       "provinceName": "KAHRAMANMARAŞ",
       "districtCode": "046001",
       "districtName": "MERKEZ",
-      "gasoline": 76.26,
-      "diesel": 83.15,
+      "gasoline": 76.35,
+      "diesel": 83.27,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.26
+          "amount": 76.35
         },
         "A110": {
           "name": "Gazyağı",
@@ -1922,12 +1922,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.15
+          "amount": 83.27
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.15
+          "amount": 83.27
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1951,13 +1951,13 @@
       "provinceName": "KARABÜK",
       "districtCode": "078001",
       "districtName": "MERKEZ",
-      "gasoline": 75.64,
-      "diesel": 82.3,
+      "gasoline": 75.73,
+      "diesel": 82.42,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.64
+          "amount": 75.73
         },
         "A110": {
           "name": "Gazyağı",
@@ -1967,12 +1967,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.3
+          "amount": 82.42
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.3
+          "amount": 82.42
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -1996,13 +1996,13 @@
       "provinceName": "KARAMAN",
       "districtCode": "070001",
       "districtName": "MERKEZ",
-      "gasoline": 76.19,
-      "diesel": 83.06,
+      "gasoline": 76.28,
+      "diesel": 83.18,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.19
+          "amount": 76.28
         },
         "A110": {
           "name": "Gazyağı",
@@ -2012,12 +2012,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.06
+          "amount": 83.18
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.06
+          "amount": 83.18
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2041,13 +2041,13 @@
       "provinceName": "KARS",
       "districtCode": "036001",
       "districtName": "MERKEZ",
-      "gasoline": 76.37,
-      "diesel": 83.22,
+      "gasoline": 76.46,
+      "diesel": 83.34,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.37
+          "amount": 76.46
         },
         "A110": {
           "name": "Gazyağı",
@@ -2057,12 +2057,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.22
+          "amount": 83.34
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.22
+          "amount": 83.34
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2086,13 +2086,13 @@
       "provinceName": "KASTAMONU",
       "districtCode": "037001",
       "districtName": "MERKEZ",
-      "gasoline": 76.01,
-      "diesel": 82.84,
+      "gasoline": 76.1,
+      "diesel": 82.96,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.01
+          "amount": 76.1
         },
         "A110": {
           "name": "Gazyağı",
@@ -2102,12 +2102,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.84
+          "amount": 82.96
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.84
+          "amount": 82.96
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2131,13 +2131,13 @@
       "provinceName": "KAYSERİ",
       "districtCode": "038001",
       "districtName": "MERKEZ",
-      "gasoline": 76.31,
-      "diesel": 83.17,
+      "gasoline": 76.4,
+      "diesel": 83.29,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.31
+          "amount": 76.4
         },
         "A110": {
           "name": "Gazyağı",
@@ -2147,12 +2147,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.17
+          "amount": 83.29
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.17
+          "amount": 83.29
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2176,13 +2176,13 @@
       "provinceName": "KIRIKKALE",
       "districtCode": "071001",
       "districtName": "MERKEZ",
-      "gasoline": 75.61,
-      "diesel": 82.46,
+      "gasoline": 75.7,
+      "diesel": 82.58,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.61
+          "amount": 75.7
         },
         "A110": {
           "name": "Gazyağı",
@@ -2192,12 +2192,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.46
+          "amount": 82.58
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.46
+          "amount": 82.58
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2221,13 +2221,13 @@
       "provinceName": "KIRKLARELİ",
       "districtCode": "039001",
       "districtName": "MERKEZ",
-      "gasoline": 75.42,
-      "diesel": 82.29,
+      "gasoline": 75.51,
+      "diesel": 82.41,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.42
+          "amount": 75.51
         },
         "A110": {
           "name": "Gazyağı",
@@ -2237,12 +2237,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.29
+          "amount": 82.41
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.29
+          "amount": 82.41
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2266,13 +2266,13 @@
       "provinceName": "KIRŞEHİR",
       "districtCode": "040001",
       "districtName": "MERKEZ",
-      "gasoline": 75.65,
-      "diesel": 82.52,
+      "gasoline": 75.74,
+      "diesel": 82.64,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.65
+          "amount": 75.74
         },
         "A110": {
           "name": "Gazyağı",
@@ -2282,12 +2282,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.52
+          "amount": 82.64
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.52
+          "amount": 82.64
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2311,13 +2311,13 @@
       "provinceName": "KİLİS",
       "districtCode": "079001",
       "districtName": "MERKEZ",
-      "gasoline": 76.01,
-      "diesel": 82.89,
+      "gasoline": 76.1,
+      "diesel": 83.01,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.01
+          "amount": 76.1
         },
         "A110": {
           "name": "Gazyağı",
@@ -2327,12 +2327,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.89
+          "amount": 83.01
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.89
+          "amount": 83.01
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2356,13 +2356,13 @@
       "provinceName": "KOCAELİ",
       "districtCode": "041001",
       "districtName": "MERKEZ",
-      "gasoline": 74.75,
-      "diesel": 81.41,
+      "gasoline": 74.84,
+      "diesel": 81.53,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 74.75
+          "amount": 74.84
         },
         "A110": {
           "name": "Gazyağı",
@@ -2372,12 +2372,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 81.41
+          "amount": 81.53
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 81.41
+          "amount": 81.53
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2401,13 +2401,13 @@
       "provinceName": "KONYA",
       "districtCode": "042001",
       "districtName": "MERKEZ",
-      "gasoline": 76.32,
-      "diesel": 83.32,
+      "gasoline": 76.41,
+      "diesel": 83.44,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.32
+          "amount": 76.41
         },
         "A110": {
           "name": "Gazyağı",
@@ -2417,12 +2417,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.32
+          "amount": 83.44
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.32
+          "amount": 83.44
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2446,13 +2446,13 @@
       "provinceName": "KÜTAHYA",
       "districtCode": "043001",
       "districtName": "MERKEZ",
-      "gasoline": 76.26,
-      "diesel": 82.92,
+      "gasoline": 76.35,
+      "diesel": 83.04,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.26
+          "amount": 76.35
         },
         "A110": {
           "name": "Gazyağı",
@@ -2462,12 +2462,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.92
+          "amount": 83.04
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.92
+          "amount": 83.04
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2491,13 +2491,13 @@
       "provinceName": "MALATYA",
       "districtCode": "044001",
       "districtName": "MERKEZ",
-      "gasoline": 76.48,
-      "diesel": 83.35,
+      "gasoline": 76.57,
+      "diesel": 83.47,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.48
+          "amount": 76.57
         },
         "A110": {
           "name": "Gazyağı",
@@ -2507,12 +2507,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.35
+          "amount": 83.47
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.35
+          "amount": 83.47
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2536,13 +2536,13 @@
       "provinceName": "MANİSA",
       "districtCode": "045001",
       "districtName": "MERKEZ",
-      "gasoline": 75.67,
-      "diesel": 82.51,
+      "gasoline": 75.76,
+      "diesel": 82.63,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.67
+          "amount": 75.76
         },
         "A110": {
           "name": "Gazyağı",
@@ -2552,12 +2552,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.51
+          "amount": 82.63
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.51
+          "amount": 82.63
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2581,13 +2581,13 @@
       "provinceName": "MARDİN",
       "districtCode": "047002",
       "districtName": "MERKEZ",
-      "gasoline": 76.79,
-      "diesel": 83.75,
+      "gasoline": 76.88,
+      "diesel": 83.87,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.79
+          "amount": 76.88
         },
         "A110": {
           "name": "Gazyağı",
@@ -2597,12 +2597,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.75
+          "amount": 83.87
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.75
+          "amount": 83.87
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2626,13 +2626,13 @@
       "provinceName": "MERSİN",
       "districtCode": "033001",
       "districtName": "MERKEZ",
-      "gasoline": 76.13,
-      "diesel": 82.98,
+      "gasoline": 76.22,
+      "diesel": 83.1,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.13
+          "amount": 76.22
         },
         "A110": {
           "name": "Gazyağı",
@@ -2642,12 +2642,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.98
+          "amount": 83.1
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.98
+          "amount": 83.1
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2671,13 +2671,13 @@
       "provinceName": "MUĞLA",
       "districtCode": "048001",
       "districtName": "MERKEZ",
-      "gasoline": 76.07,
-      "diesel": 82.94,
+      "gasoline": 76.16,
+      "diesel": 83.06,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.07
+          "amount": 76.16
         },
         "A110": {
           "name": "Gazyağı",
@@ -2687,12 +2687,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.94
+          "amount": 83.06
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.94
+          "amount": 83.06
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2716,13 +2716,13 @@
       "provinceName": "MUŞ",
       "districtCode": "049001",
       "districtName": "MERKEZ",
-      "gasoline": 76.92,
-      "diesel": 83.87,
+      "gasoline": 77.01,
+      "diesel": 83.99,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.92
+          "amount": 77.01
         },
         "A110": {
           "name": "Gazyağı",
@@ -2732,12 +2732,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.87
+          "amount": 83.99
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.87
+          "amount": 83.99
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2761,13 +2761,13 @@
       "provinceName": "NEVŞEHİR",
       "districtCode": "050001",
       "districtName": "MERKEZ",
-      "gasoline": 76.21,
-      "diesel": 83.08,
+      "gasoline": 76.3,
+      "diesel": 83.2,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.21
+          "amount": 76.3
         },
         "A110": {
           "name": "Gazyağı",
@@ -2777,12 +2777,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.08
+          "amount": 83.2
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.08
+          "amount": 83.2
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2806,13 +2806,13 @@
       "provinceName": "NİĞDE",
       "districtCode": "051001",
       "districtName": "MERKEZ",
-      "gasoline": 76.13,
-      "diesel": 82.99,
+      "gasoline": 76.22,
+      "diesel": 83.11,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.13
+          "amount": 76.22
         },
         "A110": {
           "name": "Gazyağı",
@@ -2822,12 +2822,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.99
+          "amount": 83.11
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.99
+          "amount": 83.11
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2851,13 +2851,13 @@
       "provinceName": "ORDU",
       "districtCode": "052001",
       "districtName": "MERKEZ",
-      "gasoline": 75.92,
-      "diesel": 82.74,
+      "gasoline": 76.01,
+      "diesel": 82.86,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.92
+          "amount": 76.01
         },
         "A110": {
           "name": "Gazyağı",
@@ -2867,12 +2867,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.74
+          "amount": 82.86
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.74
+          "amount": 82.86
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2896,13 +2896,13 @@
       "provinceName": "OSMANİYE",
       "districtCode": "080001",
       "districtName": "MERKEZ",
-      "gasoline": 76.0,
-      "diesel": 82.88,
+      "gasoline": 76.09,
+      "diesel": 83.0,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.0
+          "amount": 76.09
         },
         "A110": {
           "name": "Gazyağı",
@@ -2912,12 +2912,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.88
+          "amount": 83.0
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.88
+          "amount": 83.0
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2941,13 +2941,13 @@
       "provinceName": "RİZE",
       "districtCode": "053001",
       "districtName": "MERKEZ",
-      "gasoline": 76.06,
-      "diesel": 82.9,
+      "gasoline": 76.15,
+      "diesel": 83.02,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.06
+          "amount": 76.15
         },
         "A110": {
           "name": "Gazyağı",
@@ -2957,12 +2957,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.9
+          "amount": 83.02
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.9
+          "amount": 83.02
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -2986,13 +2986,13 @@
       "provinceName": "SAKARYA",
       "districtCode": "054001",
       "districtName": "MERKEZ",
-      "gasoline": 75.07,
-      "diesel": 81.71,
+      "gasoline": 75.16,
+      "diesel": 81.83,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.07
+          "amount": 75.16
         },
         "A110": {
           "name": "Gazyağı",
@@ -3002,12 +3002,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 81.71
+          "amount": 81.83
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 81.71
+          "amount": 81.83
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -3031,13 +3031,13 @@
       "provinceName": "SAMSUN",
       "districtCode": "055001",
       "districtName": "MERKEZ",
-      "gasoline": 75.89,
-      "diesel": 82.73,
+      "gasoline": 75.98,
+      "diesel": 82.85,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.89
+          "amount": 75.98
         },
         "A110": {
           "name": "Gazyağı",
@@ -3047,12 +3047,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.73
+          "amount": 82.85
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.73
+          "amount": 82.85
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -3076,13 +3076,13 @@
       "provinceName": "SİİRT",
       "districtCode": "056003",
       "districtName": "MERKEZ",
-      "gasoline": 76.82,
-      "diesel": 83.78,
+      "gasoline": 76.91,
+      "diesel": 83.9,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.82
+          "amount": 76.91
         },
         "A110": {
           "name": "Gazyağı",
@@ -3092,12 +3092,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.78
+          "amount": 83.9
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.78
+          "amount": 83.9
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -3121,13 +3121,13 @@
       "provinceName": "SİNOP",
       "districtCode": "057001",
       "districtName": "MERKEZ",
-      "gasoline": 75.95,
-      "diesel": 82.79,
+      "gasoline": 76.04,
+      "diesel": 82.91,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.95
+          "amount": 76.04
         },
         "A110": {
           "name": "Gazyağı",
@@ -3137,12 +3137,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.79
+          "amount": 82.91
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.79
+          "amount": 82.91
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -3166,13 +3166,13 @@
       "provinceName": "SİVAS",
       "districtCode": "058001",
       "districtName": "MERKEZ",
-      "gasoline": 76.31,
-      "diesel": 83.15,
+      "gasoline": 76.4,
+      "diesel": 83.27,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.31
+          "amount": 76.4
         },
         "A110": {
           "name": "Gazyağı",
@@ -3182,12 +3182,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.15
+          "amount": 83.27
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.15
+          "amount": 83.27
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -3211,13 +3211,13 @@
       "provinceName": "ŞANLIURFA",
       "districtCode": "063001",
       "districtName": "MERKEZ",
-      "gasoline": 76.46,
-      "diesel": 83.33,
+      "gasoline": 76.55,
+      "diesel": 83.45,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.46
+          "amount": 76.55
         },
         "A110": {
           "name": "Gazyağı",
@@ -3227,12 +3227,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.33
+          "amount": 83.45
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.33
+          "amount": 83.45
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -3256,13 +3256,13 @@
       "provinceName": "ŞIRNAK",
       "districtCode": "073002",
       "districtName": "MERKEZ",
-      "gasoline": 76.9,
-      "diesel": 83.87,
+      "gasoline": 76.99,
+      "diesel": 83.99,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.9
+          "amount": 76.99
         },
         "A110": {
           "name": "Gazyağı",
@@ -3272,12 +3272,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.87
+          "amount": 83.99
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.87
+          "amount": 83.99
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -3301,13 +3301,13 @@
       "provinceName": "TEKİRDAĞ",
       "districtCode": "059001",
       "districtName": "MERKEZ",
-      "gasoline": 75.02,
-      "diesel": 81.89,
+      "gasoline": 75.11,
+      "diesel": 82.01,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.02
+          "amount": 75.11
         },
         "A110": {
           "name": "Gazyağı",
@@ -3317,12 +3317,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 81.89
+          "amount": 82.01
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 81.89
+          "amount": 82.01
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -3346,13 +3346,13 @@
       "provinceName": "TOKAT",
       "districtCode": "060001",
       "districtName": "MERKEZ",
-      "gasoline": 75.95,
-      "diesel": 82.79,
+      "gasoline": 76.04,
+      "diesel": 82.91,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.95
+          "amount": 76.04
         },
         "A110": {
           "name": "Gazyağı",
@@ -3362,12 +3362,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.79
+          "amount": 82.91
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.79
+          "amount": 82.91
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -3391,13 +3391,13 @@
       "provinceName": "TRABZON",
       "districtCode": "061001",
       "districtName": "MERKEZ",
-      "gasoline": 76.05,
-      "diesel": 82.89,
+      "gasoline": 76.14,
+      "diesel": 83.01,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.05
+          "amount": 76.14
         },
         "A110": {
           "name": "Gazyağı",
@@ -3407,12 +3407,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.89
+          "amount": 83.01
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.89
+          "amount": 83.01
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -3436,13 +3436,13 @@
       "provinceName": "TUNCELİ",
       "districtCode": "062001",
       "districtName": "MERKEZ",
-      "gasoline": 76.9,
-      "diesel": 83.83,
+      "gasoline": 76.99,
+      "diesel": 83.95,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.9
+          "amount": 76.99
         },
         "A110": {
           "name": "Gazyağı",
@@ -3452,12 +3452,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.83
+          "amount": 83.95
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.83
+          "amount": 83.95
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -3481,13 +3481,13 @@
       "provinceName": "UŞAK",
       "districtCode": "064001",
       "districtName": "MERKEZ",
-      "gasoline": 76.07,
-      "diesel": 82.92,
+      "gasoline": 76.16,
+      "diesel": 83.04,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.07
+          "amount": 76.16
         },
         "A110": {
           "name": "Gazyağı",
@@ -3497,12 +3497,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.92
+          "amount": 83.04
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.92
+          "amount": 83.04
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -3526,13 +3526,13 @@
       "provinceName": "VAN",
       "districtCode": "065001",
       "districtName": "MERKEZ",
-      "gasoline": 76.89,
-      "diesel": 83.79,
+      "gasoline": 76.98,
+      "diesel": 83.91,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 76.89
+          "amount": 76.98
         },
         "A110": {
           "name": "Gazyağı",
@@ -3542,12 +3542,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 83.79
+          "amount": 83.91
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 83.79
+          "amount": 83.91
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -3571,13 +3571,13 @@
       "provinceName": "YALOVA",
       "districtCode": "077001",
       "districtName": "MERKEZ",
-      "gasoline": 75.03,
-      "diesel": 81.69,
+      "gasoline": 75.12,
+      "diesel": 81.81,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.03
+          "amount": 75.12
         },
         "A110": {
           "name": "Gazyağı",
@@ -3587,12 +3587,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 81.69
+          "amount": 81.81
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 81.69
+          "amount": 81.81
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -3616,13 +3616,13 @@
       "provinceName": "YOZGAT",
       "districtCode": "066001",
       "districtName": "MERKEZ",
-      "gasoline": 75.99,
-      "diesel": 82.85,
+      "gasoline": 76.08,
+      "diesel": 82.97,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.99
+          "amount": 76.08
         },
         "A110": {
           "name": "Gazyağı",
@@ -3632,12 +3632,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.85
+          "amount": 82.97
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.85
+          "amount": 82.97
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
@@ -3661,13 +3661,13 @@
       "provinceName": "ZONGULDAK",
       "districtCode": "067001",
       "districtName": "MERKEZ",
-      "gasoline": 75.58,
-      "diesel": 82.24,
+      "gasoline": 75.67,
+      "diesel": 82.36,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 75.58
+          "amount": 75.67
         },
         "A110": {
           "name": "Gazyağı",
@@ -3677,12 +3677,12 @@
         "A121": {
           "name": "Motorin UltraForce",
           "shortName": "MT_ULT",
-          "amount": 82.24
+          "amount": 82.36
         },
         "A128": {
           "name": "Motorin EcoForce",
           "shortName": "MT_ECO",
-          "amount": 82.24
+          "amount": 82.36
         },
         "A201": {
           "name": "Kalorifer Yakıtı",
