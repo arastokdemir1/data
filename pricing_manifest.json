@@ -1,6 +1,6 @@
 {
   "version": "pricing-manifest-v1",
-  "generatedAt": "2026-09-11T11:18:55.763610Z",
+  "generatedAt": "2026-09-11T15:12:18.720647Z",
   "repository": "arastokdemir1/data",
   "baseRawUrl": "https://raw.githubusercontent.com/arastokdemir1/data/main/",
   "refreshCadence": "15_minutes_for_provider_api_files",
@@ -65,10 +65,10 @@
       "appRole": "vehicle_consumption_profiles",
       "sourceType": "curated_vehicle_catalog",
       "refreshPolicy": "catalog_release_update",
-      "version": "2026.7",
-      "lastUpdated": "2026-07-02",
-      "bytes": 723897,
-      "sha256": "48c9122b5f2f17778f128e854fafee87721861ccfe210259d6215d65444d8a30"
+      "version": "2026.9",
+      "lastUpdated": "2026-09-11",
+      "bytes": 2186242,
+      "sha256": "4ff56af7f1d92f20f7a88d093a4e036652630dba0d888723bf655b4217cf367e"
     }
   ]
 }
