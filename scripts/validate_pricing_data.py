@@ -4,11 +4,16 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import hashlib
 import json
+import os
 import sys
 from pathlib import Path
 from typing import Any
+
+from cryptography.exceptions import InvalidSignature
+from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PublicKey
 
 from update_fuel_prices_opet import CompactPrices, DataValidationError, validate_candidate
 
@@ -96,7 +101,13 @@ def validate_toll_file(path: Path) -> None:
                 raise DataValidationError(f"{name} has no usable price model")
 
 
-def validate_manifest(root: Path) -> None:
+def _canonical_manifest_payload(manifest: dict[str, Any]) -> bytes:
+    unsigned = dict(manifest)
+    unsigned.pop("signature", None)
+    return json.dumps(unsigned, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+
+
+def validate_manifest(root: Path, *, require_signature: bool = False) -> None:
     manifest = load_json(root / "pricing_manifest.json")
     entries = manifest.get("files") if isinstance(manifest, dict) else None
     if not isinstance(entries, list) or not entries:
@@ -110,6 +121,19 @@ def validate_manifest(root: Path) -> None:
         actual_hash = hashlib.sha256(path.read_bytes()).hexdigest()
         if entry.get("sha256") != actual_hash or entry.get("bytes") != path.stat().st_size:
             raise DataValidationError(f"manifest integrity mismatch: {entry['filename']}")
+    if not require_signature:
+        return
+    signature = manifest.get("signature")
+    public_key_text = os.environ.get("PRICING_MANIFEST_PUBLIC_KEY")
+    if not isinstance(signature, dict) or signature.get("algorithm") != "ed25519" or not isinstance(signature.get("value"), str):
+        raise DataValidationError("pricing manifest has no valid Ed25519 signature")
+    if not public_key_text:
+        raise DataValidationError("PRICING_MANIFEST_PUBLIC_KEY is required for signature validation")
+    try:
+        public_key = Ed25519PublicKey.from_public_bytes(base64.b64decode(public_key_text, validate=True))
+        public_key.verify(base64.b64decode(signature["value"], validate=True), _canonical_manifest_payload(manifest))
+    except (ValueError, InvalidSignature) as error:
+        raise DataValidationError("pricing manifest signature verification failed") from error
 
 
 def main() -> int:
@@ -117,6 +141,7 @@ def main() -> int:
     parser.add_argument("--root", default=".")
     parser.add_argument("--require-fuel", action="store_true")
     parser.add_argument("--require-tolls", action="store_true")
+    parser.add_argument("--require-signature", action="store_true")
     args = parser.parse_args()
     root = Path(args.root).resolve()
     if args.require_fuel:
@@ -124,7 +149,7 @@ def main() -> int:
     if args.require_tolls:
         validate_toll_file(root / "tolls_v3_app_ready.json")
         validate_toll_file(root / "toll_matrix_tr_v1.json")
-    validate_manifest(root)
+    validate_manifest(root, require_signature=args.require_signature)
     print("Semantic pricing validation passed")
     return 0
 

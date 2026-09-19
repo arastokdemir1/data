@@ -21,14 +21,14 @@ KNOWN_FILES = {
     "fuel_prices.json": {
         "category": "fuel",
         "priority": 10,
-        "refreshPolicy": "automatic_15_minutes",
+        "refreshPolicy": "github_actions_schedule_best_effort",
         "sourceType": "provider_api",
         "appRole": "current_compact_fuel_prices",
     },
     "fuel_prices_tr_v1.json": {
         "category": "fuel",
         "priority": 20,
-        "refreshPolicy": "automatic_15_minutes",
+        "refreshPolicy": "github_actions_schedule_best_effort",
         "sourceType": "provider_api",
         "appRole": "city_district_fuel_prices",
     },
@@ -135,7 +135,7 @@ def main() -> int:
         "generatedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "repository": "arastokdemir1/data",
         "baseRawUrl": "https://raw.githubusercontent.com/arastokdemir1/data/main/",
-        "refreshCadence": "15_minutes_for_provider_api_files",
+        "refreshCadence": "github_actions_schedule_best_effort",
         "files": sorted(entries, key=lambda item: (item["category"], item["priority"], item["filename"])),
     }
 

@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import json
 import hashlib
+import base64
+import os
 import sys
 import tempfile
 import unittest
@@ -13,7 +15,8 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import update_fuel_prices_opet as fuel
 import update_toll_prices as toll
-from validate_pricing_data import validate_manifest, validate_toll_file
+from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
+from validate_pricing_data import _canonical_manifest_payload, validate_manifest, validate_toll_file
 
 
 FIXTURES = ROOT / "tests" / "fixtures"
@@ -146,6 +149,36 @@ class TollAutomationTests(unittest.TestCase):
             data_file.write_text('{"version": 2}')
             with self.assertRaises(fuel.DataValidationError):
                 validate_manifest(root)
+
+    def test_signed_manifest_rejects_a_manifest_mutation(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            data_file = root / "sample.json"
+            data_file.write_text('{"version": 1}')
+            payload = data_file.read_bytes()
+            manifest = {"files": [{
+                "filename": "sample.json", "bytes": len(payload), "sha256": hashlib.sha256(payload).hexdigest(),
+            }]}
+            private_key = Ed25519PrivateKey.generate()
+            manifest["signature"] = {
+                "algorithm": "ed25519",
+                "keyId": "test",
+                "value": base64.b64encode(private_key.sign(_canonical_manifest_payload(manifest))).decode(),
+            }
+            (root / "pricing_manifest.json").write_text(json.dumps(manifest))
+            old_public_key = os.environ.get("PRICING_MANIFEST_PUBLIC_KEY")
+            os.environ["PRICING_MANIFEST_PUBLIC_KEY"] = base64.b64encode(private_key.public_key().public_bytes_raw()).decode()
+            try:
+                validate_manifest(root, require_signature=True)
+                manifest["generatedAt"] = "tampered"
+                (root / "pricing_manifest.json").write_text(json.dumps(manifest))
+                with self.assertRaises(fuel.DataValidationError):
+                    validate_manifest(root, require_signature=True)
+            finally:
+                if old_public_key is None:
+                    os.environ.pop("PRICING_MANIFEST_PUBLIC_KEY", None)
+                else:
+                    os.environ["PRICING_MANIFEST_PUBLIC_KEY"] = old_public_key
 
 
 if __name__ == "__main__":
