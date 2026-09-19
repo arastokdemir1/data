@@ -1,0 +1,4 @@
+[
+  {"provinceCode":34,"provinceName":"İSTANBUL","districtCode":"034001","districtName":"KADIKÖY","prices":[{"productCode":"A100","productName":"Kurşunsuz 95","productShortName":"KURS","amount":80.16},{"productCode":"A121","productName":"Motorin","productShortName":"MT","amount":96.12}]},
+  {"provinceCode":934,"provinceName":"İSTANBUL","districtCode":"934001","districtName":"AVRUPA","prices":[{"productCode":"A100","productName":"Kurşunsuz 95","productShortName":"KURS","amount":80.31},{"productCode":"A128","productName":"Motorin","productShortName":"MT","amount":96.24}]}
+]

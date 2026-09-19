@@ -20,17 +20,23 @@ jobs:
       - name: Checkout data repository
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install fixture test dependencies
+        run: pip install requests beautifulsoup4 pdfplumber -q
+
+      - name: Run fixture regression tests
+        run: python3 -m unittest discover -s tests -v
+
       - name: Generate dynamic pricing JSON
         run: python3 scripts/update_all_pricing_data.py --root .
 
-      - name: Validate generated JSON
+      - name: Validate generated pricing data
         run: |
-          python3 -m json.tool fuel_prices.json >/dev/null
-          python3 -m json.tool fuel_prices_tr_v1.json >/dev/null
-          python3 -m json.tool pricing_manifest.json >/dev/null
-          if [ -f toll_matrix_tr_v1.json ]; then python3 -m json.tool toll_matrix_tr_v1.json >/dev/null; fi
-          if [ -f tolls_v3_app_ready.json ]; then python3 -m json.tool tolls_v3_app_ready.json >/dev/null; fi
-          if [ -f vehicle_profiles_tr_v1.json ]; then python3 -m json.tool vehicle_profiles_tr_v1.json >/dev/null; fi
+          python3 scripts/validate_pricing_data.py --root . --require-fuel
 
       - name: Commit changed pricing data files
         uses: stefanzweifel/git-auto-commit-action@v5

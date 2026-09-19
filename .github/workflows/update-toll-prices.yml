@@ -29,6 +29,9 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4 pdfplumber -q
 
+      - name: Run fixture regression tests
+        run: python -m unittest discover -s tests -v
+
       - name: Run toll price updater
         # continue-on-error KALDIRILDI: script zaten "gerçek scrape hatası" (exit 1)
         # ile "bu hafta fiyat değişmedi" (exit 0) durumunu ayırt ediyor. Maskeleme
@@ -36,10 +39,9 @@ jobs:
         # güncellemeden yeşil görünmesine yol açtı (CarLog gişe bug'ının kök nedeni).
         run: python scripts/update_toll_prices.py --root .
 
-      - name: Validate JSON
+      - name: Validate complete toll pricing data
         run: |
-          python -m json.tool tolls_v3_app_ready.json > /dev/null
-          python -m json.tool pricing_manifest.json > /dev/null
+          python scripts/validate_pricing_data.py --root . --require-tolls
 
       - name: Commit updated toll prices
         uses: stefanzweifel/git-auto-commit-action@v5

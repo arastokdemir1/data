@@ -20,6 +20,17 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (CarLogBot/2.0)"}
 TODAY   = date.today().isoformat()
 YEAR    = date.today().year
 
+# This updater only owns these official sources. A missing one is unsafe: it
+# would otherwise publish a mixture of fresh and stale tariffs as a success.
+EXPECTED_FIXED_POINT_IDS = {
+    "15_temmuz_sehitler_koprusu", "fatih_sultan_mehmet_koprusu",
+    "yavuz_sultan_selim_koprusu", "osmangazi_koprusu", "1915_canakkale_koprusu",
+}
+EXPECTED_CORRIDOR_IDS = {
+    "kmo_anadolu_kurtkoy_akyazi", "kmo_avrupa_kinali_odayeri", "ankara_nigde_o21",
+    "malkara_canakkale_1915", "aydin_denizli", "izmir_aydin_o31", "izmir_cesme_o32",
+}
+
 # ── Yardımcı fonksiyonlar ────────────────────────────────────────────────────
 def clean_cell(s) -> str:
     s = str(s or "").strip()
@@ -212,23 +223,29 @@ def update_v3(path: Path, fp_prices: dict, cor_prices: dict) -> bool:
             cor["headlineFullTransitPrices"] = cor_prices[cid]; changed = True
     if changed:
         data["lastUpdated"] = TODAY
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
+        temporary = path.with_suffix(path.suffix + ".tmp")
+        temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        temporary.replace(path)
         print(f"✅ {path.name} güncellendi.")
     else:
         print(f"ℹ️  {path.name} değişmedi.")
     return changed
 
-def update_manifest(root: Path) -> None:
-    mp = root / "pricing_manifest.json"
-    if not mp.exists(): return
-    with open(mp, encoding="utf-8") as f: m = json.load(f)
-    m["generatedAt"] = f"{TODAY}T00:00:00Z"
-    for e in m.get("files", []):
-        if e.get("category") == "toll": e["lastUpdated"] = TODAY
-    with open(mp, "w", encoding="utf-8") as f:
-        json.dump(m, f, ensure_ascii=False, indent=2)
-    print("✅ manifest güncellendi.")
+def require_complete_scrape(fixed_prices: dict, corridor_prices: dict) -> None:
+    missing_fixed = sorted(EXPECTED_FIXED_POINT_IDS - set(fixed_prices))
+    missing_corridors = sorted(EXPECTED_CORRIDOR_IDS - set(corridor_prices))
+    if missing_fixed or missing_corridors:
+        raise RuntimeError(
+            "Incomplete official toll scrape; no data will be published. "
+            f"missing fixed={missing_fixed}, corridors={missing_corridors}"
+        )
+
+
+def regenerate_manifest(root: Path) -> None:
+    subprocess.run(
+        [sys.executable, str(Path(__file__).with_name("update_pricing_manifest.py")), "--root", str(root)],
+        check=True,
+    )
 
 def main() -> int:
     parser = argparse.ArgumentParser()
@@ -241,15 +258,15 @@ def main() -> int:
     pdf_fp, pdf_cor = ({}, {}) if args.no_pdf else scrape_pdfs()
     all_fp = {**html_fp, **pdf_fp}
 
-    if not all_fp and not pdf_cor:
-        print("⚠️  Hiçbir fiyat alınamadı."); return 1
+    require_complete_scrape(all_fp, pdf_cor)
 
-    update_v3(root / "tolls_v3_app_ready.json", all_fp, pdf_cor)
+    changed = update_v3(root / "tolls_v3_app_ready.json", all_fp, pdf_cor)
     # KRITIK: uygulama gişe fiyatlarını önce toll_matrix_tr_v1.json'dan okuyor
     # ("primary_toll_matrix") — bu dosya güncellenmezse app'te eski fiyat gösterilir.
     # Önceden sadece app_ready dosyası güncelleniyordu, matrix hiç dokunulmuyordu.
-    update_v3(root / "toll_matrix_tr_v1.json", all_fp, pdf_cor)
-    update_manifest(root)
+    changed = update_v3(root / "toll_matrix_tr_v1.json", all_fp, pdf_cor) or changed
+    if changed:
+        regenerate_manifest(root)
     return 0
 
 if __name__ == "__main__":
