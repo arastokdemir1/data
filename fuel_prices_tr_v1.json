@@ -1,14 +1,14 @@
 {
-  "version": "opet-19.09.2026",
-  "lastUpdated": "2026-09-19T00:00:00Z",
+  "version": "fuel-v2-2026-09-18",
+  "lastUpdated": "2026-09-18T21:00:00Z",
   "currency": "TRY",
   "source": "OPET public fuel price API",
   "sourceUrl": "https://www.opet.com.tr/akaryakit-fiyatlari",
   "confidence": "provider_recommended_price",
   "notes": [
-    "OPET publishes recommended fuel prices; station pump prices may differ.",
-    "LPG sourced from hasanadiguzel.com when available, otherwise preserved from previous run.",
-    "hasanadiguzel.com used as full fallback when OPET API is unavailable."
+    "Provider prices are recommended pump prices; individual stations may differ.",
+    "LPG is preserved from the last verified value when no provider value is available.",
+    "Candidate data is range, coverage, freshness and change-rate validated before publication."
   ],
   "districtPrices": [
     {
