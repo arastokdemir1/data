@@ -288,6 +288,37 @@ def build_payloads(compact: CompactPrices, districts: list[dict[str, Any]], *, s
     return compact_payload, rich_payload
 
 
+def fetch_opet_prices(lpg: float) -> tuple[CompactPrices, list[dict[str, Any]]]:
+    last_update_payload = fetch_json(f"{OPET_API_BASE}/fuelprices/lastupdate")
+    source_date = last_update_payload.get("lastUpdateDate") if isinstance(last_update_payload, dict) else None
+    if not isinstance(source_date, str):
+        raise DataValidationError("OPET lastupdate response has no lastUpdateDate")
+    all_prices = fetch_json(f"{OPET_API_BASE}/fuelprices/allprices")
+    if not isinstance(all_prices, list):
+        raise DataValidationError("OPET allprices response is not a list")
+    districts = [normalize_district(row) for row in all_prices if isinstance(row, dict)]
+    return build_compact_prices(districts, lpg, parse_opet_date(source_date)), districts
+
+
+def select_verified_prices(lpg: float, previous: dict[str, Any] | None) -> tuple[CompactPrices, list[dict[str, Any]], str, str]:
+    """Prefer OPET, but use Aytemiz if OPET is stale or otherwise invalid."""
+    try:
+        compact, districts = fetch_opet_prices(lpg)
+        validate_candidate(compact, districts, previous=previous)
+        return compact, districts, "OPET public fuel price API", "https://www.opet.com.tr/akaryakit-fiyatlari"
+    except Exception as opet_error:
+        print(f"OPET candidate rejected: {opet_error}")
+        try:
+            districts, last_update = fetch_aytemiz_prices()
+            compact = build_compact_prices(districts, lpg, last_update)
+            validate_candidate(compact, districts, previous=previous)
+            return compact, districts, "Aytemiz official public price table (OPET fallback)", AYTEMIZ_GASOLINE_URL
+        except Exception as fallback_error:
+            raise RuntimeError(
+                f"both price providers failed validation; no files changed: OPET={opet_error}; Aytemiz={fallback_error}"
+            ) from fallback_error
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-dir", default=".", help="Directory where JSON files are written")
@@ -300,26 +331,7 @@ def main() -> int:
     except (OSError, json.JSONDecodeError):
         previous = None
     lpg = fetch_hasanadiguzel().get("lpg") or load_previous_lpg(previous_path)
-    try:
-        last_update_payload = fetch_json(f"{OPET_API_BASE}/fuelprices/lastupdate")
-        source_date = last_update_payload.get("lastUpdateDate") if isinstance(last_update_payload, dict) else None
-        if not isinstance(source_date, str):
-            raise DataValidationError("OPET lastupdate response has no lastUpdateDate")
-        all_prices = fetch_json(f"{OPET_API_BASE}/fuelprices/allprices")
-        if not isinstance(all_prices, list):
-            raise DataValidationError("OPET allprices response is not a list")
-        districts = [normalize_district(row) for row in all_prices if isinstance(row, dict)]
-        compact = build_compact_prices(districts, lpg, parse_opet_date(source_date))
-        source, source_url = "OPET public fuel price API", "https://www.opet.com.tr/akaryakit-fiyatlari"
-    except Exception as opet_error:
-        print(f"OPET fetch failed: {opet_error}")
-        try:
-            districts, last_update = fetch_aytemiz_prices()
-            compact = build_compact_prices(districts, lpg, last_update)
-            source, source_url = "Aytemiz official public price table (OPET fallback)", AYTEMIZ_GASOLINE_URL
-        except Exception as fallback_error:
-            raise RuntimeError(f"both price providers failed; no files changed: OPET={opet_error}; Aytemiz={fallback_error}") from fallback_error
-    validate_candidate(compact, districts, previous=previous)
+    compact, districts, source, source_url = select_verified_prices(lpg, previous)
     compact_payload, rich_payload = build_payloads(compact, districts, source=source, source_url=source_url)
     write_json_atomic(output_dir / "fuel_prices.json", compact_payload)
     write_json_atomic(output_dir / "fuel_prices_tr_v1.json", rich_payload)

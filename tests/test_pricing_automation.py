@@ -104,6 +104,16 @@ class FuelAutomationTests(unittest.TestCase):
         with self.assertRaises(fuel.DataValidationError):
             fuel.validate_candidate(fuel.CompactPrices(80, 90, 32, "2026-09-19T00:00:00Z"), districts(2), previous=None, now=datetime(2026, 9, 19, tzinfo=timezone.utc))
 
+    def test_stale_opet_falls_back_to_fresh_aytemiz(self):
+        stale_opet = fuel.CompactPrices(80, 90, 32, "2026-09-01T00:00:00Z")
+        fresh_aytemiz = fuel.CompactPrices(81, 91, 32, datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"))
+        with patch.object(fuel, "fetch_opet_prices", return_value=(stale_opet, districts())), \
+             patch.object(fuel, "fetch_aytemiz_prices", return_value=(districts(price=81), fresh_aytemiz.last_update)):
+            compact, selected, source, _ = fuel.select_verified_prices(32, previous=None)
+        self.assertEqual(compact, fresh_aytemiz)
+        self.assertEqual(len(selected), 70)
+        self.assertIn("Aytemiz", source)
+
 
 class TollAutomationTests(unittest.TestCase):
     def test_zero_cost_edges_are_removed_instead_of_published(self):
