@@ -1,19 +1,18 @@
 #!/usr/bin/env python3
-"""CarLog — Otomatik gişe fiyatı güncelleyici (KGM HTML + PDF tablo çekimi)."""
+"""CarLog — Otomatik gişe fiyatı güncelleyici (resmî KGM PDF tabloları)."""
 from __future__ import annotations
-import argparse, io, json, re, subprocess, sys
+import argparse, io, json, re, subprocess, sys, time
 from datetime import date
 from pathlib import Path
 
 def ensure_deps():
     try:
-        import requests, bs4, pdfplumber  # noqa
+        import requests, pdfplumber  # noqa
     except ImportError:
         subprocess.run([sys.executable,"-m","pip","install",
                         "requests","beautifulsoup4","pdfplumber","-q"], check=True)
 ensure_deps()
 import requests
-from bs4 import BeautifulSoup
 import pdfplumber
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (CarLogBot/2.0)"}
@@ -29,6 +28,14 @@ EXPECTED_FIXED_POINT_IDS = {
 EXPECTED_CORRIDOR_IDS = {
     "kmo_anadolu_kurtkoy_akyazi", "kmo_avrupa_kinali_odayeri", "ankara_nigde_o21",
     "malkara_canakkale_1915", "aydin_denizli", "izmir_aydin_o31", "izmir_cesme_o32",
+}
+BRIDGE_PDF_URL = (
+    "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/"
+    f"OtoyolKopruUcret/{YEAR}Gecis_Ucret/1-15Temmuz-FSM.pdf"
+)
+OFFICIAL_SOURCE_BY_ID = {
+    "15_temmuz_sehitler_koprusu": BRIDGE_PDF_URL,
+    "fatih_sultan_mehmet_koprusu": BRIDGE_PDF_URL,
 }
 
 # ── Yardımcı fonksiyonlar ────────────────────────────────────────────────────
@@ -52,38 +59,14 @@ def cell_to_float(s: str) -> float | None:
     except:
         return None
 
-# ── 1. FSM + 15T → HTML ─────────────────────────────────────────────────────
-KGM_BRIDGE_URL = ("https://www.kgm.gov.tr/sayfalar/kgm/sitetr/otoyollar/"
-                  "otoyolkopruucret/koprugecisucret.aspx")
-BRIDGE_HTML_IDS = ["15_temmuz_sehitler_koprusu", "fatih_sultan_mehmet_koprusu"]
-
-def scrape_bridge_html() -> dict[str, dict]:
-    print("KGM köprü HTML çekiliyor (FSM+15T)...")
-    try:
-        r = requests.get(KGM_BRIDGE_URL, headers=HEADERS, timeout=25); r.encoding = "utf-8"
-    except Exception as e:
-        print(f"  ⚠️  {e}"); return {}
-    soup = BeautifulSoup(r.text, "html.parser")
-    result: dict[str, dict] = {}
-    for table in soup.find_all("table"):
-        rows = [[td.get_text(" ",strip=True) for td in tr.find_all(["td","th"])]
-                for tr in table.find_all("tr")]
-        prices: dict[str, float] = {}
-        for row in rows:
-            cls = clean_cell(row[0]) if row else ""
-            if not cls.isdigit() or not (1 <= int(cls) <= 6): continue
-            v = cell_to_float(row[-1]) if len(row) > 1 else None
-            if v: prices[cls] = v
-        if len(prices) >= 4:
-            for fid in BRIDGE_HTML_IDS:
-                if fid not in result:
-                    result[fid] = prices
-                    print(f"  ✅ {fid}: {prices}")
-            break
-    return result
-
-# ── 2. PDF kaynakları ────────────────────────────────────────────────────────
+# ── 1. PDF kaynakları ────────────────────────────────────────────────────────
 PDF_SOURCES = [
+    # Aynı resmî tarife iki Boğaz köprüsünde de uygulanıyor. Eski HTML
+    # adresi 2026'da 404 vermeye başladığı için doğrudan KGM PDF'i kullanılır.
+    {"kind":"fixedPoint","ids":["15_temmuz_sehitler_koprusu", "fatih_sultan_mehmet_koprusu"],
+     "label":"15 Temmuz + FSM","extract":"bridge_current","urls":[
+      BRIDGE_PDF_URL,
+      f"https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/{YEAR-1}Gecis_Ucret/1-15Temmuz-FSM.pdf"]},
     # Sabit nokta köprüler (tek fiyat sütunu)
     {"kind":"fixedPoint","id":"yavuz_sultan_selim_koprusu","label":"YSS",
      "extract":"simple","urls":[
@@ -128,29 +111,64 @@ PDF_SOURCES = [
       f"https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Otoyollar/OtoyolKopruUcret/{YEAR-1}Gecis_Ucret/6-Izmir-Cesme.pdf"]},
 ]
 
-def download_pdf(urls: list[str]) -> bytes | None:
+def download_pdf(
+    urls: list[str],
+    *,
+    attempts: int = 3,
+    getter=requests.get,
+    sleeper=time.sleep,
+) -> bytes | None:
     for url in urls:
-        try:
-            r = requests.get(url, headers=HEADERS, timeout=30)
-            if r.status_code == 200 and len(r.content) > 2000:
-                return r.content
-        except: pass
+        for attempt in range(attempts):
+            try:
+                r = getter(url, headers=HEADERS, timeout=30)
+                if r.status_code == 200 and len(r.content) > 2000:
+                    return r.content
+                # 404 gibi kalıcı cevapta aynı adresi tekrar tekrar deneme;
+                # bir önceki yılın yedeğine geç.
+                if 400 <= r.status_code < 500 and r.status_code != 429:
+                    break
+            except requests.RequestException:
+                pass
+            if attempt + 1 < attempts:
+                sleeper(2 ** attempt)
     return None
+
+def extract_price_rows(rows: list, *, highest_numeric: bool = False) -> dict | None:
+    """Sınıf satırlarından fiyat çıkarır.
+
+    KGM'nin 15 Temmuz/FSM PDF'inde güncel fiyatın yanında eski tarife/fark
+    sütunu da bulunuyor. Güncel değer her satırdaki sayısal fiyatların en
+    büyüğü; tek fiyat sütunlu PDF'lerde ise son hücre kullanılmaya devam eder.
+    """
+    prices: dict[str, float] = {}
+    for row in rows:
+        cells = [clean_cell(c) for c in row if c is not None]
+        if len(cells) < 2: continue
+        cls = cells[0]
+        if not cls.isdigit() or not (1 <= int(cls) <= 6): continue
+        values = [value for cell in cells[1:]
+                  if (value := cell_to_float(cell)) is not None]
+        if values:
+            prices[cls] = max(values) if highest_numeric else values[-1]
+    return prices if len(prices) >= 4 else None
+
 
 def extract_simple(pdf_bytes: bytes) -> dict | None:
     """YSS, Osmangazi, 1915 gibi tek fiyat sütunlu köprüler."""
     with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
         for page in pdf.pages:
             for table in (page.extract_tables() or []):
-                prices: dict[str, float] = {}
-                for row in table:
-                    cells = [clean_cell(c) for c in row if c is not None]
-                    if len(cells) < 2: continue
-                    cls = cells[0]
-                    if not cls.isdigit() or not (1 <= int(cls) <= 6): continue
-                    v = cell_to_float(cells[-1])
-                    if v: prices[cls] = v
-                if len(prices) >= 4:
+                if prices := extract_price_rows(table): return prices
+    return None
+
+
+def extract_bridge_current(pdf_bytes: bytes) -> dict | None:
+    """15 Temmuz/FSM tablosunda güncel fiyatı eski yan sütundan ayırır."""
+    with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
+        for page in pdf.pages:
+            for table in (page.extract_tables() or []):
+                if prices := extract_price_rows(table, highest_numeric=True):
                     return prices
     return None
 
@@ -199,16 +217,23 @@ def scrape_pdfs() -> tuple[dict, dict]:
         data = download_pdf(src["urls"])
         if not data:
             print("  ⚠️  İndirilemedi"); continue
-        fn = extract_simple if src["extract"] == "simple" else extract_matrix
+        fn = {
+            "simple": extract_simple,
+            "bridge_current": extract_bridge_current,
+            "matrix": extract_matrix,
+        }[src["extract"]]
         prices = fn(data)
         if prices:
-            (fp if src["kind"] == "fixedPoint" else cor)[src["id"]] = prices
-            print(f"  ✅ {src['id']}: {prices}")
+            target_ids = src["ids"] if "ids" in src else [src["id"]]
+            target = fp if src["kind"] == "fixedPoint" else cor
+            for target_id in target_ids:
+                target[target_id] = dict(prices)
+                print(f"  ✅ {target_id}: {prices}")
         else:
             print("  ⚠️  Fiyat çıkarılamadı")
     return fp, cor
 
-# ── 3. JSON güncelleme ───────────────────────────────────────────────────────
+# ── 2. JSON güncelleme ───────────────────────────────────────────────────────
 def update_v3(path: Path, fp_prices: dict, cor_prices: dict) -> bool:
     if not path.exists(): return False
     with open(path, encoding="utf-8") as f: data = json.load(f)
@@ -217,6 +242,9 @@ def update_v3(path: Path, fp_prices: dict, cor_prices: dict) -> bool:
         fid = fp.get("id", "")
         if fid in fp_prices and fp.get("prices") != fp_prices[fid]:
             fp["prices"] = fp_prices[fid]; changed = True
+        official_source = OFFICIAL_SOURCE_BY_ID.get(fid)
+        if official_source and fp.get("officialSource") != official_source:
+            fp["officialSource"] = official_source; changed = True
     for cor in data.get("corridors", []):
         cid = cor.get("id", "")
         if cid in cor_prices and cor.get("headlineFullTransitPrices") != cor_prices[cid]:
@@ -230,6 +258,38 @@ def update_v3(path: Path, fp_prices: dict, cor_prices: dict) -> bool:
     else:
         print(f"ℹ️  {path.name} değişmedi.")
     return changed
+
+
+def remove_zero_cost_matrix_edges(path: Path) -> bool:
+    """Farklı istasyonlar arasındaki sıfır ücretli bozuk kenarları kaldırır.
+
+    Sıfırı gerçek bir fiyat gibi yayınlamak ücretsiz geçiş gösterir. Kenarı
+    kaldırmak daha güvenlidir: uygulama kesin olmayan durumda kendi tahmini
+    geri dönüşünü kullanır ve semantik doğrulama sıfır fiyatı kabul etmez.
+    """
+    if not path.exists(): return False
+    with open(path, encoding="utf-8") as handle:
+        data = json.load(handle)
+    removed: list[str] = []
+    for corridor in data.get("corridors", []):
+        matrix = corridor.get("matrix")
+        if not isinstance(matrix, dict): continue
+        for source_id, destinations in matrix.items():
+            if not isinstance(destinations, dict): continue
+            for destination_id, prices in list(destinations.items()):
+                if source_id == destination_id or not isinstance(prices, dict) or not prices:
+                    continue
+                values = list(prices.values())
+                if all(isinstance(value, (int, float)) and value == 0 for value in values):
+                    del destinations[destination_id]
+                    removed.append(f"{corridor.get('id')}:{source_id}->{destination_id}")
+    if not removed: return False
+    data["lastUpdated"] = TODAY
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    temporary.replace(path)
+    print(f"⚠️  {path.name}: {len(removed)} sıfır ücretli bozuk matris kenarı kaldırıldı.")
+    return True
 
 def require_complete_scrape(fixed_prices: dict, corridor_prices: dict) -> None:
     missing_fixed = sorted(EXPECTED_FIXED_POINT_IDS - set(fixed_prices))
@@ -254,17 +314,17 @@ def main() -> int:
     args = parser.parse_args()
     root = Path(args.root).resolve()
 
-    html_fp = scrape_bridge_html()
     pdf_fp, pdf_cor = ({}, {}) if args.no_pdf else scrape_pdfs()
-    all_fp = {**html_fp, **pdf_fp}
 
-    require_complete_scrape(all_fp, pdf_cor)
+    require_complete_scrape(pdf_fp, pdf_cor)
 
-    changed = update_v3(root / "tolls_v3_app_ready.json", all_fp, pdf_cor)
+    changed = update_v3(root / "tolls_v3_app_ready.json", pdf_fp, pdf_cor)
     # KRITIK: uygulama gişe fiyatlarını önce toll_matrix_tr_v1.json'dan okuyor
     # ("primary_toll_matrix") — bu dosya güncellenmezse app'te eski fiyat gösterilir.
     # Önceden sadece app_ready dosyası güncelleniyordu, matrix hiç dokunulmuyordu.
-    changed = update_v3(root / "toll_matrix_tr_v1.json", all_fp, pdf_cor) or changed
+    matrix_path = root / "toll_matrix_tr_v1.json"
+    changed = update_v3(matrix_path, pdf_fp, pdf_cor) or changed
+    changed = remove_zero_cost_matrix_edges(matrix_path) or changed
     if changed:
         regenerate_manifest(root)
     return 0

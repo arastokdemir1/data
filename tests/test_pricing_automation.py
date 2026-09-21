@@ -7,6 +7,7 @@ import os
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -105,6 +106,85 @@ class FuelAutomationTests(unittest.TestCase):
 
 
 class TollAutomationTests(unittest.TestCase):
+    def test_zero_cost_edges_are_removed_instead_of_published(self):
+        payload = {
+            "lastUpdated": "old",
+            "corridors": [{
+                "id": "road",
+                "matrix": {
+                    "entry": {
+                        "entry": {"1": 0, "2": 0, "3": 0, "4": 0},
+                        "broken_exit": {"1": 0, "2": 0, "3": 0, "4": 0},
+                        "paid_exit": {"1": 10, "2": 20, "3": 30, "4": 40},
+                    }
+                },
+            }],
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "matrix.json"
+            path.write_text(json.dumps(payload))
+            self.assertTrue(toll.remove_zero_cost_matrix_edges(path))
+            cleaned = json.loads(path.read_text())
+        destinations = cleaned["corridors"][0]["matrix"]["entry"]
+        self.assertIn("entry", destinations, "Aynı istasyon diyagonali korunmalı")
+        self.assertNotIn("broken_exit", destinations)
+        self.assertIn("paid_exit", destinations)
+
+    def test_pdf_download_retries_a_transient_failure(self):
+        attempts = 0
+
+        class Response:
+            status_code = 200
+            content = b"%PDF" + (b"x" * 3000)
+
+        def getter(*_, **__):
+            nonlocal attempts
+            attempts += 1
+            if attempts == 1:
+                raise toll.requests.ConnectionError("temporary outage")
+            return Response()
+
+        payload = toll.download_pdf(
+            ["https://example.test/toll.pdf"],
+            attempts=2,
+            getter=getter,
+            sleeper=lambda _: None,
+        )
+        self.assertIsNotNone(payload)
+        self.assertEqual(attempts, 2)
+
+    def test_bridge_pdf_uses_current_tariff_not_old_side_column(self):
+        rows = [
+            ["ARAÇ SINIF", "ARAÇ TİPİ", "KÖPRÜ GEÇİŞ ÜCRETİ", "Mevcut Tarife"],
+            ["1", "İki akslı", "59,00", "8,75"],
+            ["2", "İki akslı büyük", "75,00", "11,25"],
+            ["3", "Üç akslı", "168,00", "24,5"],
+            ["4", "Dört veya beş akslı", "333,00", "49"],
+            ["5", "Altı akslı", "440,00", "65,25"],
+            ["6", "Motosiklet", "25,00", "3,5"],
+        ]
+        self.assertEqual(
+            toll.extract_price_rows(rows, highest_numeric=True),
+            {"1": 59.0, "2": 75.0, "3": 168.0, "4": 333.0, "5": 440.0, "6": 25.0},
+        )
+
+    def test_shared_bridge_pdf_populates_both_fixed_points(self):
+        source = {
+            "kind": "fixedPoint",
+            "ids": ["15_temmuz_sehitler_koprusu", "fatih_sultan_mehmet_koprusu"],
+            "label": "15 Temmuz + FSM",
+            "extract": "bridge_current",
+            "urls": ["https://example.test/bridges.pdf"],
+        }
+        prices = {"1": 59.0, "2": 75.0, "3": 168.0, "4": 333.0}
+        with patch.object(toll, "PDF_SOURCES", [source]), \
+             patch.object(toll, "download_pdf", return_value=b"pdf"), \
+             patch.object(toll, "extract_bridge_current", return_value=prices):
+            fixed, corridors = toll.scrape_pdfs()
+        self.assertEqual(corridors, {})
+        self.assertEqual(fixed[source["ids"][0]], prices)
+        self.assertEqual(fixed[source["ids"][1]], prices)
+
     def test_partial_scrape_never_reaches_publish_step(self):
         with self.assertRaises(RuntimeError):
             toll.require_complete_scrape({}, {})
