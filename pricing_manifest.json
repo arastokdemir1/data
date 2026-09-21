@@ -1,6 +1,6 @@
 {
   "version": "pricing-manifest-v1",
-  "generatedAt": "2026-09-21T14:07:01.093859Z",
+  "generatedAt": "2026-09-21T16:41:51.962754Z",
   "repository": "arastokdemir1/data",
   "baseRawUrl": "https://raw.githubusercontent.com/arastokdemir1/data/main/",
   "refreshCadence": "github_actions_schedule_best_effort",
@@ -40,9 +40,9 @@
       "sourceType": "official_tariff_matrix",
       "refreshPolicy": "source_change_or_manual_tariff_update",
       "version": "2026.5-matrix",
-      "lastUpdated": "2026-07-13",
-      "bytes": 605606,
-      "sha256": "f35bc851defa58137caf280666e8b43ee0a7dae4778f5c5ee02aaf80e18c77e5"
+      "lastUpdated": "2026-09-21",
+      "bytes": 604598,
+      "sha256": "85e44e6538af724169de0dfbc88739a11cf8dd6c9f2ae91862605fe63d4d18e9"
     },
     {
       "id": "tolls_v3_app_ready",
@@ -53,9 +53,9 @@
       "sourceType": "official_tariff_fallback",
       "refreshPolicy": "source_change_or_manual_tariff_update",
       "version": "2026.2-app-ready",
-      "lastUpdated": "2026-07-13",
-      "bytes": 19750,
-      "sha256": "f115c5c7c6d22e5d91a1af60bd677bf1ad39febd12e44fedc873f10343a522ba"
+      "lastUpdated": "2026-09-21",
+      "bytes": 19815,
+      "sha256": "bd34eeb6a60e5aa3b9f7ff85c3678c11833d95d20a863120a0b0fe32b3f92e38"
     },
     {
       "id": "vehicle_profiles_tr_v1",
@@ -74,6 +74,6 @@
   "signature": {
     "algorithm": "ed25519",
     "keyId": "pricing-manifest-v1",
-    "value": "wkXK2iqakhlsOAGZF/ygrBMQZEmP+d/PqAHzXEp901UUSNHIaBIrJfAUhuX9jtStNbCgLojruW/j31PlnpH7Dw=="
+    "value": "BaJpNHaJ8yRwJPh2f8/uLo3UCPkiZTGkaD7ofuSGFSxv8M4krC9Z2ukMh7fO3mwuFTmiVDODe9jQtEMJLr7eAQ=="
   }
 }
