@@ -1,6 +1,6 @@
 {
-  "version": "fuel-v2-2026-09-21",
-  "lastUpdated": "2026-09-21T23:42:00Z",
+  "version": "fuel-v2-2026-09-22",
+  "lastUpdated": "2026-09-22T01:35:00Z",
   "currency": "TRY",
   "source": "Aytemiz official public price table (OPET fallback)",
   "sourceUrl": "https://www.aytemiz.com.tr/akaryakit-fiyatlari/benzin-fiyatlari",
