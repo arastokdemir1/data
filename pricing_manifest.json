@@ -1,6 +1,6 @@
 {
   "version": "pricing-manifest-v1",
-  "generatedAt": "2026-09-30T06:00:31.119848Z",
+  "generatedAt": "2026-09-30T08:50:16.033153Z",
   "repository": "arastokdemir1/data",
   "baseRawUrl": "https://raw.githubusercontent.com/arastokdemir1/data/main/",
   "refreshCadence": "github_actions_schedule_best_effort",
@@ -39,10 +39,10 @@
       "appRole": "primary_toll_matrix",
       "sourceType": "official_tariff_matrix",
       "refreshPolicy": "source_change_or_manual_tariff_update",
-      "version": "2026.5-matrix",
-      "lastUpdated": "2026-09-21",
-      "bytes": 604598,
-      "sha256": "85e44e6538af724169de0dfbc88739a11cf8dd6c9f2ae91862605fe63d4d18e9"
+      "version": "2026.6-matrix",
+      "lastUpdated": "2026-09-30",
+      "bytes": 614772,
+      "sha256": "54ff717f8d3b5ea1834cd416fcbd858dddd82058d01d5dc0496585d31c3d4e3e"
     },
     {
       "id": "tolls_v3_app_ready",
@@ -74,6 +74,6 @@
   "signature": {
     "algorithm": "ed25519",
     "keyId": "pricing-manifest-v1",
-    "value": "WpTPWXBV1ClMWwFMqWsa75juHIiG5n+F6/1RUOeieGGZ8mzs0/w492RSi/UygsPz4UdVQjvJGvD5PC6mtiYuDA=="
+    "value": "+L3dWeMRWZC6PfF0jK75giNQkpHMRSVGwFmY0LnaH6M2jU3FoOn57mhBR/MFdu5PLd18JW6WP+w5aydsnny4AA=="
   }
 }
