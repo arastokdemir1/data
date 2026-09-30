@@ -15,6 +15,9 @@ ensure_deps()
 import requests
 import pdfplumber
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import toll_matrix_extract as matrix_extract
+
 HEADERS = {"User-Agent": "Mozilla/5.0 (CarLogBot/2.0)"}
 TODAY   = date.today().isoformat()
 YEAR    = date.today().year
@@ -233,6 +236,86 @@ def scrape_pdfs() -> tuple[dict, dict]:
             print("  ⚠️  Fiyat çıkarılamadı")
     return fp, cor
 
+# ── 1b. İstasyon matrisi (gerçek hücreler) ──────────────────────────────────
+#
+# Eskiden yalnızca sınıf başına "tam geçiş" fiyatı (headline) güncelleniyordu; matris
+# hücrelerine hiç dokunulmuyordu. 01/07/2026 zammında YİD otoyollarının hücreleri ~%18
+# eski kaldı ve 1915 Çanakkale tablosu baştan yanlıştı. Artık HER koridorun hücreleri
+# resmî PDF'ten yeniden üretiliyor.
+#
+# Kapsam dışı: `gdh_anatolia_o4` — PDF'te JSON'da olmayan istasyonlar (Doğu/Batı Hereke,
+# Gebze OSB…) var; istasyon kümesi elle uzlaştırılmadan hücreler yeniden yazılmaz.
+MATRIX_TEXT_MODE = {"aydin_denizli"}          # tablo çıkarıcı yerine pdftotext satırları
+MATRIX_O5 = "gebze_orhangazi_izmir_o5"        # iki kesimli, köprü gişeli özel düzen
+MATRIX_SKIPPED = {"gdh_anatolia_o4"}
+# Yeniden üretilmiş bir matris, eldeki matrisle bu orandan fazla hücrede farklıysa
+# yine de yazılır (zam/düzeltme meşrudur) ama sayısı çıktıya not edilir.
+MIN_CELL_COVERAGE = 0.95
+
+
+def scrape_matrices(matrix_path: Path) -> dict[str, dict]:
+    """Her koridor için resmî PDF'ten tam matris üretir. Eksik/bozuk → hata (fail-closed)."""
+    data = json.loads(matrix_path.read_text(encoding="utf-8"))
+    result: dict[str, dict] = {}
+    for corridor in data.get("corridors", []):
+        cid = corridor["id"]
+        if cid in MATRIX_SKIPPED:
+            print(f"Matris: {cid} atlandı (elle uzlaştırma gerekli).")
+            continue
+        url = corridor.get("officialSource")
+        if not url:
+            raise RuntimeError(f"{cid}: resmî kaynak adresi yok")
+        print(f"Matris PDF: {cid}...")
+        pdf_bytes = download_pdf([url])
+        if not pdf_bytes:
+            raise RuntimeError(f"{cid}: resmî PDF indirilemedi ({url})")
+        stations = [(station["id"], station["name"]) for station in corridor["stations"]]
+        station_ids = [station_id for station_id, _ in stations]
+        if cid == MATRIX_O5:
+            matrix = matrix_extract.extract_o5_matrix(pdf_bytes, station_ids)
+        else:
+            matrix = matrix_extract.extract_corridor_matrix(
+                pdf_bytes, stations, text_rows=cid in MATRIX_TEXT_MODE)
+        cells = sum(len(row) for row in matrix.values())
+        possible = len(station_ids) * (len(station_ids) - 1)
+        existing = sum(len(row) for row in (corridor.get("matrix") or {}).values())
+        # Bazı üçgen tablolar bir istasyonun giriş satırını hiç basmaz (ör. Pozantı Güney);
+        # bu durumda kapsam eldeki matristen düşmemeli.
+        if cells < possible * MIN_CELL_COVERAGE and cells < existing:
+            raise RuntimeError(f"{cid}: matris eksik ({cells}/{possible} hücre, mevcut {existing})")
+        matrix_extract.validate_matrix(cid, matrix)
+        result[cid] = matrix
+        print(f"  ✅ {cid}: {cells} hücre")
+    return result
+
+
+def bump_version(version: str) -> str:
+    match = re.match(r"^(\d{4})\.(\d+)(.*)$", version or "")
+    if not match:
+        return f"{YEAR}.1-matrix"
+    return f"{match.group(1)}.{int(match.group(2)) + 1}{match.group(3)}"
+
+
+def update_matrix_cells(path: Path, matrices: dict[str, dict]) -> bool:
+    if not path.exists() or not matrices: return False
+    with open(path, encoding="utf-8") as f: data = json.load(f)
+    changed_ids: list[str] = []
+    for corridor in data.get("corridors", []):
+        cid = corridor.get("id", "")
+        if cid in matrices and corridor.get("matrix") != matrices[cid]:
+            corridor["matrix"] = matrices[cid]
+            changed_ids.append(cid)
+    if not changed_ids:
+        print(f"ℹ️  {path.name}: matris hücreleri değişmedi.")
+        return False
+    data["lastUpdated"] = TODAY
+    data["version"] = bump_version(data.get("version", ""))
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    temporary.replace(path)
+    print(f"✅ {path.name}: {len(changed_ids)} koridorun hücreleri güncellendi: {', '.join(changed_ids)}")
+    return True
+
 # ── 2. JSON güncelleme ───────────────────────────────────────────────────────
 def update_v3(path: Path, fp_prices: dict, cor_prices: dict) -> bool:
     if not path.exists(): return False
@@ -324,6 +407,8 @@ def main() -> int:
     # Önceden sadece app_ready dosyası güncelleniyordu, matrix hiç dokunulmuyordu.
     matrix_path = root / "toll_matrix_tr_v1.json"
     changed = update_v3(matrix_path, pdf_fp, pdf_cor) or changed
+    if not args.no_pdf:
+        changed = update_matrix_cells(matrix_path, scrape_matrices(matrix_path)) or changed
     changed = remove_zero_cost_matrix_edges(matrix_path) or changed
     if changed:
         regenerate_manifest(root)
