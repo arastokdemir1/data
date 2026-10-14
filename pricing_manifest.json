@@ -1,6 +1,6 @@
 {
   "version": "pricing-manifest-v1",
-  "generatedAt": "2026-10-14T10:36:52.678347Z",
+  "generatedAt": "2026-10-14T15:29:42.538236Z",
   "repository": "arastokdemir1/data",
   "baseRawUrl": "https://raw.githubusercontent.com/arastokdemir1/data/main/",
   "refreshCadence": "github_actions_schedule_best_effort",
@@ -74,6 +74,6 @@
   "signature": {
     "algorithm": "ed25519",
     "keyId": "pricing-manifest-v1",
-    "value": "Y4Z8+lF8z6bhkphlN6wsyqMmX4zbMRMncC3ZWa3kH8mhHKjq2SRRLVX3tAxy7wh+ZgeM6jAdsH9cQpxq+IaAAA=="
+    "value": "sgwjG7R+IXFW0B3GTVjLg2KFIpgFiyW+/3oT3FDtcID8lUY67IXvcYjUj0Lt/pc0k0/PDOzZalfRR7iCc9RUBQ=="
   }
 }
