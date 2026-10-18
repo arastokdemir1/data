@@ -1,6 +1,6 @@
 {
   "version": "pricing-manifest-v1",
-  "generatedAt": "2026-10-18T06:35:58.770976Z",
+  "generatedAt": "2026-10-18T11:43:21.737739Z",
   "repository": "arastokdemir1/data",
   "baseRawUrl": "https://raw.githubusercontent.com/arastokdemir1/data/main/",
   "refreshCadence": "github_actions_schedule_best_effort",
@@ -14,9 +14,9 @@
       "sourceType": "provider_api",
       "refreshPolicy": "github_actions_schedule_best_effort",
       "version": null,
-      "lastUpdated": "2026-10-18T06:35:00Z",
+      "lastUpdated": "2026-10-18T11:43:00Z",
       "bytes": 98,
-      "sha256": "2aa409eeec128adab2800a4f46a83f0877e4f822e23a282bc421120ca173cf52"
+      "sha256": "331f8175f734a128ed40342129e54de43d3595e99430c749b8b5fae2a8f3addc"
     },
     {
       "id": "fuel_prices_tr_v1",
@@ -27,9 +27,9 @@
       "sourceType": "provider_api",
       "refreshPolicy": "github_actions_schedule_best_effort",
       "version": "fuel-v2-2026-10-18",
-      "lastUpdated": "2026-10-18T06:35:00Z",
+      "lastUpdated": "2026-10-18T11:43:00Z",
       "bytes": 17153,
-      "sha256": "39234920367536e9be40fd4da157646e4f5882ec49ff6d68ee37e560dd3a6058"
+      "sha256": "c3e65e64cbe24ac9675a7965c1a45e312c9a89f133ca9af73fa1b5e9e2373c74"
     },
     {
       "id": "toll_matrix_tr_v1",
@@ -74,6 +74,6 @@
   "signature": {
     "algorithm": "ed25519",
     "keyId": "pricing-manifest-v1",
-    "value": "uN7pkpzeYDLu8SPLVHsgAMlMGJb3CZrQxPhcyoL/4x5el7RQFh6APTRLyrAqd+ayo9FB2Ygw9JMO8duHQmlXBw=="
+    "value": "7euyJpRqQu0Z0z4eF/98Fkl337gFzCYMT5AHjEao6GL+uAY7FNhnQcMnc2zwJngsHdP84F5EXyhlwEmM2wp0Bw=="
   }
 }
