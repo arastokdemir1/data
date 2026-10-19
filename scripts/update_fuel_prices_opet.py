@@ -38,7 +38,12 @@ MIN_PROVINCES = 70
 MIN_PRICE = 5.0
 MAX_PRICE = 500.0
 MAX_SOURCE_AGE = timedelta(days=3)
-MAX_PRICE_CHANGE_RATIO = 0.35
+# Tek bir çalışmada bu oranın üzerinde değişim otomatik yayınlanmaz. 19 Eki 2026'da
+# hatalı bir kaynak okuması (benzin 83,68 → 62,92, −%25) bu eşiğin altında kalıp
+# yayına girdi. Gerçek büyük zamlar için insan onayı gerekir: workflow'u
+# "allow_large_fuel_change" ile elle çalıştırmak (ALLOW_LARGE_FUEL_CHANGE=1).
+MAX_PRICE_CHANGE_RATIO = 0.15
+ALLOW_LARGE_CHANGE = os.getenv("ALLOW_LARGE_FUEL_CHANGE", "").strip().lower() in {"1", "true", "yes"}
 DOWNLOAD_ATTEMPTS = 3
 DOWNLOAD_TIMEOUT_SECONDS = 90
 MAX_DOWNLOAD_BYTES = 20 * 1024 * 1024
@@ -265,7 +270,9 @@ def validate_candidate(compact: CompactPrices, districts: list[dict[str, Any]], 
         for name, value in {"gasoline": compact.gasoline, "diesel": compact.diesel, "lpg": compact.lpg}.items():
             old = previous.get(name)
             if isinstance(old, (int, float)) and old > 0 and abs(value - old) / old > MAX_PRICE_CHANGE_RATIO:
-                raise DataValidationError(f"{name} changed from {old} to {value} by more than {MAX_PRICE_CHANGE_RATIO:.0%}")
+                if not ALLOW_LARGE_CHANGE:
+                    raise DataValidationError(f"{name} changed from {old} to {value} by more than {MAX_PRICE_CHANGE_RATIO:.0%}; onaylı büyük değişim için workflow'u allow_large_fuel_change ile çalıştır")
+                print(f"UYARI: {name} {old} → {value} büyük değişim, elle onaylı çalıştırmada kabul edildi")
 
 
 def write_json_atomic(path: Path, payload: Any) -> None:

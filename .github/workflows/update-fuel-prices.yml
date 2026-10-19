@@ -2,6 +2,11 @@ name: Update pricing data
 
 on:
   workflow_dispatch:
+    inputs:
+      allow_large_fuel_change:
+        description: "Onaylı büyük fiyat değişimine izin ver (yalnızca bilinçli düzeltme/zam için)"
+        type: boolean
+        default: false
   schedule:
     # GitHub scheduled workflows are best-effort. This requests two runs per
     # hour, but the manifest deliberately does not promise a fixed cadence.
@@ -37,6 +42,8 @@ jobs:
         run: python3 -m unittest discover -s tests -v
 
       - name: Generate dynamic pricing JSON
+        env:
+          ALLOW_LARGE_FUEL_CHANGE: ${{ inputs.allow_large_fuel_change && '1' || '0' }}
         run: python3 scripts/update_all_pricing_data.py --root .
 
       - name: Sign pricing manifest

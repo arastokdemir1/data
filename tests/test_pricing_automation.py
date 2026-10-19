@@ -94,6 +94,24 @@ class FuelAutomationTests(unittest.TestCase):
         self.assertEqual(rows[0]["diesel"], 96.12)
         self.assertEqual(timestamp, "2026-09-19T20:46:00Z")
 
+    def test_large_change_needs_explicit_approval(self):
+        """19 Ekim hatası: %25'lik hatalı düşüş eski eşikle yayına giriyordu."""
+        now = datetime(2026, 10, 19, tzinfo=timezone.utc)
+        candidate = fuel.CompactPrices(62.92, 65.10, 32, "2026-10-19T00:00:00Z")
+        previous = {"gasoline": 83.68, "diesel": 96.52, "lpg": 32}
+        with patch.object(fuel, "ALLOW_LARGE_CHANGE", False):
+            with self.assertRaises(fuel.DataValidationError):
+                fuel.validate_candidate(candidate, districts(), previous=previous, now=now)
+        with patch.object(fuel, "ALLOW_LARGE_CHANGE", True):
+            fuel.validate_candidate(candidate, districts(), previous=previous, now=now)
+
+    def test_small_daily_move_is_still_published(self):
+        now = datetime(2026, 10, 19, tzinfo=timezone.utc)
+        candidate = fuel.CompactPrices(84.5, 97.0, 32, "2026-10-19T00:00:00Z")
+        previous = {"gasoline": 83.68, "diesel": 96.52, "lpg": 32}
+        with patch.object(fuel, "ALLOW_LARGE_CHANGE", False):
+            fuel.validate_candidate(candidate, districts(), previous=previous, now=now)
+
     def test_rejects_stale_or_incomplete_or_large_change_data(self):
         stale = fuel.CompactPrices(80, 90, 32, "2026-09-01T00:00:00Z")
         with self.assertRaises(fuel.DataValidationError):
