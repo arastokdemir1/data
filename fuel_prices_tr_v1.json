@@ -1,6 +1,6 @@
 {
-  "version": "fuel-v2-2026-10-19",
-  "lastUpdated": "2026-10-19T21:00:00Z",
+  "version": "fuel-v2-2026-10-21",
+  "lastUpdated": "2026-10-21T21:00:00Z",
   "currency": "TRY",
   "source": "OPET public fuel price API",
   "sourceUrl": "https://www.opet.com.tr/akaryakit-fiyatlari",
@@ -16,13 +16,13 @@
       "provinceName": "ADANA",
       "districtCode": "001001",
       "districtName": "MERKEZ",
-      "gasoline": 81.41,
+      "gasoline": 78.06,
       "diesel": 98.65,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.41
+          "amount": 78.06
         },
         "A110": {
           "name": "Gazyağı",
@@ -61,13 +61,13 @@
       "provinceName": "ADIYAMAN",
       "districtCode": "002001",
       "districtName": "MERKEZ",
-      "gasoline": 81.75,
+      "gasoline": 78.4,
       "diesel": 99.02,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.75
+          "amount": 78.4
         },
         "A110": {
           "name": "Gazyağı",
@@ -106,13 +106,13 @@
       "provinceName": "AFYONKARAHİSAR",
       "districtCode": "003001",
       "districtName": "MERKEZ",
-      "gasoline": 81.68,
+      "gasoline": 78.33,
       "diesel": 99.07,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.68
+          "amount": 78.33
         },
         "A110": {
           "name": "Gazyağı",
@@ -151,13 +151,13 @@
       "provinceName": "AĞRI",
       "districtCode": "004001",
       "districtName": "MERKEZ",
-      "gasoline": 82.12,
+      "gasoline": 78.77,
       "diesel": 99.39,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 82.12
+          "amount": 78.77
         },
         "A110": {
           "name": "Gazyağı",
@@ -196,13 +196,13 @@
       "provinceName": "AKSARAY",
       "districtCode": "068001",
       "districtName": "MERKEZ",
-      "gasoline": 81.48,
+      "gasoline": 78.13,
       "diesel": 98.72,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.48
+          "amount": 78.13
         },
         "A110": {
           "name": "Gazyağı",
@@ -241,13 +241,13 @@
       "provinceName": "AMASYA",
       "districtCode": "005001",
       "districtName": "MERKEZ",
-      "gasoline": 81.17,
+      "gasoline": 77.82,
       "diesel": 98.4,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.17
+          "amount": 77.82
         },
         "A110": {
           "name": "Gazyağı",
@@ -286,13 +286,13 @@
       "provinceName": "ANKARA",
       "districtCode": "006001",
       "districtName": "MERKEZ",
-      "gasoline": 80.57,
+      "gasoline": 77.22,
       "diesel": 97.82,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.57
+          "amount": 77.22
         },
         "A110": {
           "name": "Gazyağı",
@@ -331,13 +331,13 @@
       "provinceName": "ANTALYA",
       "districtCode": "007001",
       "districtName": "MERKEZ",
-      "gasoline": 81.82,
+      "gasoline": 78.47,
       "diesel": 99.13,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.82
+          "amount": 78.47
         },
         "A110": {
           "name": "Gazyağı",
@@ -376,13 +376,13 @@
       "provinceName": "ARDAHAN",
       "districtCode": "075002",
       "districtName": "MERKEZ",
-      "gasoline": 81.64,
+      "gasoline": 78.29,
       "diesel": 98.92,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.64
+          "amount": 78.29
         },
         "A110": {
           "name": "Gazyağı",
@@ -421,13 +421,13 @@
       "provinceName": "ARTVİN",
       "districtCode": "008001",
       "districtName": "MERKEZ",
-      "gasoline": 81.47,
+      "gasoline": 78.12,
       "diesel": 98.73,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.47
+          "amount": 78.12
         },
         "A110": {
           "name": "Gazyağı",
@@ -466,13 +466,13 @@
       "provinceName": "AYDIN",
       "districtCode": "009001",
       "districtName": "MERKEZ",
-      "gasoline": 81.07,
+      "gasoline": 77.72,
       "diesel": 98.36,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.07
+          "amount": 77.72
         },
         "A110": {
           "name": "Gazyağı",
@@ -511,13 +511,13 @@
       "provinceName": "BALIKESİR",
       "districtCode": "010001",
       "districtName": "MERKEZ",
-      "gasoline": 81.17,
+      "gasoline": 77.82,
       "diesel": 98.45,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.17
+          "amount": 77.82
         },
         "A110": {
           "name": "Gazyağı",
@@ -556,13 +556,13 @@
       "provinceName": "BARTIN",
       "districtCode": "074001",
       "districtName": "MERKEZ",
-      "gasoline": 80.89,
+      "gasoline": 77.54,
       "diesel": 97.95,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.89
+          "amount": 77.54
         },
         "A110": {
           "name": "Gazyağı",
@@ -601,13 +601,13 @@
       "provinceName": "BATMAN",
       "districtCode": "072001",
       "districtName": "MERKEZ",
-      "gasoline": 82.05,
+      "gasoline": 78.7,
       "diesel": 99.4,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 82.05
+          "amount": 78.7
         },
         "A110": {
           "name": "Gazyağı",
@@ -646,13 +646,13 @@
       "provinceName": "BAYBURT",
       "districtCode": "069001",
       "districtName": "MERKEZ",
-      "gasoline": 81.34,
+      "gasoline": 77.99,
       "diesel": 98.61,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.34
+          "amount": 77.99
         },
         "A110": {
           "name": "Gazyağı",
@@ -691,13 +691,13 @@
       "provinceName": "BİLECİK",
       "districtCode": "011001",
       "districtName": "MERKEZ",
-      "gasoline": 80.54,
+      "gasoline": 77.19,
       "diesel": 97.57,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.54
+          "amount": 77.19
         },
         "A110": {
           "name": "Gazyağı",
@@ -736,13 +736,13 @@
       "provinceName": "BİNGÖL",
       "districtCode": "012001",
       "districtName": "MERKEZ",
-      "gasoline": 82.14,
+      "gasoline": 78.79,
       "diesel": 99.49,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 82.14
+          "amount": 78.79
         },
         "A110": {
           "name": "Gazyağı",
@@ -781,13 +781,13 @@
       "provinceName": "BİTLİS",
       "districtCode": "013002",
       "districtName": "MERKEZ",
-      "gasoline": 82.19,
+      "gasoline": 78.84,
       "diesel": 99.55,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 82.19
+          "amount": 78.84
         },
         "A110": {
           "name": "Gazyağı",
@@ -826,13 +826,13 @@
       "provinceName": "BOLU",
       "districtCode": "014001",
       "districtName": "MERKEZ",
-      "gasoline": 80.66,
+      "gasoline": 77.31,
       "diesel": 97.69,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.66
+          "amount": 77.31
         },
         "A110": {
           "name": "Gazyağı",
@@ -871,13 +871,13 @@
       "provinceName": "BURDUR",
       "districtCode": "015001",
       "districtName": "MERKEZ",
-      "gasoline": 81.63,
+      "gasoline": 78.28,
       "diesel": 98.97,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.63
+          "amount": 78.28
         },
         "A110": {
           "name": "Gazyağı",
@@ -916,13 +916,13 @@
       "provinceName": "BURSA",
       "districtCode": "016001",
       "districtName": "MERKEZ",
-      "gasoline": 80.66,
+      "gasoline": 77.31,
       "diesel": 97.71,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.66
+          "amount": 77.31
         },
         "A110": {
           "name": "Gazyağı",
@@ -961,13 +961,13 @@
       "provinceName": "ÇANAKKALE",
       "districtCode": "017001",
       "districtName": "MERKEZ",
-      "gasoline": 81.23,
+      "gasoline": 77.88,
       "diesel": 98.49,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.23
+          "amount": 77.88
         },
         "A110": {
           "name": "Gazyağı",
@@ -1006,13 +1006,13 @@
       "provinceName": "ÇANKIRI",
       "districtCode": "018001",
       "districtName": "MERKEZ",
-      "gasoline": 80.98,
+      "gasoline": 77.63,
       "diesel": 98.23,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.98
+          "amount": 77.63
         },
         "A110": {
           "name": "Gazyağı",
@@ -1051,13 +1051,13 @@
       "provinceName": "ÇORUM",
       "districtCode": "019001",
       "districtName": "MERKEZ",
-      "gasoline": 81.18,
+      "gasoline": 77.83,
       "diesel": 98.4,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.18
+          "amount": 77.83
         },
         "A110": {
           "name": "Gazyağı",
@@ -1096,13 +1096,13 @@
       "provinceName": "DENİZLİ",
       "districtCode": "020001",
       "districtName": "MERKEZ",
-      "gasoline": 81.33,
+      "gasoline": 77.98,
       "diesel": 98.64,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.33
+          "amount": 77.98
         },
         "A110": {
           "name": "Gazyağı",
@@ -1141,13 +1141,13 @@
       "provinceName": "DİYARBAKIR",
       "districtCode": "021001",
       "districtName": "MERKEZ",
-      "gasoline": 82.04,
+      "gasoline": 78.69,
       "diesel": 99.4,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 82.04
+          "amount": 78.69
         },
         "A110": {
           "name": "Gazyağı",
@@ -1186,13 +1186,13 @@
       "provinceName": "DÜZCE",
       "districtCode": "081001",
       "districtName": "MERKEZ",
-      "gasoline": 80.5,
+      "gasoline": 77.15,
       "diesel": 97.54,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.5
+          "amount": 77.15
         },
         "A110": {
           "name": "Gazyağı",
@@ -1231,13 +1231,13 @@
       "provinceName": "EDİRNE",
       "districtCode": "022003",
       "districtName": "MERKEZ",
-      "gasoline": 80.7,
+      "gasoline": 77.35,
       "diesel": 97.97,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.7
+          "amount": 77.35
         },
         "A110": {
           "name": "Gazyağı",
@@ -1276,13 +1276,13 @@
       "provinceName": "ELAZIĞ",
       "districtCode": "023001",
       "districtName": "MERKEZ",
-      "gasoline": 82.19,
+      "gasoline": 78.84,
       "diesel": 99.53,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 82.19
+          "amount": 78.84
         },
         "A110": {
           "name": "Gazyağı",
@@ -1321,13 +1321,13 @@
       "provinceName": "ERZİNCAN",
       "districtCode": "024001",
       "districtName": "MERKEZ",
-      "gasoline": 81.58,
+      "gasoline": 78.23,
       "diesel": 98.85,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.58
+          "amount": 78.23
         },
         "A110": {
           "name": "Gazyağı",
@@ -1366,13 +1366,13 @@
       "provinceName": "ERZURUM",
       "districtCode": "025001",
       "districtName": "MERKEZ",
-      "gasoline": 81.63,
+      "gasoline": 78.28,
       "diesel": 98.91,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.63
+          "amount": 78.28
         },
         "A110": {
           "name": "Gazyağı",
@@ -1411,13 +1411,13 @@
       "provinceName": "ESKİŞEHİR",
       "districtCode": "026001",
       "districtName": "MERKEZ",
-      "gasoline": 80.85,
+      "gasoline": 77.5,
       "diesel": 97.9,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.85
+          "amount": 77.5
         },
         "A110": {
           "name": "Gazyağı",
@@ -1456,13 +1456,13 @@
       "provinceName": "GAZİANTEP",
       "districtCode": "027001",
       "districtName": "MERKEZ",
-      "gasoline": 81.55,
+      "gasoline": 78.2,
       "diesel": 98.78,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.55
+          "amount": 78.2
         },
         "A110": {
           "name": "Gazyağı",
@@ -1501,13 +1501,13 @@
       "provinceName": "GİRESUN",
       "districtCode": "028001",
       "districtName": "MERKEZ",
-      "gasoline": 81.39,
+      "gasoline": 78.04,
       "diesel": 98.67,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.39
+          "amount": 78.04
         },
         "A110": {
           "name": "Gazyağı",
@@ -1546,13 +1546,13 @@
       "provinceName": "GÜMÜŞHANE",
       "districtCode": "029002",
       "districtName": "MERKEZ",
-      "gasoline": 81.35,
+      "gasoline": 78.0,
       "diesel": 98.61,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.35
+          "amount": 78.0
         },
         "A110": {
           "name": "Gazyağı",
@@ -1591,13 +1591,13 @@
       "provinceName": "HAKKARİ",
       "districtCode": "030002",
       "districtName": "MERKEZ",
-      "gasoline": 82.2,
+      "gasoline": 78.85,
       "diesel": 99.55,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 82.2
+          "amount": 78.85
         },
         "A110": {
           "name": "Gazyağı",
@@ -1636,13 +1636,13 @@
       "provinceName": "HATAY",
       "districtCode": "031001",
       "districtName": "MERKEZ",
-      "gasoline": 81.31,
+      "gasoline": 77.96,
       "diesel": 98.57,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.31
+          "amount": 77.96
         },
         "A110": {
           "name": "Gazyağı",
@@ -1681,13 +1681,13 @@
       "provinceName": "IĞDIR",
       "districtCode": "076001",
       "districtName": "MERKEZ",
-      "gasoline": 82.12,
+      "gasoline": 78.77,
       "diesel": 99.38,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 82.12
+          "amount": 78.77
         },
         "A110": {
           "name": "Gazyağı",
@@ -1726,13 +1726,13 @@
       "provinceName": "ISPARTA",
       "districtCode": "032001",
       "districtName": "MERKEZ",
-      "gasoline": 81.68,
+      "gasoline": 78.33,
       "diesel": 99.03,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.68
+          "amount": 78.33
         },
         "A110": {
           "name": "Gazyağı",
@@ -1771,13 +1771,13 @@
       "provinceName": "İSTANBUL ANADOLU",
       "districtCode": "034002",
       "districtName": "ANADOLU_Y_MERKEZ",
-      "gasoline": 79.42,
+      "gasoline": 76.07,
       "diesel": 96.63,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 79.42
+          "amount": 76.07
         },
         "A110": {
           "name": "Gazyağı",
@@ -1816,13 +1816,13 @@
       "provinceName": "İSTANBUL AVRUPA",
       "districtCode": "934004",
       "districtName": "MERKEZ",
-      "gasoline": 79.57,
+      "gasoline": 76.22,
       "diesel": 96.75,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 79.57
+          "amount": 76.22
         },
         "A110": {
           "name": "Gazyağı",
@@ -1861,13 +1861,13 @@
       "provinceName": "İZMİR",
       "districtCode": "035001",
       "districtName": "MERKEZ",
-      "gasoline": 80.86,
+      "gasoline": 77.51,
       "diesel": 98.13,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.86
+          "amount": 77.51
         },
         "A110": {
           "name": "Gazyağı",
@@ -1906,13 +1906,13 @@
       "provinceName": "KAHRAMANMARAŞ",
       "districtCode": "046001",
       "districtName": "MERKEZ",
-      "gasoline": 81.53,
+      "gasoline": 78.18,
       "diesel": 98.81,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.53
+          "amount": 78.18
         },
         "A110": {
           "name": "Gazyağı",
@@ -1951,13 +1951,13 @@
       "provinceName": "KARABÜK",
       "districtCode": "078001",
       "districtName": "MERKEZ",
-      "gasoline": 80.91,
+      "gasoline": 77.56,
       "diesel": 97.96,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.91
+          "amount": 77.56
         },
         "A110": {
           "name": "Gazyağı",
@@ -1996,13 +1996,13 @@
       "provinceName": "KARAMAN",
       "districtCode": "070001",
       "districtName": "MERKEZ",
-      "gasoline": 81.46,
+      "gasoline": 78.11,
       "diesel": 98.72,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.46
+          "amount": 78.11
         },
         "A110": {
           "name": "Gazyağı",
@@ -2041,13 +2041,13 @@
       "provinceName": "KARS",
       "districtCode": "036001",
       "districtName": "MERKEZ",
-      "gasoline": 81.64,
+      "gasoline": 78.29,
       "diesel": 98.91,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.64
+          "amount": 78.29
         },
         "A110": {
           "name": "Gazyağı",
@@ -2086,13 +2086,13 @@
       "provinceName": "KASTAMONU",
       "districtCode": "037001",
       "districtName": "MERKEZ",
-      "gasoline": 81.28,
+      "gasoline": 77.93,
       "diesel": 98.5,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.28
+          "amount": 77.93
         },
         "A110": {
           "name": "Gazyağı",
@@ -2131,13 +2131,13 @@
       "provinceName": "KAYSERİ",
       "districtCode": "038001",
       "districtName": "MERKEZ",
-      "gasoline": 81.58,
+      "gasoline": 78.23,
       "diesel": 98.83,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.58
+          "amount": 78.23
         },
         "A110": {
           "name": "Gazyağı",
@@ -2176,13 +2176,13 @@
       "provinceName": "KIRIKKALE",
       "districtCode": "071001",
       "districtName": "MERKEZ",
-      "gasoline": 80.88,
+      "gasoline": 77.53,
       "diesel": 98.12,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.88
+          "amount": 77.53
         },
         "A110": {
           "name": "Gazyağı",
@@ -2221,13 +2221,13 @@
       "provinceName": "KIRKLARELİ",
       "districtCode": "039001",
       "districtName": "MERKEZ",
-      "gasoline": 80.69,
+      "gasoline": 77.34,
       "diesel": 97.95,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.69
+          "amount": 77.34
         },
         "A110": {
           "name": "Gazyağı",
@@ -2266,13 +2266,13 @@
       "provinceName": "KIRŞEHİR",
       "districtCode": "040001",
       "districtName": "MERKEZ",
-      "gasoline": 80.92,
+      "gasoline": 77.57,
       "diesel": 98.18,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.92
+          "amount": 77.57
         },
         "A110": {
           "name": "Gazyağı",
@@ -2311,13 +2311,13 @@
       "provinceName": "KİLİS",
       "districtCode": "079001",
       "districtName": "MERKEZ",
-      "gasoline": 81.28,
+      "gasoline": 77.93,
       "diesel": 98.55,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.28
+          "amount": 77.93
         },
         "A110": {
           "name": "Gazyağı",
@@ -2356,13 +2356,13 @@
       "provinceName": "KOCAELİ",
       "districtCode": "041001",
       "districtName": "MERKEZ",
-      "gasoline": 80.02,
+      "gasoline": 76.67,
       "diesel": 97.07,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.02
+          "amount": 76.67
         },
         "A110": {
           "name": "Gazyağı",
@@ -2401,13 +2401,13 @@
       "provinceName": "KONYA",
       "districtCode": "042001",
       "districtName": "MERKEZ",
-      "gasoline": 81.59,
+      "gasoline": 78.24,
       "diesel": 98.98,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.59
+          "amount": 78.24
         },
         "A110": {
           "name": "Gazyağı",
@@ -2446,13 +2446,13 @@
       "provinceName": "KÜTAHYA",
       "districtCode": "043001",
       "districtName": "MERKEZ",
-      "gasoline": 81.53,
+      "gasoline": 78.18,
       "diesel": 98.58,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.53
+          "amount": 78.18
         },
         "A110": {
           "name": "Gazyağı",
@@ -2491,13 +2491,13 @@
       "provinceName": "MALATYA",
       "districtCode": "044001",
       "districtName": "MERKEZ",
-      "gasoline": 81.75,
+      "gasoline": 78.4,
       "diesel": 99.01,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.75
+          "amount": 78.4
         },
         "A110": {
           "name": "Gazyağı",
@@ -2536,13 +2536,13 @@
       "provinceName": "MANİSA",
       "districtCode": "045001",
       "districtName": "MERKEZ",
-      "gasoline": 80.94,
+      "gasoline": 77.59,
       "diesel": 98.2,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.94
+          "amount": 77.59
         },
         "A110": {
           "name": "Gazyağı",
@@ -2581,13 +2581,13 @@
       "provinceName": "MARDİN",
       "districtCode": "047002",
       "districtName": "MERKEZ",
-      "gasoline": 82.06,
+      "gasoline": 78.71,
       "diesel": 99.41,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 82.06
+          "amount": 78.71
         },
         "A110": {
           "name": "Gazyağı",
@@ -2626,13 +2626,13 @@
       "provinceName": "MERSİN",
       "districtCode": "033001",
       "districtName": "MERKEZ",
-      "gasoline": 81.4,
+      "gasoline": 78.05,
       "diesel": 98.64,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.4
+          "amount": 78.05
         },
         "A110": {
           "name": "Gazyağı",
@@ -2671,13 +2671,13 @@
       "provinceName": "MUĞLA",
       "districtCode": "048001",
       "districtName": "MERKEZ",
-      "gasoline": 81.34,
+      "gasoline": 77.99,
       "diesel": 98.63,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.34
+          "amount": 77.99
         },
         "A110": {
           "name": "Gazyağı",
@@ -2716,13 +2716,13 @@
       "provinceName": "MUŞ",
       "districtCode": "049001",
       "districtName": "MERKEZ",
-      "gasoline": 82.19,
+      "gasoline": 78.84,
       "diesel": 99.53,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 82.19
+          "amount": 78.84
         },
         "A110": {
           "name": "Gazyağı",
@@ -2761,13 +2761,13 @@
       "provinceName": "NEVŞEHİR",
       "districtCode": "050001",
       "districtName": "MERKEZ",
-      "gasoline": 81.48,
+      "gasoline": 78.13,
       "diesel": 98.74,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.48
+          "amount": 78.13
         },
         "A110": {
           "name": "Gazyağı",
@@ -2806,13 +2806,13 @@
       "provinceName": "NİĞDE",
       "districtCode": "051001",
       "districtName": "MERKEZ",
-      "gasoline": 81.4,
+      "gasoline": 78.05,
       "diesel": 98.65,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.4
+          "amount": 78.05
         },
         "A110": {
           "name": "Gazyağı",
@@ -2851,13 +2851,13 @@
       "provinceName": "ORDU",
       "districtCode": "052001",
       "districtName": "MERKEZ",
-      "gasoline": 81.19,
+      "gasoline": 77.84,
       "diesel": 98.4,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.19
+          "amount": 77.84
         },
         "A110": {
           "name": "Gazyağı",
@@ -2896,13 +2896,13 @@
       "provinceName": "OSMANİYE",
       "districtCode": "080001",
       "districtName": "MERKEZ",
-      "gasoline": 81.29,
+      "gasoline": 77.94,
       "diesel": 98.56,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.29
+          "amount": 77.94
         },
         "A110": {
           "name": "Gazyağı",
@@ -2941,13 +2941,13 @@
       "provinceName": "RİZE",
       "districtCode": "053001",
       "districtName": "MERKEZ",
-      "gasoline": 81.33,
+      "gasoline": 77.98,
       "diesel": 98.59,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.33
+          "amount": 77.98
         },
         "A110": {
           "name": "Gazyağı",
@@ -2986,13 +2986,13 @@
       "provinceName": "SAKARYA",
       "districtCode": "054001",
       "districtName": "MERKEZ",
-      "gasoline": 80.34,
+      "gasoline": 76.99,
       "diesel": 97.37,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.34
+          "amount": 76.99
         },
         "A110": {
           "name": "Gazyağı",
@@ -3031,13 +3031,13 @@
       "provinceName": "SAMSUN",
       "districtCode": "055001",
       "districtName": "MERKEZ",
-      "gasoline": 81.16,
+      "gasoline": 77.81,
       "diesel": 98.39,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.16
+          "amount": 77.81
         },
         "A110": {
           "name": "Gazyağı",
@@ -3076,13 +3076,13 @@
       "provinceName": "SİİRT",
       "districtCode": "056003",
       "districtName": "MERKEZ",
-      "gasoline": 82.09,
+      "gasoline": 78.74,
       "diesel": 99.44,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 82.09
+          "amount": 78.74
         },
         "A110": {
           "name": "Gazyağı",
@@ -3121,13 +3121,13 @@
       "provinceName": "SİNOP",
       "districtCode": "057001",
       "districtName": "MERKEZ",
-      "gasoline": 81.22,
+      "gasoline": 77.87,
       "diesel": 98.45,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.22
+          "amount": 77.87
         },
         "A110": {
           "name": "Gazyağı",
@@ -3166,13 +3166,13 @@
       "provinceName": "SİVAS",
       "districtCode": "058001",
       "districtName": "MERKEZ",
-      "gasoline": 81.58,
+      "gasoline": 78.23,
       "diesel": 98.81,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.58
+          "amount": 78.23
         },
         "A110": {
           "name": "Gazyağı",
@@ -3211,13 +3211,13 @@
       "provinceName": "ŞANLIURFA",
       "districtCode": "063001",
       "districtName": "MERKEZ",
-      "gasoline": 81.73,
+      "gasoline": 78.38,
       "diesel": 98.99,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.73
+          "amount": 78.38
         },
         "A110": {
           "name": "Gazyağı",
@@ -3256,13 +3256,13 @@
       "provinceName": "ŞIRNAK",
       "districtCode": "073002",
       "districtName": "MERKEZ",
-      "gasoline": 82.17,
+      "gasoline": 78.82,
       "diesel": 99.53,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 82.17
+          "amount": 78.82
         },
         "A110": {
           "name": "Gazyağı",
@@ -3301,13 +3301,13 @@
       "provinceName": "TEKİRDAĞ",
       "districtCode": "059001",
       "districtName": "MERKEZ",
-      "gasoline": 80.29,
+      "gasoline": 76.94,
       "diesel": 97.55,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.29
+          "amount": 76.94
         },
         "A110": {
           "name": "Gazyağı",
@@ -3346,13 +3346,13 @@
       "provinceName": "TOKAT",
       "districtCode": "060001",
       "districtName": "MERKEZ",
-      "gasoline": 81.22,
+      "gasoline": 77.87,
       "diesel": 98.45,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.22
+          "amount": 77.87
         },
         "A110": {
           "name": "Gazyağı",
@@ -3391,13 +3391,13 @@
       "provinceName": "TRABZON",
       "districtCode": "061001",
       "districtName": "MERKEZ",
-      "gasoline": 81.32,
+      "gasoline": 77.97,
       "diesel": 98.58,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.32
+          "amount": 77.97
         },
         "A110": {
           "name": "Gazyağı",
@@ -3436,13 +3436,13 @@
       "provinceName": "TUNCELİ",
       "districtCode": "062001",
       "districtName": "MERKEZ",
-      "gasoline": 82.17,
+      "gasoline": 78.82,
       "diesel": 99.49,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 82.17
+          "amount": 78.82
         },
         "A110": {
           "name": "Gazyağı",
@@ -3481,13 +3481,13 @@
       "provinceName": "UŞAK",
       "districtCode": "064001",
       "districtName": "MERKEZ",
-      "gasoline": 81.34,
+      "gasoline": 77.99,
       "diesel": 98.61,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.34
+          "amount": 77.99
         },
         "A110": {
           "name": "Gazyağı",
@@ -3526,13 +3526,13 @@
       "provinceName": "VAN",
       "districtCode": "065001",
       "districtName": "MERKEZ",
-      "gasoline": 82.16,
+      "gasoline": 78.81,
       "diesel": 99.45,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 82.16
+          "amount": 78.81
         },
         "A110": {
           "name": "Gazyağı",
@@ -3571,13 +3571,13 @@
       "provinceName": "YALOVA",
       "districtCode": "077001",
       "districtName": "MERKEZ",
-      "gasoline": 80.3,
+      "gasoline": 76.95,
       "diesel": 97.35,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.3
+          "amount": 76.95
         },
         "A110": {
           "name": "Gazyağı",
@@ -3616,13 +3616,13 @@
       "provinceName": "YOZGAT",
       "districtCode": "066001",
       "districtName": "MERKEZ",
-      "gasoline": 81.26,
+      "gasoline": 77.91,
       "diesel": 98.51,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 81.26
+          "amount": 77.91
         },
         "A110": {
           "name": "Gazyağı",
@@ -3661,13 +3661,13 @@
       "provinceName": "ZONGULDAK",
       "districtCode": "067001",
       "districtName": "MERKEZ",
-      "gasoline": 80.85,
+      "gasoline": 77.5,
       "diesel": 97.9,
       "products": {
         "A100": {
           "name": "Kurşunsuz Benzin 95",
           "shortName": "KURS",
-          "amount": 80.85
+          "amount": 77.5
         },
         "A110": {
           "name": "Gazyağı",
