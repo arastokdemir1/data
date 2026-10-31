@@ -1,6 +1,6 @@
 {
-  "version": "fuel-v2-2026-10-30",
-  "lastUpdated": "2026-10-30T21:03:00Z",
+  "version": "fuel-v2-2026-10-31",
+  "lastUpdated": "2026-10-31T00:46:00Z",
   "currency": "TRY",
   "source": "Aytemiz official public price table (OPET fallback)",
   "sourceUrl": "https://www.aytemiz.com.tr/akaryakit-fiyatlari/benzin-fiyatlari",
@@ -16,8 +16,8 @@
       "provinceName": "Adana",
       "districtCode": null,
       "districtName": "Adana",
-      "gasoline": 78.06,
-      "diesel": 98.68,
+      "gasoline": 78.18,
+      "diesel": 98.77,
       "products": {}
     },
     {
@@ -25,8 +25,8 @@
       "provinceName": "Adıyaman",
       "districtCode": null,
       "districtName": "Adıyaman",
-      "gasoline": 78.46,
-      "diesel": 99.01,
+      "gasoline": 78.52,
+      "diesel": 99.1,
       "products": {}
     },
     {
@@ -34,8 +34,8 @@
       "provinceName": "Afyonkarahisar",
       "districtCode": null,
       "districtName": "Afyonkarahisar",
-      "gasoline": 78.36,
-      "diesel": 99.08,
+      "gasoline": 78.47,
+      "diesel": 99.18,
       "products": {}
     },
     {
@@ -43,8 +43,8 @@
       "provinceName": "Ağrı",
       "districtCode": null,
       "districtName": "Ağrı",
-      "gasoline": 78.86,
-      "diesel": 99.41,
+      "gasoline": 78.91,
+      "diesel": 99.52,
       "products": {}
     },
     {
@@ -52,8 +52,8 @@
       "provinceName": "Aksaray",
       "districtCode": null,
       "districtName": "Aksaray",
-      "gasoline": 78.26,
-      "diesel": 98.68,
+      "gasoline": 78.27,
+      "diesel": 98.8,
       "products": {}
     },
     {
@@ -61,8 +61,8 @@
       "provinceName": "Amasya",
       "districtCode": null,
       "districtName": "Amasya",
-      "gasoline": 77.86,
-      "diesel": 98.38,
+      "gasoline": 77.93,
+      "diesel": 98.49,
       "products": {}
     },
     {
@@ -70,8 +70,8 @@
       "provinceName": "Ankara",
       "districtCode": null,
       "districtName": "Ankara",
-      "gasoline": 77.26,
-      "diesel": 97.86,
+      "gasoline": 77.32,
+      "diesel": 97.95,
       "products": {}
     },
     {
@@ -79,8 +79,8 @@
       "provinceName": "Antalya",
       "districtCode": null,
       "districtName": "Antalya",
-      "gasoline": 78.46,
-      "diesel": 99.18,
+      "gasoline": 78.58,
+      "diesel": 99.27,
       "products": {}
     },
     {
@@ -88,8 +88,8 @@
       "provinceName": "Ardahan",
       "districtCode": null,
       "districtName": "Ardahan",
-      "gasoline": 78.26,
-      "diesel": 98.95,
+      "gasoline": 78.39,
+      "diesel": 99.03,
       "products": {}
     },
     {
@@ -97,8 +97,8 @@
       "provinceName": "Artvin",
       "districtCode": null,
       "districtName": "Artvin",
-      "gasoline": 78.16,
-      "diesel": 98.78,
+      "gasoline": 78.26,
+      "diesel": 98.87,
       "products": {}
     },
     {
@@ -106,8 +106,8 @@
       "provinceName": "Aydın",
       "districtCode": null,
       "districtName": "Aydın",
-      "gasoline": 77.76,
-      "diesel": 98.38,
+      "gasoline": 77.86,
+      "diesel": 98.51,
       "products": {}
     },
     {
@@ -115,8 +115,8 @@
       "provinceName": "Balıkesir",
       "districtCode": null,
       "districtName": "Balıkesir",
-      "gasoline": 77.86,
-      "diesel": 98.48,
+      "gasoline": 77.93,
+      "diesel": 98.57,
       "products": {}
     },
     {
@@ -124,8 +124,8 @@
       "provinceName": "Bartın",
       "districtCode": null,
       "districtName": "Bartın",
-      "gasoline": 77.66,
-      "diesel": 98.01,
+      "gasoline": 77.67,
+      "diesel": 98.07,
       "products": {}
     },
     {
@@ -133,8 +133,8 @@
       "provinceName": "Batman",
       "districtCode": null,
       "districtName": "Batman",
-      "gasoline": 78.66,
-      "diesel": 99.38,
+      "gasoline": 78.79,
+      "diesel": 99.49,
       "products": {}
     },
     {
@@ -142,8 +142,8 @@
       "provinceName": "Bayburt",
       "districtCode": null,
       "districtName": "Bayburt",
-      "gasoline": 78.06,
-      "diesel": 98.61,
+      "gasoline": 78.15,
+      "diesel": 98.73,
       "products": {}
     },
     {
@@ -151,8 +151,8 @@
       "provinceName": "Bilecik",
       "districtCode": null,
       "districtName": "Bilecik",
-      "gasoline": 77.26,
-      "diesel": 97.58,
+      "gasoline": 77.35,
+      "diesel": 97.68,
       "products": {}
     },
     {
@@ -160,8 +160,8 @@
       "provinceName": "Bingöl",
       "districtCode": null,
       "districtName": "Bingöl",
-      "gasoline": 78.76,
-      "diesel": 99.48,
+      "gasoline": 78.89,
+      "diesel": 99.59,
       "products": {}
     },
     {
@@ -169,8 +169,8 @@
       "provinceName": "Bitlis",
       "districtCode": null,
       "districtName": "Bitlis",
-      "gasoline": 78.86,
-      "diesel": 99.58,
+      "gasoline": 78.97,
+      "diesel": 99.67,
       "products": {}
     },
     {
@@ -178,8 +178,8 @@
       "provinceName": "Bolu",
       "districtCode": null,
       "districtName": "Bolu",
-      "gasoline": 77.36,
-      "diesel": 97.68,
+      "gasoline": 77.46,
+      "diesel": 97.79,
       "products": {}
     },
     {
@@ -187,8 +187,8 @@
       "provinceName": "Burdur",
       "districtCode": null,
       "districtName": "Burdur",
-      "gasoline": 78.26,
-      "diesel": 98.98,
+      "gasoline": 78.38,
+      "diesel": 99.08,
       "products": {}
     },
     {
@@ -196,8 +196,8 @@
       "provinceName": "Bursa",
       "districtCode": null,
       "districtName": "Bursa",
-      "gasoline": 77.36,
-      "diesel": 97.75,
+      "gasoline": 77.46,
+      "diesel": 97.86,
       "products": {}
     },
     {
@@ -205,8 +205,8 @@
       "provinceName": "Çanakkale",
       "districtCode": null,
       "districtName": "Çanakkale",
-      "gasoline": 77.86,
-      "diesel": 98.48,
+      "gasoline": 77.98,
+      "diesel": 98.62,
       "products": {}
     },
     {
@@ -214,8 +214,8 @@
       "provinceName": "Çankırı",
       "districtCode": null,
       "districtName": "Çankırı",
-      "gasoline": 77.66,
-      "diesel": 98.28,
+      "gasoline": 77.77,
+      "diesel": 98.37,
       "products": {}
     },
     {
@@ -223,8 +223,8 @@
       "provinceName": "Çorum",
       "districtCode": null,
       "districtName": "Çorum",
-      "gasoline": 77.86,
-      "diesel": 98.41,
+      "gasoline": 77.97,
+      "diesel": 98.52,
       "products": {}
     },
     {
@@ -232,8 +232,8 @@
       "provinceName": "Denizli",
       "districtCode": null,
       "districtName": "Denizli",
-      "gasoline": 78.06,
-      "diesel": 98.68,
+      "gasoline": 78.12,
+      "diesel": 98.77,
       "products": {}
     },
     {
@@ -241,8 +241,8 @@
       "provinceName": "Diyarbakır",
       "districtCode": null,
       "districtName": "Diyarbakır",
-      "gasoline": 78.66,
-      "diesel": 99.38,
+      "gasoline": 78.79,
+      "diesel": 99.49,
       "products": {}
     },
     {
@@ -250,8 +250,8 @@
       "provinceName": "Düzce",
       "districtCode": null,
       "districtName": "Düzce",
-      "gasoline": 77.16,
-      "diesel": 97.55,
+      "gasoline": 77.27,
+      "diesel": 97.67,
       "products": {}
     },
     {
@@ -259,8 +259,8 @@
       "provinceName": "Edirne",
       "districtCode": null,
       "districtName": "Edirne",
-      "gasoline": 77.36,
-      "diesel": 97.98,
+      "gasoline": 77.47,
+      "diesel": 98.08,
       "products": {}
     },
     {
@@ -268,8 +268,8 @@
       "provinceName": "Elazığ",
       "districtCode": null,
       "districtName": "Elazığ",
-      "gasoline": 78.86,
-      "diesel": 99.51,
+      "gasoline": 78.97,
+      "diesel": 99.6,
       "products": {}
     },
     {
@@ -277,8 +277,8 @@
       "provinceName": "Erzincan",
       "districtCode": null,
       "districtName": "Erzincan",
-      "gasoline": 78.26,
-      "diesel": 98.88,
+      "gasoline": 78.33,
+      "diesel": 98.94,
       "products": {}
     },
     {
@@ -286,8 +286,8 @@
       "provinceName": "Erzurum",
       "districtCode": null,
       "districtName": "Erzurum",
-      "gasoline": 78.26,
-      "diesel": 98.88,
+      "gasoline": 78.38,
+      "diesel": 98.99,
       "products": {}
     },
     {
@@ -295,8 +295,8 @@
       "provinceName": "Eskişehir",
       "districtCode": null,
       "districtName": "Eskişehir",
-      "gasoline": 77.46,
-      "diesel": 97.88,
+      "gasoline": 77.59,
+      "diesel": 97.99,
       "products": {}
     },
     {
@@ -304,8 +304,8 @@
       "provinceName": "Gaziantep",
       "districtCode": null,
       "districtName": "Gaziantep",
-      "gasoline": 78.16,
-      "diesel": 98.78,
+      "gasoline": 78.29,
+      "diesel": 98.88,
       "products": {}
     },
     {
@@ -313,8 +313,8 @@
       "provinceName": "Giresun",
       "districtCode": null,
       "districtName": "Giresun",
-      "gasoline": 78.06,
-      "diesel": 98.68,
+      "gasoline": 78.14,
+      "diesel": 98.75,
       "products": {}
     },
     {
@@ -322,8 +322,8 @@
       "provinceName": "Gümüşhane",
       "districtCode": null,
       "districtName": "Gümüşhane",
-      "gasoline": 77.96,
-      "diesel": 98.58,
+      "gasoline": 78.09,
+      "diesel": 98.69,
       "products": {}
     },
     {
@@ -331,8 +331,8 @@
       "provinceName": "Hakkari",
       "districtCode": null,
       "districtName": "Hakkari",
-      "gasoline": 78.86,
-      "diesel": 99.58,
+      "gasoline": 78.97,
+      "diesel": 99.67,
       "products": {}
     },
     {
@@ -340,8 +340,8 @@
       "provinceName": "Hatay",
       "districtCode": null,
       "districtName": "Hatay",
-      "gasoline": 77.96,
-      "diesel": 98.58,
+      "gasoline": 78.08,
+      "diesel": 98.68,
       "products": {}
     },
     {
@@ -349,8 +349,8 @@
       "provinceName": "Iğdır",
       "districtCode": null,
       "districtName": "Iğdır",
-      "gasoline": 78.86,
-      "diesel": 99.41,
+      "gasoline": 78.95,
+      "diesel": 99.52,
       "products": {}
     },
     {
@@ -358,8 +358,8 @@
       "provinceName": "Isparta",
       "districtCode": null,
       "districtName": "Isparta",
-      "gasoline": 78.36,
-      "diesel": 99.08,
+      "gasoline": 78.47,
+      "diesel": 99.17,
       "products": {}
     },
     {
@@ -367,8 +367,8 @@
       "provinceName": "İstanbul",
       "districtCode": null,
       "districtName": "İstanbul / Anadolu",
-      "gasoline": 76.06,
-      "diesel": 96.59,
+      "gasoline": 76.17,
+      "diesel": 96.69,
       "products": {}
     },
     {
@@ -376,8 +376,8 @@
       "provinceName": "İstanbul",
       "districtCode": null,
       "districtName": "İstanbul / Avrupa",
-      "gasoline": 76.26,
-      "diesel": 96.76,
+      "gasoline": 76.32,
+      "diesel": 96.86,
       "products": {}
     },
     {
@@ -385,8 +385,8 @@
       "provinceName": "İzmir",
       "districtCode": null,
       "districtName": "İzmir",
-      "gasoline": 77.46,
-      "diesel": 98.09,
+      "gasoline": 77.58,
+      "diesel": 98.22,
       "products": {}
     },
     {
@@ -394,8 +394,8 @@
       "provinceName": "Kahramanmaraş",
       "districtCode": null,
       "districtName": "Kahramanmaraş",
-      "gasoline": 78.26,
-      "diesel": 98.85,
+      "gasoline": 78.32,
+      "diesel": 98.93,
       "products": {}
     },
     {
@@ -403,8 +403,8 @@
       "provinceName": "Karabük",
       "districtCode": null,
       "districtName": "Karabük",
-      "gasoline": 77.66,
-      "diesel": 98.01,
+      "gasoline": 77.68,
+      "diesel": 98.08,
       "products": {}
     },
     {
@@ -413,7 +413,7 @@
       "districtCode": null,
       "districtName": "Karaman",
       "gasoline": 78.26,
-      "diesel": 98.68,
+      "diesel": 98.8,
       "products": {}
     },
     {
@@ -421,8 +421,8 @@
       "provinceName": "Kars",
       "districtCode": null,
       "districtName": "Kars",
-      "gasoline": 78.26,
-      "diesel": 98.91,
+      "gasoline": 78.39,
+      "diesel": 99.03,
       "products": {}
     },
     {
@@ -430,8 +430,8 @@
       "provinceName": "Kastamonu",
       "districtCode": null,
       "districtName": "Kastamonu",
-      "gasoline": 77.96,
-      "diesel": 98.48,
+      "gasoline": 78.07,
+      "diesel": 98.59,
       "products": {}
     },
     {
@@ -439,8 +439,8 @@
       "provinceName": "Kayseri",
       "districtCode": null,
       "districtName": "Kayseri",
-      "gasoline": 78.26,
-      "diesel": 98.85,
+      "gasoline": 78.33,
+      "diesel": 98.93,
       "products": {}
     },
     {
@@ -448,8 +448,8 @@
       "provinceName": "Kırıkkale",
       "districtCode": null,
       "districtName": "Kırıkkale",
-      "gasoline": 77.56,
-      "diesel": 98.13,
+      "gasoline": 77.6,
+      "diesel": 98.2,
       "products": {}
     },
     {
@@ -457,8 +457,8 @@
       "provinceName": "Kırklareli",
       "districtCode": null,
       "districtName": "Kırklareli",
-      "gasoline": 77.36,
-      "diesel": 97.95,
+      "gasoline": 77.47,
+      "diesel": 98.07,
       "products": {}
     },
     {
@@ -466,8 +466,8 @@
       "provinceName": "Kırşehir",
       "districtCode": null,
       "districtName": "Kırşehir",
-      "gasoline": 77.56,
-      "diesel": 98.18,
+      "gasoline": 77.68,
+      "diesel": 98.28,
       "products": {}
     },
     {
@@ -475,8 +475,8 @@
       "provinceName": "Kilis",
       "districtCode": null,
       "districtName": "Kilis",
-      "gasoline": 77.96,
-      "diesel": 98.58,
+      "gasoline": 78.07,
+      "diesel": 98.67,
       "products": {}
     },
     {
@@ -484,8 +484,8 @@
       "provinceName": "Kocaeli",
       "districtCode": null,
       "districtName": "Kocaeli",
-      "gasoline": 76.66,
-      "diesel": 97.08,
+      "gasoline": 76.78,
+      "diesel": 97.18,
       "products": {}
     },
     {
@@ -493,8 +493,8 @@
       "provinceName": "Konya",
       "districtCode": null,
       "districtName": "Konya",
-      "gasoline": 78.26,
-      "diesel": 98.98,
+      "gasoline": 78.37,
+      "diesel": 99.08,
       "products": {}
     },
     {
@@ -502,8 +502,8 @@
       "provinceName": "Kütahya",
       "districtCode": null,
       "districtName": "Kütahya",
-      "gasoline": 78.16,
-      "diesel": 98.58,
+      "gasoline": 78.28,
+      "diesel": 98.68,
       "products": {}
     },
     {
@@ -511,8 +511,8 @@
       "provinceName": "Malatya",
       "districtCode": null,
       "districtName": "Malatya",
-      "gasoline": 78.46,
-      "diesel": 99.01,
+      "gasoline": 78.56,
+      "diesel": 99.13,
       "products": {}
     },
     {
@@ -520,8 +520,8 @@
       "provinceName": "Manisa",
       "districtCode": null,
       "districtName": "Manisa",
-      "gasoline": 77.56,
-      "diesel": 98.18,
+      "gasoline": 77.69,
+      "diesel": 98.32,
       "products": {}
     },
     {
@@ -529,8 +529,8 @@
       "provinceName": "Mardin",
       "districtCode": null,
       "districtName": "Mardin",
-      "gasoline": 78.66,
-      "diesel": 99.38,
+      "gasoline": 78.79,
+      "diesel": 99.49,
       "products": {}
     },
     {
@@ -538,8 +538,8 @@
       "provinceName": "Mersin",
       "districtCode": null,
       "districtName": "Mersin",
-      "gasoline": 78.06,
-      "diesel": 98.68,
+      "gasoline": 78.17,
+      "diesel": 98.77,
       "products": {}
     },
     {
@@ -547,8 +547,8 @@
       "provinceName": "Muğla",
       "districtCode": null,
       "districtName": "Muğla",
-      "gasoline": 78.06,
-      "diesel": 98.65,
+      "gasoline": 78.12,
+      "diesel": 98.77,
       "products": {}
     },
     {
@@ -556,8 +556,8 @@
       "provinceName": "Muş",
       "districtCode": null,
       "districtName": "Muş",
-      "gasoline": 78.86,
-      "diesel": 99.55,
+      "gasoline": 78.97,
+      "diesel": 99.67,
       "products": {}
     },
     {
@@ -565,8 +565,8 @@
       "provinceName": "Nevşehir",
       "districtCode": null,
       "districtName": "Nevşehir",
-      "gasoline": 78.16,
-      "diesel": 98.78,
+      "gasoline": 78.23,
+      "diesel": 98.84,
       "products": {}
     },
     {
@@ -574,8 +574,8 @@
       "provinceName": "Niğde",
       "districtCode": null,
       "districtName": "Niğde",
-      "gasoline": 78.06,
-      "diesel": 98.68,
+      "gasoline": 78.17,
+      "diesel": 98.77,
       "products": {}
     },
     {
@@ -583,8 +583,8 @@
       "provinceName": "Ordu",
       "districtCode": null,
       "districtName": "Ordu",
-      "gasoline": 77.86,
-      "diesel": 98.38,
+      "gasoline": 77.94,
+      "diesel": 98.49,
       "products": {}
     },
     {
@@ -592,8 +592,8 @@
       "provinceName": "Osmaniye",
       "districtCode": null,
       "districtName": "Osmaniye",
-      "gasoline": 77.96,
-      "diesel": 98.58,
+      "gasoline": 78.07,
+      "diesel": 98.68,
       "products": {}
     },
     {
@@ -601,8 +601,8 @@
       "provinceName": "Rize",
       "districtCode": null,
       "districtName": "Rize",
-      "gasoline": 77.96,
-      "diesel": 98.58,
+      "gasoline": 78.08,
+      "diesel": 98.69,
       "products": {}
     },
     {
@@ -610,8 +610,8 @@
       "provinceName": "Sakarya",
       "districtCode": null,
       "districtName": "Sakarya",
-      "gasoline": 76.96,
-      "diesel": 97.38,
+      "gasoline": 77.09,
+      "diesel": 97.48,
       "products": {}
     },
     {
@@ -619,8 +619,8 @@
       "provinceName": "Samsun",
       "districtCode": null,
       "districtName": "Samsun",
-      "gasoline": 77.86,
-      "diesel": 98.38,
+      "gasoline": 77.93,
+      "diesel": 98.49,
       "products": {}
     },
     {
@@ -628,8 +628,8 @@
       "provinceName": "Siirt",
       "districtCode": null,
       "districtName": "Siirt",
-      "gasoline": 78.76,
-      "diesel": 99.45,
+      "gasoline": 78.87,
+      "diesel": 99.57,
       "products": {}
     },
     {
@@ -637,8 +637,8 @@
       "provinceName": "Sinop",
       "districtCode": null,
       "districtName": "Sinop",
-      "gasoline": 77.96,
-      "diesel": 98.48,
+      "gasoline": 78.01,
+      "diesel": 98.57,
       "products": {}
     },
     {
@@ -646,8 +646,8 @@
       "provinceName": "Sivas",
       "districtCode": null,
       "districtName": "Sivas",
-      "gasoline": 78.26,
-      "diesel": 98.85,
+      "gasoline": 78.33,
+      "diesel": 98.93,
       "products": {}
     },
     {
@@ -655,8 +655,8 @@
       "provinceName": "Şanlıurfa",
       "districtCode": null,
       "districtName": "Şanlıurfa",
-      "gasoline": 78.36,
-      "diesel": 98.98,
+      "gasoline": 78.48,
+      "diesel": 99.09,
       "products": {}
     },
     {
@@ -664,8 +664,8 @@
       "provinceName": "Şırnak",
       "districtCode": null,
       "districtName": "Şırnak",
-      "gasoline": 78.76,
-      "diesel": 99.48,
+      "gasoline": 78.9,
+      "diesel": 99.6,
       "products": {}
     },
     {
@@ -673,8 +673,8 @@
       "provinceName": "Tekirdağ",
       "districtCode": null,
       "districtName": "Tekirdağ",
-      "gasoline": 76.96,
-      "diesel": 97.58,
+      "gasoline": 77.07,
+      "diesel": 97.67,
       "products": {}
     },
     {
@@ -682,8 +682,8 @@
       "provinceName": "Tokat",
       "districtCode": null,
       "districtName": "Tokat",
-      "gasoline": 77.86,
-      "diesel": 98.45,
+      "gasoline": 77.95,
+      "diesel": 98.54,
       "products": {}
     },
     {
@@ -691,8 +691,8 @@
       "provinceName": "Trabzon",
       "districtCode": null,
       "districtName": "Trabzon",
-      "gasoline": 77.96,
-      "diesel": 98.58,
+      "gasoline": 78.08,
+      "diesel": 98.68,
       "products": {}
     },
     {
@@ -700,8 +700,8 @@
       "provinceName": "Tunceli",
       "districtCode": null,
       "districtName": "Tunceli",
-      "gasoline": 78.86,
-      "diesel": 99.51,
+      "gasoline": 78.96,
+      "diesel": 99.62,
       "products": {}
     },
     {
@@ -709,8 +709,8 @@
       "provinceName": "Uşak",
       "districtCode": null,
       "districtName": "Uşak",
-      "gasoline": 78.06,
-      "diesel": 98.61,
+      "gasoline": 78.12,
+      "diesel": 98.73,
       "products": {}
     },
     {
@@ -718,8 +718,8 @@
       "provinceName": "Van",
       "districtCode": null,
       "districtName": "Van",
-      "gasoline": 78.86,
-      "diesel": 99.45,
+      "gasoline": 78.96,
+      "diesel": 99.57,
       "products": {}
     },
     {
@@ -727,8 +727,8 @@
       "provinceName": "Yalova",
       "districtCode": null,
       "districtName": "Yalova",
-      "gasoline": 76.96,
-      "diesel": 97.38,
+      "gasoline": 77.07,
+      "diesel": 97.47,
       "products": {}
     },
     {
@@ -736,8 +736,8 @@
       "provinceName": "Yozgat",
       "districtCode": null,
       "districtName": "Yozgat",
-      "gasoline": 77.86,
-      "diesel": 98.48,
+      "gasoline": 77.99,
+      "diesel": 98.59,
       "products": {}
     }
   ]
