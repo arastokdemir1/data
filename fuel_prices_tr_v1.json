@@ -7,7 +7,7 @@
   "confidence": "provider_recommended_price",
   "notes": [
     "Provider prices are recommended pump prices; individual stations may differ.",
-    "LPG is preserved from the last verified value when no provider value is available.",
+    "LPG comes from Petrol Ofisi's Istanbul table; it is preserved from the last verified value when no provider value is available.",
     "Candidate data is range, coverage, freshness and change-rate validated before publication."
   ],
   "districtPrices": [
