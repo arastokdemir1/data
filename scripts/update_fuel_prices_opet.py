@@ -2,8 +2,10 @@
 """Fetch, validate and atomically publish CarLog fuel price data.
 
 OPET is the primary source. Aytemiz's official public price table is a real
-fallback for gasoline and diesel; Hasan Adigüzel is used only for LPG when it
-has a value. No output file is touched before the candidate data is validated.
+fallback for gasoline and diesel. OPET does not sell LPG: the LPG price comes
+from Petrol Ofisi's official Istanbul table ("PO/gaz Otogaz", Avrupa + Anadolu
+average), then Hasan Adigüzel, then the last published value. No output file
+is touched before the candidate data is validated.
 """
 
 from __future__ import annotations
@@ -30,6 +32,10 @@ OPET_API_BASE = "https://api.opet.com.tr/api"
 AYTEMIZ_GASOLINE_URL = "https://www.aytemiz.com.tr/akaryakit-fiyatlari/benzin-fiyatlari"
 HASANADIGUZEL_API = "https://hasanadiguzel.com.tr/api/akaryakit/sehir={sehir}"
 HASANADIGUZEL_SEHIR = "ISTANBUL"
+# 1 Kas 2026: Hasan Adigüzel'in Otogaz alanı boş geliyordu ve LPG aylarca son
+# değerde (32,30) donup kaldı; gerçek fiyat 40,60–41,20 idi. Petrol Ofisi'nin
+# resmi il tablosu LPG'yi KDV dahil veriyor.
+PO_ISTANBUL_URL = "https://www.petrolofisi.com.tr/akaryakit-fiyatlari/istanbul-akaryakit-fiyatlari"
 DEFAULT_LPG_PRICE = 32.30
 DEFAULT_PROVINCE_CODES = (34, 934)
 MIN_DISTRICT_ROWS = 70
@@ -207,6 +213,36 @@ def fetch_hasanadiguzel() -> dict[str, float | None]:
         return {"diesel": None, "lpg": None}
 
 
+def parse_po_lpg(payload: str) -> float:
+    """Average KDV-included "PO/gaz Otogaz" price of the Istanbul rows."""
+    headers = [_strip_html(cell) for cell in re.findall(r"<th\b[^>]*>(.*?)</th>", payload, flags=re.IGNORECASE | re.DOTALL)]
+    column = next((index for index, header in enumerate(headers) if "otogaz" in normalized_label(header)), None)
+    if column is None:
+        raise DataValidationError("Petrol Ofisi table has no Otogaz column")
+    values: list[float] = []
+    for row in re.findall(r"<tr\b[^>]*class=\"[^\"]*price-row[^\"]*\"[^>]*>(.*?)</tr>", payload, flags=re.IGNORECASE | re.DOTALL):
+        cells = [_strip_html(cell) for cell in re.findall(r"<td\b[^>]*>(.*?)</td>", row, flags=re.IGNORECASE | re.DOTALL)]
+        if len(cells) <= column or "istanbul" not in normalized_label(cells[0]):
+            continue
+        # Hücre "41.20 34.33 TL/LT +KDV": ilk sayı KDV dahil pompa fiyatı.
+        if match := re.search(r"\d+[.,]\d{2}", cells[column]):
+            values.append(float(match.group(0).replace(",", ".")))
+    if not values:
+        raise DataValidationError("Petrol Ofisi table has no Istanbul Otogaz price")
+    lpg = round(statistics.fmean(values), 2)
+    if not MIN_PRICE <= lpg <= MAX_PRICE:
+        raise DataValidationError(f"Petrol Ofisi LPG price {lpg} is implausible")
+    return lpg
+
+
+def fetch_po_lpg() -> float | None:
+    try:
+        return parse_po_lpg(fetch_bytes(PO_ISTANBUL_URL, attempts=2, timeout=30).decode("utf-8", errors="replace"))
+    except Exception as error:
+        print(f"Petrol Ofisi LPG fetch failed: {error}")
+        return None
+
+
 def load_previous_lpg(path: Path) -> float:
     try:
         value = json.loads(path.read_text(encoding="utf-8")).get("lpg")
@@ -288,7 +324,7 @@ def build_payloads(compact: CompactPrices, districts: list[dict[str, Any]], *, s
         "source": source, "sourceUrl": source_url, "confidence": "provider_recommended_price",
         "notes": [
             "Provider prices are recommended pump prices; individual stations may differ.",
-            "LPG is preserved from the last verified value when no provider value is available.",
+            "LPG comes from Petrol Ofisi's Istanbul table; it is preserved from the last verified value when no provider value is available.",
             "Candidate data is range, coverage, freshness and change-rate validated before publication.",
         ], "districtPrices": districts,
     }
@@ -337,7 +373,7 @@ def main() -> int:
         previous = json.loads(previous_path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         previous = None
-    lpg = fetch_hasanadiguzel().get("lpg") or load_previous_lpg(previous_path)
+    lpg = fetch_po_lpg() or fetch_hasanadiguzel().get("lpg") or load_previous_lpg(previous_path)
     compact, districts, source, source_url = select_verified_prices(lpg, previous)
     compact_payload, rich_payload = build_payloads(compact, districts, source=source, source_url=source_url)
     write_json_atomic(output_dir / "fuel_prices.json", compact_payload)

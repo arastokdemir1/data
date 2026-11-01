@@ -94,6 +94,20 @@ class FuelAutomationTests(unittest.TestCase):
         self.assertEqual(rows[0]["diesel"], 96.12)
         self.assertEqual(timestamp, "2026-09-19T20:46:00Z")
 
+    def test_petrol_ofisi_lpg_averages_both_istanbul_rows(self):
+        payload = """
+        <table><thead><tr class="table-primary"><th>Şehir</th><th>V/Max Kurşunsuz 95</th><th>PO/gaz Otogaz</th></tr></thead>
+        <tbody>
+        <tr class="price-row"><td>ADANA</td><td>81.90 68.25 TL/LT +KDV</td><td>40.99 34.16 TL/LT +KDV</td></tr>
+        <tr class="price-row"><td>ISTANBUL (AVRUPA)</td><td>80.40 67.00 TL/LT +KDV</td><td>41.20 34.33 TL/LT +KDV</td></tr>
+        <tr class="price-row"><td>ISTANBUL (ANADOLU)</td><td>80.30 66.92 TL/LT +KDV</td><td>40.60 33.83 TL/LT +KDV</td></tr>
+        </tbody></table>"""
+        self.assertEqual(fuel.parse_po_lpg(payload), 40.9)
+
+    def test_petrol_ofisi_without_otogaz_column_is_rejected(self):
+        with self.assertRaises(fuel.DataValidationError):
+            fuel.parse_po_lpg("<table><tr><th>Şehir</th></tr><tr class=\"price-row\"><td>ISTANBUL (AVRUPA)</td></tr></table>")
+
     def test_large_change_needs_explicit_approval(self):
         """19 Ekim hatası: %25'lik hatalı düşüş eski eşikle yayına giriyordu."""
         now = datetime(2026, 10, 19, tzinfo=timezone.utc)
